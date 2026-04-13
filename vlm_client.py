@@ -121,6 +121,12 @@ def describe_page_image(
             return result.strip()
 
         except Exception as e:
+            error_text = str(e)
+            if "invalid_api_key" in error_text.lower() or "invalid api key" in error_text.lower():
+                raise RuntimeError(
+                    f"Invalid API key provided for page {page_number}."
+                ) from e
+
             if attempt < config.MAX_RETRIES:
                 console.print(
                     f"  [yellow]⚠ Groq API error on page {page_number} "
