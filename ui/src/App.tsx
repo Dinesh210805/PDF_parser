@@ -15,7 +15,10 @@ import {
 } from './lib/api';
 
 type Step = 'welcome' | 'upload' | 'parsing' | 'results';
-const LEGACY_API_KEY_STORAGE_KEY = 'pdf_parser_api_key';
+const LEGACY_API_KEY_STORAGE_KEYS = [
+  'pdf_parser_api_key',
+  'pdf-parser-api-key',
+];
 
 export default function App() {
   const [step, setStep] = useState<Step>('welcome');
@@ -32,7 +35,9 @@ export default function App() {
   useEffect(() => {
     try {
       // Clear any previously persisted key from older app versions.
-      window.localStorage.removeItem(LEGACY_API_KEY_STORAGE_KEY);
+      LEGACY_API_KEY_STORAGE_KEYS.forEach((storageKey) => {
+        window.localStorage.removeItem(storageKey);
+      });
     } catch {
       // Ignore storage access errors.
     }
