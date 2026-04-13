@@ -267,6 +267,17 @@ def _run_parse_job(
                 progress_callback=_progress_callback,
             )
 
+        vlm_failures: list[str] = []
+        for page in processed_pages:
+            if "[VLM processing failed" in page.vlm_description:
+                vlm_failures.append(page.vlm_description.strip("*[]"))
+
+        if vlm_failures:
+            raise RuntimeError(
+                "VLM request failed. Please verify your session API key and try again. "
+                f"Details: {vlm_failures[0]}"
+            )
+
         _update_job(job_id, phase="building_markdown", progress=90, message="Building markdown")
         _append_log(job_id, "Compiling markdown output")
 
