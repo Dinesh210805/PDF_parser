@@ -491,7 +491,7 @@ def get_page_image(job_id: str, page_number: int) -> FileResponse:
 
 
 @app.get("/", include_in_schema=False)
-def serve_ui_root() -> FileResponse | dict[str, str]:
+def serve_ui_root() -> Any:
     if UI_INDEX_FILE.exists():
         return FileResponse(path=str(UI_INDEX_FILE), media_type="text/html")
     return {"status": "ok", "message": "UI build not found. Build ui/ first."}
