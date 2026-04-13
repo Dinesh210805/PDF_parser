@@ -5,7 +5,7 @@ import { WelcomeScreen } from './components/WelcomeScreen';
 import { UploadScreen } from './components/UploadScreen';
 import { ParsingScreen } from './components/ParsingScreen';
 import { ResultsScreen } from './components/ResultsScreen';
-import { SettingsModal } from './components/SettingsModal';
+import { SettingsModal, type PageRangePreset } from './components/SettingsModal';
 import {
   fetchParseJob,
   fetchParseResult,
@@ -19,11 +19,16 @@ const LEGACY_API_KEY_STORAGE_KEYS = [
   'pdf_parser_api_key',
   'pdf-parser-api-key',
 ];
+const PAGE_RANGE_PATTERN = /^\s*\d+(\s*-\s*\d+)?(\s*,\s*\d+(\s*-\s*\d+)?)*\s*$/;
 
 export default function App() {
   const [step, setStep] = useState<Step>('welcome');
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [apiKey, setApiKey] = useState('');
+  const [visionModel, setVisionModel] = useState('meta-llama/llama-4-scout-17b-16e-instruct');
+  const [dpi, setDpi] = useState(180);
+  const [pageRangePreset, setPageRangePreset] = useState<PageRangePreset>('all');
+  const [customPageRange, setCustomPageRange] = useState('');
   const [activeJobId, setActiveJobId] = useState<string | null>(null);
   const [jobStatus, setJobStatus] = useState<ParseJobResponse | null>(null);
   const [parseResult, setParseResult] = useState<ParseJobResult | null>(null);
@@ -44,6 +49,27 @@ export default function App() {
   }, []);
 
   const handleStartParsing = async (file: File) => {
+    const pages =
+      pageRangePreset === 'all'
+        ? undefined
+        : pageRangePreset === 'first5'
+          ? '1-5'
+          : pageRangePreset === 'first10'
+            ? '1-10'
+            : customPageRange.trim() || undefined;
+
+    if (pageRangePreset === 'custom') {
+      if (!customPageRange.trim()) {
+        setUploadError('Enter a custom page range, for example: 1-5, 8, 10-12.');
+        return;
+      }
+
+      if (!PAGE_RANGE_PATTERN.test(customPageRange.trim())) {
+        setUploadError('Invalid page range format. Use values like 1-5, 8, 10-12.');
+        return;
+      }
+    }
+
     setIsStarting(true);
     setUploadError(null);
     setParseResult(null);
@@ -53,6 +79,9 @@ export default function App() {
       const createdJob = await startParseJob({
         file,
         apiKey: apiKey || undefined,
+        model: visionModel,
+        dpi,
+        pages,
       });
       setActiveJobId(createdJob.jobId);
       setJobStatus(createdJob);
@@ -260,6 +289,14 @@ export default function App() {
         onClose={() => setIsSettingsOpen(false)} 
         apiKey={apiKey}
         setApiKey={setApiKey}
+        visionModel={visionModel}
+        setVisionModel={setVisionModel}
+        dpi={dpi}
+        setDpi={setDpi}
+        pageRangePreset={pageRangePreset}
+        setPageRangePreset={setPageRangePreset}
+        customPageRange={customPageRange}
+        setCustomPageRange={setCustomPageRange}
       />
     </div>
   );

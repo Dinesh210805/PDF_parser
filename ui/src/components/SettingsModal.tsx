@@ -1,28 +1,155 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Key, Settings2, ShieldCheck, X } from 'lucide-react';
+import { Key, RefreshCw, Settings2, ShieldCheck, X } from 'lucide-react';
 import { Button } from './ui/Button';
 import { Input } from './ui/Input';
+import { fetchGroqModels, type GroqModelInfo } from '../lib/api';
+
+export type PageRangePreset = 'all' | 'first5' | 'first10' | 'custom';
 
 interface SettingsModalProps {
   isOpen: boolean;
   onClose: () => void;
   apiKey: string;
   setApiKey: (key: string) => void;
+  visionModel: string;
+  setVisionModel: (model: string) => void;
+  dpi: number;
+  setDpi: (dpi: number) => void;
+  pageRangePreset: PageRangePreset;
+  setPageRangePreset: (preset: PageRangePreset) => void;
+  customPageRange: string;
+  setCustomPageRange: (value: string) => void;
 }
 
-export function SettingsModal({ isOpen, onClose, apiKey, setApiKey }: SettingsModalProps) {
+export function SettingsModal({
+  isOpen,
+  onClose,
+  apiKey,
+  setApiKey,
+  visionModel,
+  setVisionModel,
+  dpi,
+  setDpi,
+  pageRangePreset,
+  setPageRangePreset,
+  customPageRange,
+  setCustomPageRange,
+}: SettingsModalProps) {
   const [showKey, setShowKey] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
   const [testResult, setTestResult] = useState<'idle' | 'success' | 'error'>('idle');
+  const [testMessage, setTestMessage] = useState('');
+  const [availableModels, setAvailableModels] = useState<GroqModelInfo[]>([]);
+  const [isLoadingModels, setIsLoadingModels] = useState(false);
+  const [modelError, setModelError] = useState<string | null>(null);
+  const [multimodalFallback, setMultimodalFallback] = useState(false);
+  const lastLoadedApiKeyRef = useRef('');
+  const latestModelRequestIdRef = useRef(0);
 
-  const handleTest = () => {
-    setIsTesting(true);
-    setTestResult('idle');
-    setTimeout(() => {
-      setIsTesting(false);
-      setTestResult(apiKey.length > 10 ? 'success' : 'error');
-    }, 1500);
+  const modelOptions = useMemo(() => {
+    const deduped = new Map<string, GroqModelInfo>();
+    availableModels.forEach((model) => {
+      deduped.set(model.id, model);
+    });
+    if (visionModel && !deduped.has(visionModel)) {
+      deduped.set(visionModel, {
+        id: visionModel,
+        ownedBy: null,
+        contextWindow: null,
+        active: true,
+        isMultimodal: true,
+      });
+    }
+    return Array.from(deduped.values()).sort((a, b) => a.id.localeCompare(b.id));
+  }, [availableModels, visionModel]);
+
+  const loadModels = async (isConnectionTest = false) => {
+    const requestId = latestModelRequestIdRef.current + 1;
+    latestModelRequestIdRef.current = requestId;
+
+    const trimmedKey = apiKey.trim();
+    if (!trimmedKey) {
+      setModelError('Enter API key to load available models.');
+      if (isConnectionTest) {
+        setTestResult('error');
+        setTestMessage('API key is required.');
+      }
+      return;
+    }
+
+    setIsLoadingModels(true);
+    setModelError(null);
+    if (isConnectionTest) {
+      setIsTesting(true);
+      setTestResult('idle');
+      setTestMessage('');
+    }
+
+    try {
+      const response = await fetchGroqModels(trimmedKey, true);
+      if (requestId !== latestModelRequestIdRef.current) {
+        return;
+      }
+
+      setAvailableModels(response.models);
+      setMultimodalFallback(response.multimodalFallback);
+      if (isConnectionTest) {
+        setTestResult('success');
+        setTestMessage('Connection successful');
+      }
+      lastLoadedApiKeyRef.current = trimmedKey;
+    } catch (error) {
+      if (requestId !== latestModelRequestIdRef.current) {
+        return;
+      }
+
+      const message =
+        error instanceof Error ? error.message : 'Failed to load models from Groq.';
+      setModelError(message);
+      if (isConnectionTest) {
+        setTestResult('error');
+        setTestMessage(message);
+      }
+    } finally {
+      if (requestId === latestModelRequestIdRef.current) {
+        setIsLoadingModels(false);
+        if (isConnectionTest) {
+          setIsTesting(false);
+        }
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const trimmedKey = apiKey.trim();
+    if (!trimmedKey) {
+      setAvailableModels([]);
+      setModelError('Enter API key to load available models.');
+      setMultimodalFallback(false);
+      lastLoadedApiKeyRef.current = '';
+      return;
+    }
+
+    if (trimmedKey === lastLoadedApiKeyRef.current) {
+      return;
+    }
+
+    const debounceId = window.setTimeout(() => {
+      void loadModels(false);
+    }, 350);
+
+    return () => {
+      window.clearTimeout(debounceId);
+    };
+  }, [isOpen, apiKey]);
+
+  const handleTest = async () => {
+    await loadModels(true);
   };
 
   return (
@@ -78,7 +205,7 @@ export function SettingsModal({ isOpen, onClose, apiKey, setApiKey }: SettingsMo
                       <ShieldCheck className="w-4 h-4 mr-1 text-zinc-400" />
                       Session only (cleared on refresh).
                     </div>
-                    <Button 
+                    <Button
                       variant="outline" 
                       size="sm" 
                       onClick={handleTest}
@@ -89,10 +216,10 @@ export function SettingsModal({ isOpen, onClose, apiKey, setApiKey }: SettingsMo
                   </div>
                   
                   {testResult === 'success' && (
-                    <p className="text-sm text-white font-medium mt-2 flex items-center"><span className="w-2 h-2 rounded-full bg-white mr-2 shadow-[0_0_8px_rgba(255,255,255,0.8)]" /> Connection successful</p>
+                    <p className="text-sm text-white font-medium mt-2 flex items-center"><span className="w-2 h-2 rounded-full bg-white mr-2 shadow-[0_0_8px_rgba(255,255,255,0.8)]" /> {testMessage || 'Connection successful'}</p>
                   )}
                   {testResult === 'error' && (
-                    <p className="text-sm text-red-400 font-medium mt-2 flex items-center"><span className="w-2 h-2 rounded-full bg-red-500 mr-2" /> Invalid API key format</p>
+                    <p className="text-sm text-red-400 font-medium mt-2 flex items-center"><span className="w-2 h-2 rounded-full bg-red-500 mr-2" /> {testMessage || 'Connection failed'}</p>
                   )}
                 </div>
 
@@ -103,26 +230,75 @@ export function SettingsModal({ isOpen, onClose, apiKey, setApiKey }: SettingsMo
                   </div>
                   <div className="space-y-3">
                     <div className="space-y-1.5">
-                      <label className="text-xs text-zinc-400">Vision Model</label>
-                      <select className="flex h-10 w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus-visible:outline-none focus-visible:border-white/30 transition-all appearance-none">
-                        <option value="llama-3.2-90b-vision-preview">llama-3.2-90b-vision-preview</option>
-                        <option value="llama-3.2-11b-vision-preview">llama-3.2-11b-vision-preview</option>
+                      <div className="flex items-center justify-between">
+                        <label className="text-xs text-zinc-400">Vision Model (multimodal)</label>
+                        <button
+                          type="button"
+                          onClick={() => void loadModels(false)}
+                          disabled={isLoadingModels || !apiKey.trim()}
+                          className="inline-flex items-center text-xs text-zinc-400 hover:text-white disabled:opacity-50 transition-colors"
+                        >
+                          <RefreshCw className={`w-3.5 h-3.5 mr-1 ${isLoadingModels ? 'animate-spin' : ''}`} />
+                          Refresh
+                        </button>
+                      </div>
+                      <select
+                        value={visionModel}
+                        onChange={(event) => setVisionModel(event.target.value)}
+                        className="settings-select"
+                        disabled={isLoadingModels || modelOptions.length === 0}
+                      >
+                        {modelOptions.map((model) => (
+                          <option key={model.id} value={model.id}>
+                            {model.id}
+                          </option>
+                        ))}
                       </select>
+                      {modelError && <p className="text-xs text-amber-300">{modelError}</p>}
+                      {multimodalFallback && (
+                        <p className="text-xs text-zinc-500">
+                          Multimodal filter was unavailable, showing all models returned by Groq.
+                        </p>
+                      )}
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-1.5">
                         <label className="text-xs text-zinc-400">DPI (Rasterization)</label>
-                        <select className="flex h-10 w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus-visible:outline-none focus-visible:border-white/30 transition-all appearance-none">
-                          <option>150 (Fast)</option>
-                          <option selected>300 (Balanced)</option>
-                          <option>600 (High Quality)</option>
+                        <select
+                          value={String(dpi)}
+                          onChange={(event) => setDpi(Number.parseInt(event.target.value, 10))}
+                          className="settings-select"
+                        >
+                          <option value="150">150 (Fast)</option>
+                          <option value="180">180 (Balanced)</option>
+                          <option value="300">300 (High Quality)</option>
                         </select>
                       </div>
                       <div className="space-y-1.5">
                         <label className="text-xs text-zinc-400">Page Range</label>
-                        <Input placeholder="e.g. 1-5, 8" defaultValue="All" className="h-10" />
+                        <select
+                          value={pageRangePreset}
+                          onChange={(event) => setPageRangePreset(event.target.value as PageRangePreset)}
+                          className="settings-select"
+                        >
+                          <option value="all">All pages</option>
+                          <option value="first5">First 5 pages</option>
+                          <option value="first10">First 10 pages</option>
+                          <option value="custom">Custom range</option>
+                        </select>
                       </div>
                     </div>
+                    {pageRangePreset === 'custom' && (
+                      <div className="space-y-1.5">
+                        <label className="text-xs text-zinc-400">Custom Range Expression</label>
+                        <Input
+                          placeholder="e.g. 1-5, 8, 12-14"
+                          value={customPageRange}
+                          onChange={(event) => setCustomPageRange(event.target.value)}
+                          className="h-10"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

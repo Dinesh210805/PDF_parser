@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import os
+import re
 import tempfile
 import threading
 import time
@@ -15,10 +16,11 @@ from pathlib import Path
 from typing import Any
 
 import fitz
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, Header, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from groq import Groq
 
 import config
 from knowledge_builder import build_knowledge_base
@@ -28,6 +30,9 @@ from vlm_client import set_api_key
 
 MAX_UPLOAD_BYTES = 50 * 1024 * 1024
 JOB_WORKERS = 1
+PAGE_RANGE_PATTERN = re.compile(
+    r"^\s*\d+(\s*-\s*\d+)?(\s*,\s*\d+(\s*-\s*\d+)?)*\s*$"
+)
 UI_DIST_DIR = Path(__file__).resolve().parent / "ui" / "dist"
 UI_INDEX_FILE = UI_DIST_DIR / "index.html"
 
@@ -103,6 +108,15 @@ def _resolve_page_range(spec: str | None, total: int) -> list[int] | None:
     return normalized
 
 
+def _is_valid_page_range_syntax(spec: str | None) -> bool:
+    if spec is None:
+        return True
+    trimmed = spec.strip()
+    if not trimmed:
+        return True
+    return bool(PAGE_RANGE_PATTERN.fullmatch(trimmed))
+
+
 def _save_upload_file(upload: UploadFile, destination: Path) -> None:
     total = 0
     with destination.open("wb") as handle:
@@ -170,6 +184,50 @@ def _job_snapshot(job: JobState) -> dict[str, Any]:
         "createdAt": job.created_at,
         "updatedAt": job.updated_at,
     }
+
+
+def _groq_model_to_dict(model_obj: Any) -> dict[str, Any]:
+    if isinstance(model_obj, dict):
+        return model_obj
+    if hasattr(model_obj, "model_dump"):
+        try:
+            return model_obj.model_dump()
+        except Exception:
+            return {}
+    if hasattr(model_obj, "to_dict"):
+        try:
+            return model_obj.to_dict()
+        except Exception:
+            return {}
+    return {}
+
+
+def _is_multimodal_model(model_id: str, model_payload: dict[str, Any]) -> bool:
+    modalities = model_payload.get("modalities")
+    if isinstance(modalities, list):
+        normalized_modalities = {str(m).lower() for m in modalities}
+        if "image" in normalized_modalities or "vision" in normalized_modalities:
+            return True
+
+    capabilities = model_payload.get("capabilities")
+    if isinstance(capabilities, dict):
+        if capabilities.get("image_input") is True or capabilities.get("vision") is True:
+            return True
+        cap_modalities = capabilities.get("modalities")
+        if isinstance(cap_modalities, list):
+            normalized_cap_modalities = {str(m).lower() for m in cap_modalities}
+            if "image" in normalized_cap_modalities or "vision" in normalized_cap_modalities:
+                return True
+
+    normalized_id = model_id.lower()
+    multimodal_tokens = (
+        "llama-4-",
+        "vision",
+        "-vl",
+        "qvq",
+        "gemma-3",
+    )
+    return any(token in normalized_id for token in multimodal_tokens)
 
 
 def _preview_image_path(job_id: str, page_number: int) -> Path:
@@ -331,6 +389,61 @@ def health() -> dict[str, Any]:
     }
 
 
+@app.get("/api/models")
+def list_available_models(
+    x_groq_api_key: str | None = Header(default=None),
+    multimodalOnly: bool = True,
+) -> dict[str, Any]:
+    provided_key = (x_groq_api_key or "").strip()
+    if not provided_key:
+        raise HTTPException(status_code=400, detail="API key is required to list models")
+
+    try:
+        client = Groq(api_key=provided_key)
+        payload = client.models.list()
+    except Exception as exc:
+        error_text = str(exc).lower()
+        if "invalid_api_key" in error_text or "invalid api key" in error_text:
+            raise HTTPException(status_code=401, detail="Invalid API key") from exc
+        raise HTTPException(status_code=502, detail=f"Failed to query Groq models: {exc}") from exc
+
+    payload_data = getattr(payload, "data", None)
+    if payload_data is None and isinstance(payload, dict):
+        payload_data = payload.get("data", [])
+    if not isinstance(payload_data, list):
+        payload_data = []
+
+    normalized_models: list[dict[str, Any]] = []
+    for model_obj in payload_data:
+        model_payload = _groq_model_to_dict(model_obj)
+        model_id = str(model_payload.get("id") or getattr(model_obj, "id", "")).strip()
+        if not model_id:
+            continue
+
+        is_multimodal = _is_multimodal_model(model_id, model_payload)
+        normalized_models.append(
+            {
+                "id": model_id,
+                "ownedBy": model_payload.get("owned_by") or getattr(model_obj, "owned_by", None),
+                "contextWindow": model_payload.get("context_window") or getattr(model_obj, "context_window", None),
+                "active": model_payload.get("active") if "active" in model_payload else getattr(model_obj, "active", None),
+                "isMultimodal": is_multimodal,
+            }
+        )
+
+    normalized_models.sort(key=lambda item: item["id"])
+    filtered_models = normalized_models
+    if multimodalOnly:
+        filtered_models = [model for model in normalized_models if model["isMultimodal"]]
+
+    return {
+        "models": filtered_models,
+        "multimodalOnlyApplied": multimodalOnly,
+        "multimodalFallback": False,
+        "totalModels": len(normalized_models),
+    }
+
+
 @app.post("/api/jobs", status_code=202)
 async def create_job(
     file: UploadFile = File(...),
@@ -339,6 +452,12 @@ async def create_job(
     model: str | None = Form(default=None),
     pages: str | None = Form(default=None),
 ) -> dict[str, Any]:
+    if not _is_valid_page_range_syntax(pages):
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid page range format. Use values like 1-5, 8, 10-12",
+        )
+
     file_name = file.filename or "document.pdf"
     if not file_name.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are supported")

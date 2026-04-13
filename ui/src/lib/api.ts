@@ -48,6 +48,21 @@ export interface PageImagesResponse {
   pages: PageImage[];
 }
 
+export interface GroqModelInfo {
+  id: string;
+  ownedBy: string | null;
+  contextWindow: number | null;
+  active: boolean | null;
+  isMultimodal: boolean;
+}
+
+export interface GroqModelsResponse {
+  models: GroqModelInfo[];
+  multimodalOnlyApplied: boolean;
+  multimodalFallback: boolean;
+  totalModels: number;
+}
+
 export interface StartParseJobInput {
   file: File;
   apiKey?: string;
@@ -140,6 +155,26 @@ export async function fetchPageImages(jobId: string): Promise<PageImagesResponse
   }
 
   return (await response.json()) as PageImagesResponse;
+}
+
+export async function fetchGroqModels(
+  apiKey: string,
+  multimodalOnly = true
+): Promise<GroqModelsResponse> {
+  const response = await fetch(
+    `${API_BASE_URL}/api/models?multimodalOnly=${multimodalOnly ? 'true' : 'false'}`,
+    {
+      headers: {
+        'x-groq-api-key': apiKey,
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(await parseErrorMessage(response));
+  }
+
+  return (await response.json()) as GroqModelsResponse;
 }
 
 export function buildApiUrl(path: string): string {

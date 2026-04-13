@@ -53,11 +53,21 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
       const selected = e.target.files[0];
       if (!isPdfFile(selected)) {
         setLocalError('Please upload a valid PDF file.');
+        e.target.value = '';
         return;
       }
       setFile(selected);
       setLocalError(null);
+      // Allow selecting the same file again if needed.
+      e.target.value = '';
     }
+  };
+
+  const openFilePicker = () => {
+    if (isStarting) {
+      return;
+    }
+    fileInputRef.current?.click();
   };
 
   const handleParseClick = async () => {
@@ -119,6 +129,15 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
                   onDragOver={handleDragOver}
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
+                  onClick={openFilePicker}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                      event.preventDefault();
+                      openFilePicker();
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
                 >
                   <motion.div 
                     animate={{ y: isDragging ? -10 : 0, scale: isDragging ? 1.1 : 1 }}
@@ -129,13 +148,6 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
                   </motion.div>
                   <p className="text-base font-medium text-white mb-2">Click to upload or drag and drop</p>
                   <p className="text-sm text-zinc-500">PDF files only (max 50MB)</p>
-                  <input
-                    type="file"
-                    ref={fileInputRef}
-                    onChange={handleFileChange}
-                    accept="application/pdf"
-                    className="absolute inset-0 opacity-0 cursor-pointer"
-                  />
                 </motion.div>
               ) : (
                 <motion.div 
@@ -165,6 +177,13 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
                 </motion.div>
               )}
             </AnimatePresence>
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleFileChange}
+              accept="application/pdf"
+              className="hidden"
+            />
           </CardContent>
         </Card>
       </motion.div>
