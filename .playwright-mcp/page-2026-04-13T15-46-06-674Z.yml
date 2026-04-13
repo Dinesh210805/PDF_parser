@@ -1,0 +1,386 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Render" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Render" [ref=e8]
+          - button "M My Workspace" [ref=e12] [cursor=pointer]:
+            - generic [ref=e13]:
+              - generic [ref=e14]: M
+              - generic "My Workspace" [ref=e15]
+              - img [ref=e16]
+        - generic [ref=e20]:
+          - navigation [ref=e21]:
+            - list [ref=e22]:
+              - listitem [ref=e23]:
+                - generic [ref=e24]:
+                  - img [ref=e25]
+                  - generic [ref=e29]: Projects
+          - button "Search Ctrl + K" [ref=e31] [cursor=pointer]:
+            - img [ref=e33]
+            - text: Search
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]: Ctrl
+              - generic [ref=e39]: +
+              - generic [ref=e40]: K
+              - generic [ref=e41]: K
+        - generic [ref=e42]:
+          - button "New" [ref=e44] [cursor=pointer]:
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - generic [ref=e48]: New
+          - button "Upgrade" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]:
+              - img [ref=e52]
+              - generic [ref=e54]: Upgrade
+          - button "Help" [ref=e56] [cursor=pointer]:
+            - img "Help" [ref=e57]
+          - button "d" [ref=e62] [cursor=pointer]:
+            - generic [ref=e64]: d
+      - generic [ref=e65]:
+        - navigation [ref=e66]:
+          - separator [ref=e67]
+          - generic [ref=e69]:
+            - list [ref=e70]:
+              - listitem [ref=e71]:
+                - link "Projects" [ref=e72] [cursor=pointer]:
+                  - /url: /
+                  - img [ref=e73]
+                  - generic [ref=e77]: Projects
+              - listitem [ref=e78]:
+                - link "Blueprints" [ref=e79] [cursor=pointer]:
+                  - /url: /blueprints
+                  - img [ref=e80]
+                  - generic [ref=e85]: Blueprints
+              - listitem [ref=e86]:
+                - link "Environment Groups" [ref=e87] [cursor=pointer]:
+                  - /url: /env-groups
+                  - img [ref=e88]
+                  - generic [ref=e94]: Environment Groups
+            - generic [ref=e95]:
+              - generic [ref=e96]: Integrations
+              - list "Integrations" [ref=e97]:
+                - listitem [ref=e98]:
+                  - link "Observability" [ref=e99] [cursor=pointer]:
+                    - /url: /observability
+                    - img [ref=e100]
+                    - generic [ref=e102]: Observability
+                - listitem [ref=e103]:
+                  - link "Webhooks" [ref=e104] [cursor=pointer]:
+                    - /url: /webhooks
+                    - img [ref=e105]
+                    - generic [ref=e109]: Webhooks
+                - listitem [ref=e110]:
+                  - link "Notifications" [ref=e111] [cursor=pointer]:
+                    - /url: /notifications
+                    - img [ref=e112]
+                    - generic [ref=e122]: Notifications
+            - generic [ref=e123]:
+              - generic [ref=e124]: Networking
+              - list "Networking" [ref=e125]:
+                - listitem [ref=e126]:
+                  - link "Private Links" [ref=e127] [cursor=pointer]:
+                    - /url: /private-links
+                    - img [ref=e128]
+                    - generic [ref=e130]: Private Links
+            - generic [ref=e131]:
+              - generic [ref=e132]: Workspace
+              - list "Workspace" [ref=e133]:
+                - listitem [ref=e134]:
+                  - link "Billing" [ref=e135] [cursor=pointer]:
+                    - /url: /w/tea-cvpa5k3e5dus73cdc4u0/billing
+                    - img [ref=e136]
+                    - generic [ref=e139]: Billing
+                - listitem [ref=e140]:
+                  - link "Settings" [ref=e141] [cursor=pointer]:
+                    - /url: /w/tea-cvpa5k3e5dus73cdc4u0/settings
+                    - img [ref=e142]
+                    - generic [ref=e145]: Settings
+          - generic [ref=e146]:
+            - alert [ref=e147]:
+              - img [ref=e149]
+              - generic [ref=e153]:
+                - generic [ref=e154]:
+                  - generic [ref=e155]: "Workflows: Now in beta"
+                  - generic [ref=e156]:
+                    - text: Orchestrate your agents and background jobs with automatic retries and scale-to-zero.
+                    - link "Learn more" [ref=e157] [cursor=pointer]:
+                      - /url: https://render.com/docs/workflows
+                - link "Create Workflow" [ref=e159] [cursor=pointer]:
+                  - /url: /workflow/new
+              - button "Close notification" [ref=e160] [cursor=pointer]:
+                - img [ref=e161]
+            - generic [ref=e163]:
+              - button "Collapse items" [expanded] [ref=e164] [cursor=pointer]:
+                - img [ref=e165]
+              - list "Footer navigation" [ref=e167]:
+                - listitem [ref=e168]:
+                  - link "Changelog" [ref=e169] [cursor=pointer]:
+                    - /url: https://render.com/changelog
+                    - img [ref=e170]
+                    - generic [ref=e175]: Changelog
+                - listitem [ref=e176]:
+                  - link "Invite a friend" [ref=e177] [cursor=pointer]:
+                    - /url: /invites
+                    - img [ref=e178]
+                    - generic [ref=e180]: Invite a friend
+                - listitem [ref=e181]:
+                  - button "Contact support" [ref=e182] [cursor=pointer]:
+                    - img [ref=e183]
+                    - generic [ref=e187]: Contact support
+              - link "Render Status" [ref=e189] [cursor=pointer]:
+                - /url: https://status.render.com
+                - img [ref=e190]
+                - generic [ref=e192]: Render Status
+        - generic [ref=e193]:
+          - button "Share feedback" [ref=e451] [cursor=pointer]:
+            - img [ref=e452]
+            - text: Share feedback
+          - main [ref=e200]:
+            - generic [ref=e201]:
+              - heading "Overview" [level=1] [ref=e203]
+              - generic [ref=e205]:
+                - button "Invite your team" [disabled] [ref=e210]:
+                  - img [ref=e212]
+                  - text: Invite your team
+                - button "New" [expanded] [active] [ref=e217] [cursor=pointer]:
+                  - generic [ref=e218]:
+                    - img [ref=e219]
+                    - generic [ref=e221]: New
+                    - img [ref=e541]
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e228]: Projects
+                - list
+                - generic [ref=e229]:
+                  - generic [ref=e230]:
+                    - img [ref=e232]
+                    - generic [ref=e236]:
+                      - generic [ref=e237]:
+                        - heading "Get organized with Projects" [level=2] [ref=e238]
+                        - paragraph [ref=e239]: An easier way to organize your resources and collaborate with team members.
+                      - generic [ref=e240]:
+                        - button "Create your first project" [ref=e241] [cursor=pointer]:
+                          - img [ref=e243]
+                          - text: Create your first project
+                        - link "Learn more" [ref=e245] [cursor=pointer]:
+                          - /url: https://render.com/docs/projects
+                  - generic:
+                    - img "Project"
+                  - button "Close project intro" [ref=e247] [cursor=pointer]:
+                    - img [ref=e248]
+              - generic [ref=e250]:
+                - generic [ref=e252]: Ungrouped Services
+                - generic [ref=e253]:
+                  - list [ref=e256]:
+                    - listitem [ref=e257]:
+                      - tab "active (3)" [selected] [ref=e258] [cursor=pointer]:
+                        - generic [ref=e259]:
+                          - generic [ref=e260]: active
+                          - generic [ref=e261]: (3)
+                    - listitem [ref=e262]:
+                      - tab "suspended (0)" [ref=e263] [cursor=pointer]:
+                        - generic [ref=e264]:
+                          - generic [ref=e265]: suspended
+                          - generic [ref=e266]: (0)
+                    - listitem [ref=e267]:
+                      - tab "all (3)" [ref=e268] [cursor=pointer]:
+                        - generic [ref=e269]:
+                          - generic [ref=e270]: all
+                          - generic [ref=e271]: (3)
+                  - generic [ref=e272]:
+                    - generic [ref=e273]: Search services
+                    - generic [ref=e274]:
+                      - img
+                      - textbox "Search services" [ref=e275]
+                - table [ref=e277]:
+                  - rowgroup [ref=e278]:
+                    - row "Select all rows id Service Name 3 total rows Status Runtime Region Updated" [ref=e279]:
+                      - columnheader "Select all rows":
+                        - generic [ref=e282] [cursor=pointer]:
+                          - checkbox "Select all rows" [ref=e283]
+                          - generic [ref=e285]: Select all rows
+                      - columnheader "id" [ref=e286]:
+                        - button "id" [ref=e287] [cursor=pointer]:
+                          - generic [ref=e288]: id
+                      - columnheader "Service Name 3 total rows" [ref=e289]:
+                        - button "Service Name 3 total rows" [ref=e290] [cursor=pointer]:
+                          - generic [ref=e291]:
+                            - generic [ref=e292]: Service Name
+                            - generic "3 total rows" [ref=e293]: "3"
+                      - columnheader "Status" [ref=e294]:
+                        - button "Status" [ref=e295] [cursor=pointer]:
+                          - generic [ref=e296]: Status
+                      - columnheader "Runtime" [ref=e297]:
+                        - button "Runtime" [ref=e298] [cursor=pointer]:
+                          - generic [ref=e299]: Runtime
+                      - columnheader "Region" [ref=e300]:
+                        - button "Region" [ref=e301] [cursor=pointer]:
+                          - generic [ref=e302]: Region
+                      - columnheader "Updated" [ref=e303]:
+                        - button "Updated" [ref=e304] [cursor=pointer]:
+                          - generic [ref=e305]: Updated
+                          - img [ref=e306]
+                      - columnheader [ref=e308]
+                  - rowgroup [ref=e309]:
+                    - row "Select row joyboy-s-n8n Deployed Docker oregon 3mo Options" [ref=e310]:
+                      - cell "Select row":
+                        - generic [ref=e313] [cursor=pointer]:
+                          - checkbox "Select row" [ref=e314]
+                          - generic [ref=e316]: Select row
+                      - cell [ref=e317]:
+                        - img [ref=e320]
+                      - cell "joyboy-s-n8n" [ref=e322]:
+                        - link "joyboy-s-n8n" [ref=e324] [cursor=pointer]:
+                          - /url: /web/srv-d5j1r6hr0fns738d3jkg
+                          - generic [ref=e325]: joyboy-s-n8n
+                      - cell "Deployed" [ref=e326]:
+                        - generic [ref=e327]:
+                          - img [ref=e328]
+                          - generic "Deployed" [ref=e330]
+                      - cell "Docker" [ref=e331]:
+                        - generic "Docker" [ref=e333]
+                      - cell "oregon" [ref=e334]
+                      - cell "3mo" [ref=e335]:
+                        - time [ref=e336]: 3mo
+                      - cell "Options" [ref=e337]:
+                        - button "Options" [ref=e340] [cursor=pointer]:
+                          - generic [ref=e341]: Options
+                          - img [ref=e342]
+                    - row "Select row n8n_deployment Failed deploy Node oregon 4mo Options" [ref=e346]:
+                      - cell "Select row":
+                        - generic [ref=e349] [cursor=pointer]:
+                          - checkbox "Select row" [ref=e350]
+                          - generic [ref=e352]: Select row
+                      - cell [ref=e353]:
+                        - img [ref=e356]
+                      - cell "n8n_deployment" [ref=e358]:
+                        - link "n8n_deployment" [ref=e360] [cursor=pointer]:
+                          - /url: /web/srv-d24v4vqli9vc73eo45p0
+                          - generic [ref=e361]: n8n_deployment
+                      - cell "Failed deploy" [ref=e362]:
+                        - link "Failed deploy" [ref=e364] [cursor=pointer]:
+                          - /url: /web/srv-d24v4vqli9vc73eo45p0/deploys/dep-d24v5pc9c44c73b21fj0
+                          - generic [ref=e365]:
+                            - img [ref=e366]
+                            - generic "Failed deploy" [ref=e368]
+                      - cell "Node" [ref=e369]:
+                        - generic "Node" [ref=e371]
+                      - cell "oregon" [ref=e372]
+                      - cell "4mo" [ref=e373]:
+                        - time [ref=e374]: 4mo
+                      - cell "Options" [ref=e375]:
+                        - button "Options" [ref=e378] [cursor=pointer]:
+                          - generic [ref=e379]: Options
+                          - img [ref=e380]
+                    - row "Select row GravitycARgo---deploy Deployed Python 3 oregon 10mo Options" [ref=e384]:
+                      - cell "Select row":
+                        - generic [ref=e387] [cursor=pointer]:
+                          - checkbox "Select row" [ref=e388]
+                          - generic [ref=e390]: Select row
+                      - cell [ref=e391]:
+                        - img [ref=e394]
+                      - cell "GravitycARgo---deploy" [ref=e396]:
+                        - link "GravitycARgo---deploy" [ref=e398] [cursor=pointer]:
+                          - /url: /web/srv-cvpabugdl3ps73fv7oeg
+                          - generic [ref=e399]: GravitycARgo---deploy
+                      - cell "Deployed" [ref=e400]:
+                        - generic [ref=e401]:
+                          - img [ref=e402]
+                          - generic "Deployed" [ref=e404]
+                      - cell "Python 3" [ref=e405]:
+                        - generic "Python 3" [ref=e407]
+                      - cell "oregon" [ref=e408]
+                      - cell "10mo" [ref=e409]:
+                        - time [ref=e410]: 10mo
+                      - cell "Options" [ref=e411]:
+                        - button "Options" [ref=e414] [cursor=pointer]:
+                          - generic [ref=e415]: Options
+                          - img [ref=e416]
+    - generic:
+      - generic:
+        - generic: "0 services selected:"
+        - generic:
+          - generic:
+            - generic:
+              - button:
+                - generic:
+                  - img
+                - generic: Move
+                - img
+      - generic:
+        - separator
+        - generic:
+          - generic:
+            - button:
+              - img
+  - iframe [ref=e420]:
+    
+  - listbox "New" [ref=e545]:
+    - list [ref=e546]:
+      - option "Static Site" [ref=e547]:
+        - link "Static Site" [ref=e548] [cursor=pointer]:
+          - /url: /static/new
+          - generic [ref=e549]:
+            - img [ref=e550]
+            - generic [ref=e553]: Static Site
+      - option "Web Service" [ref=e554]:
+        - link "Web Service" [ref=e555] [cursor=pointer]:
+          - /url: /web/new
+          - generic [ref=e556]:
+            - img [ref=e557]
+            - generic [ref=e559]: Web Service
+      - option "Private Service" [ref=e560]:
+        - link "Private Service" [ref=e561] [cursor=pointer]:
+          - /url: /pserv/new
+          - generic [ref=e562]:
+            - img [ref=e563]
+            - generic [ref=e565]: Private Service
+      - option "Workflow Beta" [ref=e566]:
+        - link "Workflow Beta" [ref=e567] [cursor=pointer]:
+          - /url: /workflow/new
+          - generic [ref=e568]:
+            - img [ref=e569]
+            - generic [ref=e574]: Workflow
+            - generic [ref=e575]: Beta
+      - option "Background Worker" [ref=e576]:
+        - link "Background Worker" [ref=e577] [cursor=pointer]:
+          - /url: /worker/new
+          - generic [ref=e578]:
+            - img [ref=e579]
+            - generic [ref=e584]: Background Worker
+      - option "Cron Job" [ref=e585]:
+        - link "Cron Job" [ref=e586] [cursor=pointer]:
+          - /url: /cron/new
+          - generic [ref=e587]:
+            - img [ref=e588]
+            - generic [ref=e592]: Cron Job
+        - separator [ref=e593]
+      - option "Postgres" [ref=e595]:
+        - link "Postgres" [ref=e596] [cursor=pointer]:
+          - /url: /new/database
+          - generic [ref=e597]:
+            - img [ref=e598]
+            - generic [ref=e600]: Postgres
+      - option "Key Value" [ref=e601]:
+        - link "Key Value" [ref=e602] [cursor=pointer]:
+          - /url: /new/redis
+          - generic [ref=e603]:
+            - img [ref=e604]
+            - generic [ref=e608]: Key Value
+        - separator [ref=e609]
+      - option "Project" [ref=e611]:
+        - link "Project" [ref=e612] [cursor=pointer]:
+          - /url: /new/project
+          - generic [ref=e613]:
+            - img [ref=e614]
+            - generic [ref=e618]: Project
+      - option "Blueprint" [ref=e619]:
+        - link "Blueprint" [ref=e620] [cursor=pointer]:
+          - /url: /select-repo?type=blueprint
+          - generic [ref=e621]:
+            - img [ref=e622]
+            - generic [ref=e627]: Blueprint

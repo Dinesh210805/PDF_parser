@@ -1,0 +1,748 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Render" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Render" [ref=e8]
+          - button "M My Workspace" [ref=e12] [cursor=pointer]:
+            - generic [ref=e13]:
+              - generic [ref=e14]: M
+              - generic "My Workspace" [ref=e15]
+              - img [ref=e16]
+        - generic [ref=e20]:
+          - navigation [ref=e21]:
+            - list [ref=e22]:
+              - listitem [ref=e23]:
+                - generic [ref=e647]:
+                  - img [ref=e648]
+                  - generic [ref=e653]: New Blueprint
+          - button "Search Ctrl + K" [ref=e31] [cursor=pointer]:
+            - img [ref=e33]
+            - text: Search
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]: Ctrl
+              - generic [ref=e39]: +
+              - generic [ref=e40]: K
+              - generic [ref=e41]: K
+        - generic [ref=e42]:
+          - button "New" [ref=e44] [cursor=pointer]:
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - generic [ref=e48]: New
+          - button "Upgrade" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]:
+              - img [ref=e52]
+              - generic [ref=e54]: Upgrade
+          - button "Help" [ref=e56] [cursor=pointer]:
+            - img "Help" [ref=e57]
+          - button "d" [ref=e62] [cursor=pointer]:
+            - generic [ref=e64]: d
+      - main [ref=e654]:
+        - generic [ref=e655]:
+          - heading "Create a new Blueprint Instance in My Workspace" [level=1] [ref=e656]:
+            - text: Create a new
+            - link "Blueprint Instance" [ref=e657] [cursor=pointer]:
+              - /url: https://render.com/docs/infrastructure-as-code
+            - text: in
+            - link "My Workspace" [ref=e658] [cursor=pointer]:
+              - /url: /w/tea-cvpa5k3e5dus73cdc4u0/settings
+          - generic [ref=e661]: Connect your Git repository or use an existing public repository URL.
+        - generic [ref=e662]:
+          - generic [ref=e663]:
+            - generic [ref=e665]:
+              - heading "Connect a repository" [level=4] [ref=e670]
+              - generic [ref=e671]:
+                - generic [ref=e673]:
+                  - generic [ref=e674]: Search repositories
+                  - generic [ref=e675]:
+                    - img
+                    - textbox "Search repositories" [active] [ref=e676]:
+                      - /placeholder: Search
+                - list [ref=e678]:
+                  - listitem [ref=e679]:
+                    - generic [ref=e680]:
+                      - img "GitHub" [ref=e682]
+                      - link "Dinesh210805 / aura-live" [ref=e684] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/aura-live
+                        - generic [ref=e685]: Dinesh210805 / aura-live
+                      - generic [ref=e686]:
+                        - separator [ref=e687]: •
+                        - time [ref=e688]: 4 hours ago
+                    - button "Connect" [ref=e689] [cursor=pointer]
+                  - listitem [ref=e690]:
+                    - generic [ref=e691]:
+                      - img "GitHub" [ref=e693]
+                      - link "Dinesh210805 / coding-agent" [ref=e695] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/coding-agent
+                        - generic [ref=e696]: Dinesh210805 / coding-agent
+                      - img "Private" [ref=e697]
+                      - generic [ref=e699]:
+                        - separator [ref=e700]: •
+                        - time [ref=e701]: 3 days ago
+                    - button "Connect" [ref=e702] [cursor=pointer]
+                  - listitem [ref=e703]:
+                    - generic [ref=e704]:
+                      - img "GitHub" [ref=e706]
+                      - link "Dinesh210805 / graphify" [ref=e708] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/graphify
+                        - generic [ref=e709]: Dinesh210805 / graphify
+                      - generic [ref=e710]:
+                        - separator [ref=e711]: •
+                        - time [ref=e712]: 4 days ago
+                    - button "Connect" [ref=e713] [cursor=pointer]
+                  - listitem [ref=e714]:
+                    - generic [ref=e715]:
+                      - img "GitHub" [ref=e717]
+                      - link "Dinesh210805 / openclaude" [ref=e719] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/openclaude
+                        - generic [ref=e720]: Dinesh210805 / openclaude
+                      - generic [ref=e721]:
+                        - separator [ref=e722]: •
+                        - time [ref=e723]: 4 days ago
+                    - button "Connect" [ref=e724] [cursor=pointer]
+                  - listitem [ref=e725]:
+                    - generic [ref=e726]:
+                      - img "GitHub" [ref=e728]
+                      - link "Dinesh210805 / Dinesh210805" [ref=e730] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Dinesh210805
+                        - generic [ref=e731]: Dinesh210805 / Dinesh210805
+                      - generic [ref=e732]:
+                        - separator [ref=e733]: •
+                        - time [ref=e734]: 5 days ago
+                    - button "Connect" [ref=e735] [cursor=pointer]
+                  - listitem [ref=e736]:
+                    - generic [ref=e737]:
+                      - img "GitHub" [ref=e739]
+                      - link "Dinesh210805 / ET-HACKATHON" [ref=e741] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/ET-HACKATHON
+                        - generic [ref=e742]: Dinesh210805 / ET-HACKATHON
+                      - generic [ref=e743]:
+                        - separator [ref=e744]: •
+                        - time [ref=e745]: 15 days ago
+                    - button "Connect" [ref=e746] [cursor=pointer]
+                  - listitem [ref=e747]:
+                    - generic [ref=e748]:
+                      - img "GitHub" [ref=e750]
+                      - link "Dinesh210805 / Aura_agent" [ref=e752] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Aura_agent
+                        - generic [ref=e753]: Dinesh210805 / Aura_agent
+                      - img "Private" [ref=e754]
+                      - generic [ref=e756]:
+                        - separator [ref=e757]: •
+                        - time [ref=e758]: a month ago
+                    - button "Connect" [ref=e759] [cursor=pointer]
+                  - listitem [ref=e760]:
+                    - generic [ref=e761]:
+                      - img "GitHub" [ref=e763]
+                      - link "Dinesh210805 / finance_drive" [ref=e765] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/finance_drive
+                        - generic [ref=e766]: Dinesh210805 / finance_drive
+                      - img "Private" [ref=e767]
+                      - generic [ref=e769]:
+                        - separator [ref=e770]: •
+                        - time [ref=e771]: 2 months ago
+                    - button "Connect" [ref=e772] [cursor=pointer]
+                  - listitem [ref=e773]:
+                    - generic [ref=e774]:
+                      - img "GitHub" [ref=e776]
+                      - link "Dinesh210805 / convrt" [ref=e778] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/convrt
+                        - generic [ref=e779]: Dinesh210805 / convrt
+                      - generic [ref=e780]:
+                        - separator [ref=e781]: •
+                        - time [ref=e782]: 2 months ago
+                    - button "Connect" [ref=e783] [cursor=pointer]
+                  - listitem [ref=e784]:
+                    - generic [ref=e785]:
+                      - img "GitHub" [ref=e787]
+                      - link "Dinesh210805 / joyboy-s-n8n" [ref=e789] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/joyboy-s-n8n
+                        - generic [ref=e790]: Dinesh210805 / joyboy-s-n8n
+                      - img "Private" [ref=e791]
+                      - generic [ref=e793]:
+                        - separator [ref=e794]: •
+                        - time [ref=e795]: 3 months ago
+                    - button "Connect" [ref=e796] [cursor=pointer]
+                  - listitem [ref=e797]:
+                    - generic [ref=e798]:
+                      - img "GitHub" [ref=e800]
+                      - link "Dinesh210805 / Dinesh-s-portfolio" [ref=e802] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Dinesh-s-portfolio
+                        - generic [ref=e803]: Dinesh210805 / Dinesh-s-portfolio
+                      - generic [ref=e804]:
+                        - separator [ref=e805]: •
+                        - time [ref=e806]: 4 months ago
+                    - button "Connect" [ref=e807] [cursor=pointer]
+                  - listitem [ref=e808]:
+                    - generic [ref=e809]:
+                      - img "GitHub" [ref=e811]
+                      - link "Dinesh210805 / Cliqtrix-25" [ref=e813] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Cliqtrix-25
+                        - generic [ref=e814]: Dinesh210805 / Cliqtrix-25
+                      - img "Private" [ref=e815]
+                      - generic [ref=e817]:
+                        - separator [ref=e818]: •
+                        - time [ref=e819]: 4 months ago
+                    - button "Connect" [ref=e820] [cursor=pointer]
+                  - listitem [ref=e821]:
+                    - generic [ref=e822]:
+                      - img "GitHub" [ref=e824]
+                      - link "Dinesh210805 / Own_tools" [ref=e826] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Own_tools
+                        - generic [ref=e827]: Dinesh210805 / Own_tools
+                      - img "Private" [ref=e828]
+                      - generic [ref=e830]:
+                        - separator [ref=e831]: •
+                        - time [ref=e832]: 6 months ago
+                    - button "Connect" [ref=e833] [cursor=pointer]
+                  - listitem [ref=e834]:
+                    - generic [ref=e835]:
+                      - img "GitHub" [ref=e837]
+                      - link "Dinesh210805 / TECHSURF25" [ref=e839] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/TECHSURF25
+                        - generic [ref=e840]: Dinesh210805 / TECHSURF25
+                      - img "Private" [ref=e841]
+                      - generic [ref=e843]:
+                        - separator [ref=e844]: •
+                        - time [ref=e845]: 7 months ago
+                    - button "Connect" [ref=e846] [cursor=pointer]
+                  - listitem [ref=e847]:
+                    - generic [ref=e848]:
+                      - img "GitHub" [ref=e850]
+                      - link "Dinesh210805 / Dinesh-Kumar---Portfolio" [ref=e852] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Dinesh-Kumar---Portfolio
+                        - generic [ref=e853]: Dinesh210805 / Dinesh-Kumar---Portfolio
+                      - img "Private" [ref=e854]
+                      - generic [ref=e856]:
+                        - separator [ref=e857]: •
+                        - time [ref=e858]: 8 months ago
+                    - button "Connect" [ref=e859] [cursor=pointer]
+                  - listitem [ref=e860]:
+                    - generic [ref=e861]:
+                      - img "GitHub" [ref=e863]
+                      - link "Dinesh210805 / my-portfolio-legal" [ref=e865] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/my-portfolio-legal
+                        - generic [ref=e866]: Dinesh210805 / my-portfolio-legal
+                      - generic [ref=e867]:
+                        - separator [ref=e868]: •
+                        - time [ref=e869]: 8 months ago
+                    - button "Connect" [ref=e870] [cursor=pointer]
+                  - listitem [ref=e871]:
+                    - generic [ref=e872]:
+                      - img "GitHub" [ref=e874]
+                      - link "Dinesh210805 / n8n_render" [ref=e876] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/n8n_render
+                        - generic [ref=e877]: Dinesh210805 / n8n_render
+                      - generic [ref=e878]:
+                        - separator [ref=e879]: •
+                        - time [ref=e880]: 8 months ago
+                    - button "Connect" [ref=e881] [cursor=pointer]
+                  - listitem [ref=e882]:
+                    - generic [ref=e883]:
+                      - img "GitHub" [ref=e885]
+                      - link "Dinesh210805 / GravitycARgo_TGB" [ref=e887] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/GravitycARgo_TGB
+                        - generic [ref=e888]: Dinesh210805 / GravitycARgo_TGB
+                      - img "Private" [ref=e889]
+                      - generic [ref=e891]:
+                        - separator [ref=e892]: •
+                        - time [ref=e893]: 8 months ago
+                    - button "Connect" [ref=e894] [cursor=pointer]
+                  - listitem [ref=e895]:
+                    - generic [ref=e896]:
+                      - img "GitHub" [ref=e898]
+                      - link "Dinesh210805 / git_and_github_practice" [ref=e900] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/git_and_github_practice
+                        - generic [ref=e901]: Dinesh210805 / git_and_github_practice
+                      - img "Private" [ref=e902]
+                      - generic [ref=e904]:
+                        - separator [ref=e905]: •
+                        - time [ref=e906]: 9 months ago
+                    - button "Connect" [ref=e907] [cursor=pointer]
+                  - listitem [ref=e908]:
+                    - generic [ref=e909]:
+                      - img "GitHub" [ref=e911]
+                      - link "Dinesh210805 / Aura_mark3" [ref=e913] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Aura_mark3
+                        - generic [ref=e914]: Dinesh210805 / Aura_mark3
+                      - generic [ref=e915]:
+                        - separator [ref=e916]: •
+                        - time [ref=e917]: 9 months ago
+                    - button "Connect" [ref=e918] [cursor=pointer]
+                  - listitem [ref=e919]:
+                    - generic [ref=e920]:
+                      - img "GitHub" [ref=e922]
+                      - link "System32-official / GravitycARgo-" [ref=e924] [cursor=pointer]:
+                        - /url: https://github.com/System32-official/GravitycARgo-
+                        - generic [ref=e925]: System32-official / GravitycARgo-
+                      - img "Private" [ref=e926]
+                      - generic [ref=e928]:
+                        - separator [ref=e929]: •
+                        - time [ref=e930]: 9 months ago
+                    - button "Connect" [ref=e931] [cursor=pointer]
+                  - listitem [ref=e932]:
+                    - generic [ref=e933]:
+                      - img "GitHub" [ref=e935]
+                      - link "Dinesh210805 / Aura_mark1" [ref=e937] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Aura_mark1
+                        - generic [ref=e938]: Dinesh210805 / Aura_mark1
+                      - img "Private" [ref=e939]
+                      - generic [ref=e941]:
+                        - separator [ref=e942]: •
+                        - time [ref=e943]: 9 months ago
+                    - button "Connect" [ref=e944] [cursor=pointer]
+                  - listitem [ref=e945]:
+                    - generic [ref=e946]:
+                      - img "GitHub" [ref=e948]
+                      - link "Dinesh210805 / AURA" [ref=e950] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/AURA
+                        - generic [ref=e951]: Dinesh210805 / AURA
+                      - img "Private" [ref=e952]
+                      - generic [ref=e954]:
+                        - separator [ref=e955]: •
+                        - time [ref=e956]: 9 months ago
+                    - button "Connect" [ref=e957] [cursor=pointer]
+                  - listitem [ref=e958]:
+                    - generic [ref=e959]:
+                      - img "GitHub" [ref=e961]
+                      - link "Dinesh210805 / AURA-Autonomous-UI-Reader-and-Assistant-for-the-Visually-Impaired" [ref=e963] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/AURA-Autonomous-UI-Reader-and-Assistant-for-the-Visually-Impaired
+                        - generic [ref=e964]: Dinesh210805 / AURA-Autonomous-UI-Reader-and-Assistant-for-the-Visually-Impaired
+                      - img "Private" [ref=e965]
+                      - generic [ref=e967]:
+                        - separator [ref=e968]: •
+                        - time [ref=e969]: 9 months ago
+                    - button "Connect" [ref=e970] [cursor=pointer]
+                  - listitem [ref=e971]:
+                    - generic [ref=e972]:
+                      - img "GitHub" [ref=e974]
+                      - link "Dinesh210805 / Sparkathon25" [ref=e976] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Sparkathon25
+                        - generic [ref=e977]: Dinesh210805 / Sparkathon25
+                      - img "Private" [ref=e978]
+                      - generic [ref=e980]:
+                        - separator [ref=e981]: •
+                        - time [ref=e982]: 9 months ago
+                    - button "Connect" [ref=e983] [cursor=pointer]
+                  - listitem [ref=e984]:
+                    - generic [ref=e985]:
+                      - img "GitHub" [ref=e987]
+                      - link "Dinesh210805 / AgroVerse" [ref=e989] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/AgroVerse
+                        - generic [ref=e990]: Dinesh210805 / AgroVerse
+                      - generic [ref=e991]:
+                        - separator [ref=e992]: •
+                        - time [ref=e993]: 9 months ago
+                    - button "Connect" [ref=e994] [cursor=pointer]
+                  - listitem [ref=e995]:
+                    - generic [ref=e996]:
+                      - img "GitHub" [ref=e998]
+                      - link "Dinesh210805 / Milk_logger" [ref=e1000] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Milk_logger
+                        - generic [ref=e1001]: Dinesh210805 / Milk_logger
+                      - img "Private" [ref=e1002]
+                      - generic [ref=e1004]:
+                        - separator [ref=e1005]: •
+                        - time [ref=e1006]: 9 months ago
+                    - button "Connect" [ref=e1007] [cursor=pointer]
+                  - listitem [ref=e1008]:
+                    - generic [ref=e1009]:
+                      - img "GitHub" [ref=e1011]
+                      - link "Dinesh210805 / Milk_log_App" [ref=e1013] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Milk_log_App
+                        - generic [ref=e1014]: Dinesh210805 / Milk_log_App
+                      - img "Private" [ref=e1015]
+                      - generic [ref=e1017]:
+                        - separator [ref=e1018]: •
+                        - time [ref=e1019]: 10 months ago
+                    - button "Connect" [ref=e1020] [cursor=pointer]
+                  - listitem [ref=e1021]:
+                    - generic [ref=e1022]:
+                      - img "GitHub" [ref=e1024]
+                      - link "Dinesh210805 / Groq_GPT" [ref=e1026] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Groq_GPT
+                        - generic [ref=e1027]: Dinesh210805 / Groq_GPT
+                      - img "Private" [ref=e1028]
+                      - generic [ref=e1030]:
+                        - separator [ref=e1031]: •
+                        - time [ref=e1032]: 10 months ago
+                    - button "Connect" [ref=e1033] [cursor=pointer]
+                  - listitem [ref=e1034]:
+                    - generic [ref=e1035]:
+                      - img "GitHub" [ref=e1037]
+                      - link "Dinesh210805 / The_light_FYP" [ref=e1039] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/The_light_FYP
+                        - generic [ref=e1040]: Dinesh210805 / The_light_FYP
+                      - img "Private" [ref=e1041]
+                      - generic [ref=e1043]:
+                        - separator [ref=e1044]: •
+                        - time [ref=e1045]: 10 months ago
+                    - button "Connect" [ref=e1046] [cursor=pointer]
+                  - listitem [ref=e1047]:
+                    - generic [ref=e1048]:
+                      - img "GitHub" [ref=e1050]
+                      - link "System32-official / GravitycARgo---deploy" [ref=e1052] [cursor=pointer]:
+                        - /url: https://github.com/System32-official/GravitycARgo---deploy
+                        - generic [ref=e1053]: System32-official / GravitycARgo---deploy
+                      - img "Private" [ref=e1054]
+                      - generic [ref=e1056]:
+                        - separator [ref=e1057]: •
+                        - time [ref=e1058]: 10 months ago
+                    - button "Connect" [ref=e1059] [cursor=pointer]
+                  - listitem [ref=e1060]:
+                    - generic [ref=e1061]:
+                      - img "GitHub" [ref=e1063]
+                      - link "Dinesh210805 / programming_and_DSA" [ref=e1065] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/programming_and_DSA
+                        - generic [ref=e1066]: Dinesh210805 / programming_and_DSA
+                      - generic [ref=e1067]:
+                        - separator [ref=e1068]: •
+                        - time [ref=e1069]: 10 months ago
+                    - button "Connect" [ref=e1070] [cursor=pointer]
+                  - listitem [ref=e1071]:
+                    - generic [ref=e1072]:
+                      - img "GitHub" [ref=e1074]
+                      - link "System32-official / GravitycARgo-v2-deploy" [ref=e1076] [cursor=pointer]:
+                        - /url: https://github.com/System32-official/GravitycARgo-v2-deploy
+                        - generic [ref=e1077]: System32-official / GravitycARgo-v2-deploy
+                      - generic [ref=e1078]:
+                        - separator [ref=e1079]: •
+                        - time [ref=e1080]: 10 months ago
+                    - button "Connect" [ref=e1081] [cursor=pointer]
+                  - listitem [ref=e1082]:
+                    - generic [ref=e1083]:
+                      - img "GitHub" [ref=e1085]
+                      - link "Dinesh210805 / Dinesh-s---Digital-Portfolio" [ref=e1087] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Dinesh-s---Digital-Portfolio
+                        - generic [ref=e1088]: Dinesh210805 / Dinesh-s---Digital-Portfolio
+                      - generic [ref=e1089]:
+                        - separator [ref=e1090]: •
+                        - time [ref=e1091]: 10 months ago
+                    - button "Connect" [ref=e1092] [cursor=pointer]
+                  - listitem [ref=e1093]:
+                    - generic [ref=e1094]:
+                      - img "GitHub" [ref=e1096]
+                      - link "System32-official / GravityARgo-google-solution-challenge" [ref=e1098] [cursor=pointer]:
+                        - /url: https://github.com/System32-official/GravityARgo-google-solution-challenge
+                        - generic [ref=e1099]: System32-official / GravityARgo-google-solution-challenge
+                      - img "Private" [ref=e1100]
+                      - generic [ref=e1102]:
+                        - separator [ref=e1103]: •
+                        - time [ref=e1104]: 10 months ago
+                    - button "Connect" [ref=e1105] [cursor=pointer]
+                  - listitem [ref=e1106]:
+                    - generic [ref=e1107]:
+                      - img "GitHub" [ref=e1109]
+                      - link "Dinesh210805 / Auth32" [ref=e1111] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Auth32
+                        - generic [ref=e1112]: Dinesh210805 / Auth32
+                      - img "Private" [ref=e1113]
+                      - generic [ref=e1115]:
+                        - separator [ref=e1116]: •
+                        - time [ref=e1117]: 10 months ago
+                    - button "Connect" [ref=e1118] [cursor=pointer]
+                  - listitem [ref=e1119]:
+                    - generic [ref=e1120]:
+                      - img "GitHub" [ref=e1122]
+                      - link "Dinesh210805 / digital-portfolio-mark5" [ref=e1124] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/digital-portfolio-mark5
+                        - generic [ref=e1125]: Dinesh210805 / digital-portfolio-mark5
+                      - generic [ref=e1126]:
+                        - separator [ref=e1127]: •
+                        - time [ref=e1128]: a year ago
+                    - button "Connect" [ref=e1129] [cursor=pointer]
+                  - listitem [ref=e1130]:
+                    - generic [ref=e1131]:
+                      - img "GitHub" [ref=e1133]
+                      - link "Dinesh210805 / Pdfit" [ref=e1135] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Pdfit
+                        - generic [ref=e1136]: Dinesh210805 / Pdfit
+                      - generic [ref=e1137]:
+                        - separator [ref=e1138]: •
+                        - time [ref=e1139]: a year ago
+                    - button "Connect" [ref=e1140] [cursor=pointer]
+                  - listitem [ref=e1141]:
+                    - generic [ref=e1142]:
+                      - img "GitHub" [ref=e1144]
+                      - link "Dinesh210805 / whisper_android" [ref=e1146] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/whisper_android
+                        - generic [ref=e1147]: Dinesh210805 / whisper_android
+                      - generic [ref=e1148]:
+                        - separator [ref=e1149]: •
+                        - time [ref=e1150]: a year ago
+                    - button "Connect" [ref=e1151] [cursor=pointer]
+                  - listitem [ref=e1152]:
+                    - generic [ref=e1153]:
+                      - img "GitHub" [ref=e1155]
+                      - link "Dinesh210805 / SACH-AI-Deepfake-Detection" [ref=e1157] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/SACH-AI-Deepfake-Detection
+                        - generic [ref=e1158]: Dinesh210805 / SACH-AI-Deepfake-Detection
+                      - generic [ref=e1159]:
+                        - separator [ref=e1160]: •
+                        - time [ref=e1161]: a year ago
+                    - button "Connect" [ref=e1162] [cursor=pointer]
+                  - listitem [ref=e1163]:
+                    - generic [ref=e1164]:
+                      - img "GitHub" [ref=e1166]
+                      - link "Dinesh210805 / measure_app" [ref=e1168] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/measure_app
+                        - generic [ref=e1169]: Dinesh210805 / measure_app
+                      - img "Private" [ref=e1170]
+                      - generic [ref=e1172]:
+                        - separator [ref=e1173]: •
+                        - time [ref=e1174]: a year ago
+                    - button "Connect" [ref=e1175] [cursor=pointer]
+                  - listitem [ref=e1176]:
+                    - generic [ref=e1177]:
+                      - img "GitHub" [ref=e1179]
+                      - link "Dinesh210805 / sys32Auth" [ref=e1181] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/sys32Auth
+                        - generic [ref=e1182]: Dinesh210805 / sys32Auth
+                      - img "Private" [ref=e1183]
+                      - generic [ref=e1185]:
+                        - separator [ref=e1186]: •
+                        - time [ref=e1187]: a year ago
+                    - button "Connect" [ref=e1188] [cursor=pointer]
+                  - listitem [ref=e1189]:
+                    - generic [ref=e1190]:
+                      - img "GitHub" [ref=e1192]
+                      - link "Saathvic / UIP-GravitycARgo" [ref=e1194] [cursor=pointer]:
+                        - /url: https://github.com/Saathvic/UIP-GravitycARgo
+                        - generic [ref=e1195]: Saathvic / UIP-GravitycARgo
+                      - generic [ref=e1196]:
+                        - separator [ref=e1197]: •
+                        - time [ref=e1198]: a year ago
+                    - button "Connect" [ref=e1199] [cursor=pointer]
+                  - listitem [ref=e1200]:
+                    - generic [ref=e1201]:
+                      - img "GitHub" [ref=e1203]
+                      - link "Dinesh210805 / Synthetic-data-generation-using-gen-AI" [ref=e1205] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Synthetic-data-generation-using-gen-AI
+                        - generic [ref=e1206]: Dinesh210805 / Synthetic-data-generation-using-gen-AI
+                      - img "Private" [ref=e1207]
+                      - generic [ref=e1209]:
+                        - separator [ref=e1210]: •
+                        - time [ref=e1211]: a year ago
+                    - button "Connect" [ref=e1212] [cursor=pointer]
+                  - listitem [ref=e1213]:
+                    - generic [ref=e1214]:
+                      - img "GitHub" [ref=e1216]
+                      - link "Dinesh210805 / Amazon-ML-challenge-24" [ref=e1218] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Amazon-ML-challenge-24
+                        - generic [ref=e1219]: Dinesh210805 / Amazon-ML-challenge-24
+                      - img "Private" [ref=e1220]
+                      - generic [ref=e1222]:
+                        - separator [ref=e1223]: •
+                        - time [ref=e1224]: a year ago
+                    - button "Connect" [ref=e1225] [cursor=pointer]
+                  - listitem [ref=e1226]:
+                    - generic [ref=e1227]:
+                      - img "GitHub" [ref=e1229]
+                      - link "Dinesh210805 / AUTOMATED-DOCUMENT-MANAGEMENT-SYSTEM-uip-y15" [ref=e1231] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/AUTOMATED-DOCUMENT-MANAGEMENT-SYSTEM-uip-y15
+                        - generic [ref=e1232]: Dinesh210805 / AUTOMATED-DOCUMENT-MANAGEMENT-SYSTEM-uip-y15
+                      - generic [ref=e1233]:
+                        - separator [ref=e1234]: •
+                        - time [ref=e1235]: a year ago
+                    - button "Connect" [ref=e1236] [cursor=pointer]
+                  - listitem [ref=e1237]:
+                    - generic [ref=e1238]:
+                      - img "GitHub" [ref=e1240]
+                      - link "Dinesh210805 / Language-Translation-and-Learning-Tool---mark-2" [ref=e1242] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Language-Translation-and-Learning-Tool---mark-2
+                        - generic [ref=e1243]: Dinesh210805 / Language-Translation-and-Learning-Tool---mark-2
+                      - generic [ref=e1244]:
+                        - separator [ref=e1245]: •
+                        - time [ref=e1246]: a year ago
+                    - button "Connect" [ref=e1247] [cursor=pointer]
+                  - listitem [ref=e1248]:
+                    - generic [ref=e1249]:
+                      - img "GitHub" [ref=e1251]
+                      - link "Dinesh210805 / REACT" [ref=e1253] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/REACT
+                        - generic [ref=e1254]: Dinesh210805 / REACT
+                      - img "Private" [ref=e1255]
+                      - generic [ref=e1257]:
+                        - separator [ref=e1258]: •
+                        - time [ref=e1259]: a year ago
+                    - button "Connect" [ref=e1260] [cursor=pointer]
+                  - listitem [ref=e1261]:
+                    - generic [ref=e1262]:
+                      - img "GitHub" [ref=e1264]
+                      - link "Dinesh210805 / GravicARgo" [ref=e1266] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/GravicARgo
+                        - generic [ref=e1267]: Dinesh210805 / GravicARgo
+                      - img "Private" [ref=e1268]
+                      - generic [ref=e1270]:
+                        - separator [ref=e1271]: •
+                        - time [ref=e1272]: a year ago
+                    - button "Connect" [ref=e1273] [cursor=pointer]
+                  - listitem [ref=e1274]:
+                    - generic [ref=e1275]:
+                      - img "GitHub" [ref=e1277]
+                      - link "Dinesh210805 / Language-Translation-and-Learning-Tool" [ref=e1279] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Language-Translation-and-Learning-Tool
+                        - generic [ref=e1280]: Dinesh210805 / Language-Translation-and-Learning-Tool
+                      - generic [ref=e1281]:
+                        - separator [ref=e1282]: •
+                        - time [ref=e1283]: a year ago
+                    - button "Connect" [ref=e1284] [cursor=pointer]
+                  - listitem [ref=e1285]:
+                    - generic [ref=e1286]:
+                      - img "GitHub" [ref=e1288]
+                      - link "Dinesh210805 / talkback-X-The-Light" [ref=e1290] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/talkback-X-The-Light
+                        - generic [ref=e1291]: Dinesh210805 / talkback-X-The-Light
+                      - generic [ref=e1292]:
+                        - separator [ref=e1293]: •
+                        - time [ref=e1294]: a year ago
+                    - button "Connect" [ref=e1295] [cursor=pointer]
+                  - listitem [ref=e1296]:
+                    - generic [ref=e1297]:
+                      - img "GitHub" [ref=e1299]
+                      - link "Dinesh210805 / waste_to_wealth_ai" [ref=e1301] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/waste_to_wealth_ai
+                        - generic [ref=e1302]: Dinesh210805 / waste_to_wealth_ai
+                      - img "Private" [ref=e1303]
+                      - generic [ref=e1305]:
+                        - separator [ref=e1306]: •
+                        - time [ref=e1307]: 2 years ago
+                    - button "Connect" [ref=e1308] [cursor=pointer]
+                  - listitem [ref=e1309]:
+                    - generic [ref=e1310]:
+                      - img "GitHub" [ref=e1312]
+                      - link "Dinesh210805 / github-chapter-2-sandbox" [ref=e1314] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/github-chapter-2-sandbox
+                        - generic [ref=e1315]: Dinesh210805 / github-chapter-2-sandbox
+                      - generic [ref=e1316]:
+                        - separator [ref=e1317]: •
+                        - time [ref=e1318]: 2 years ago
+                    - button "Connect" [ref=e1319] [cursor=pointer]
+                  - listitem [ref=e1320]:
+                    - generic [ref=e1321]:
+                      - img "GitHub" [ref=e1323]
+                      - link "Saathvic / The-Light" [ref=e1325] [cursor=pointer]:
+                        - /url: https://github.com/Saathvic/The-Light
+                        - generic [ref=e1326]: Saathvic / The-Light
+                      - generic [ref=e1327]:
+                        - separator [ref=e1328]: •
+                        - time [ref=e1329]: 2 years ago
+                    - button "Connect" [ref=e1330] [cursor=pointer]
+                  - listitem [ref=e1331]:
+                    - generic [ref=e1332]:
+                      - img "GitHub" [ref=e1334]
+                      - link "Dinesh210805 / Aventurs-Mverick-Minds" [ref=e1336] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Aventurs-Mverick-Minds
+                        - generic [ref=e1337]: Dinesh210805 / Aventurs-Mverick-Minds
+                      - generic [ref=e1338]:
+                        - separator [ref=e1339]: •
+                        - time [ref=e1340]: 2 years ago
+                    - button "Connect" [ref=e1341] [cursor=pointer]
+                  - listitem [ref=e1342]:
+                    - generic [ref=e1343]:
+                      - img "GitHub" [ref=e1345]
+                      - link "Dinesh210805 / Nuevera-Infotech" [ref=e1347] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/Nuevera-Infotech
+                        - generic [ref=e1348]: Dinesh210805 / Nuevera-Infotech
+                      - generic [ref=e1349]:
+                        - separator [ref=e1350]: •
+                        - time [ref=e1351]: 2 years ago
+                    - button "Connect" [ref=e1352] [cursor=pointer]
+                  - listitem [ref=e1353]:
+                    - generic [ref=e1354]:
+                      - img "GitHub" [ref=e1356]
+                      - link "Dinesh210805 / dinesh_resume.github.io" [ref=e1358] [cursor=pointer]:
+                        - /url: https://github.com/Dinesh210805/dinesh_resume.github.io
+                        - generic [ref=e1359]: Dinesh210805 / dinesh_resume.github.io
+                      - generic [ref=e1360]:
+                        - separator [ref=e1361]: •
+                        - time [ref=e1362]: 2 years ago
+                    - button "Connect" [ref=e1363] [cursor=pointer]
+            - generic [ref=e1365]:
+              - generic [ref=e1368]:
+                - heading "Public Git Repository" [level=4] [ref=e1370]
+                - generic [ref=e1371]:
+                  - text: Use a public repository by entering the URL below. Features like
+                  - link "PR Previews" [ref=e1372] [cursor=pointer]:
+                    - /url: https://render.com/docs/service-previews#pull-request-previews-git-backed
+                  - text: and
+                  - link "Auto-Deploy" [ref=e1373] [cursor=pointer]:
+                    - /url: https://render.com/docs/deploys
+                  - text: are not available if the repository has not been configured for Render.
+              - generic [ref=e1375]:
+                - generic [ref=e1377]:
+                  - generic [ref=e1378]: Repository URL
+                  - textbox "Repository URL" [ref=e1380]:
+                    - /placeholder: https://github.com/render-examples/temporal
+                - button "Continue" [disabled] [ref=e1381]
+          - generic [ref=e1382]:
+            - generic [ref=e1383]:
+              - generic [ref=e1384]:
+                - img "GitHub" [ref=e1386]
+                - text: GitHub
+              - list [ref=e1388]:
+                - listitem [ref=e1389]:
+                  - link "@Dinesh210805" [ref=e1390] [cursor=pointer]:
+                    - /url: https://github.com/Dinesh210805
+                    - img [ref=e1392]
+                    - text: "@Dinesh210805"
+                    - img [ref=e1396]
+                  - separator [ref=e1399]: •
+                  - generic [ref=e1400]: 51 repos
+                - listitem [ref=e1401]:
+                  - link "@Saathvic" [ref=e1402] [cursor=pointer]:
+                    - /url: https://github.com/Saathvic
+                    - img [ref=e1404]
+                    - text: "@Saathvic"
+                    - img [ref=e1408]
+                  - separator [ref=e1411]: •
+                  - generic [ref=e1412]: 2 repos
+                - listitem [ref=e1413]:
+                  - link "@System32-official" [ref=e1414] [cursor=pointer]:
+                    - /url: https://github.com/System32-official
+                    - img [ref=e1416]
+                    - text: "@System32-official"
+                    - img [ref=e1425]
+                  - separator [ref=e1428]: •
+                  - generic [ref=e1429]: 4 repos
+              - button "Configure account" [ref=e1430] [cursor=pointer]:
+                - text: Configure account
+                - img [ref=e1432]
+            - generic [ref=e1435]:
+              - generic [ref=e1436]:
+                - img "GitLab" [ref=e1438]
+                - text: GitLab
+              - list
+              - button "Connect account" [ref=e1443] [cursor=pointer]:
+                - text: Connect account
+                - img [ref=e1445]
+            - generic [ref=e1447]:
+              - generic [ref=e1448]:
+                - img [ref=e1450]
+                - text: Bitbucket
+              - list
+              - button "Connect account" [ref=e1454] [cursor=pointer]:
+                - text: Connect account
+                - img [ref=e1456]
+    - generic:
+      - generic:
+        - generic: "0 services selected:"
+        - generic:
+          - generic:
+            - generic:
+              - button:
+                - generic:
+                  - img
+                - generic: Move
+                - img
+      - generic:
+        - separator
+        - generic:
+          - generic:
+            - button:
+              - img
+  - iframe [ref=e420]:
+    
