@@ -15,7 +15,15 @@ interface UploadScreenProps {
 export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorMessage }: UploadScreenProps) {
   const [isDragging, setIsDragging] = useState(false);
   const [file, setFile] = useState<File | null>(null);
+  const [localError, setLocalError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const isPdfFile = (candidate: File) => {
+    if (candidate.type === 'application/pdf') {
+      return true;
+    }
+    return candidate.name.toLowerCase().endsWith('.pdf');
+  };
 
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
@@ -31,22 +39,34 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
     setIsDragging(false);
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
       const droppedFile = e.dataTransfer.files[0];
-      if (droppedFile.type === 'application/pdf') {
+      if (isPdfFile(droppedFile)) {
         setFile(droppedFile);
+        setLocalError(null);
       } else {
-        alert('Please upload a valid PDF file.');
+        setLocalError('Please upload a valid PDF file.');
       }
     }
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
-      setFile(e.target.files[0]);
+      const selected = e.target.files[0];
+      if (!isPdfFile(selected)) {
+        setLocalError('Please upload a valid PDF file.');
+        return;
+      }
+      setFile(selected);
+      setLocalError(null);
     }
   };
 
   const handleParseClick = async () => {
     if (!file || isStarting) {
+      return;
+    }
+    if (!apiKey.trim()) {
+      setLocalError('Set your API key in Settings before parsing.');
+      openSettings();
       return;
     }
     await onStart(file);
@@ -99,7 +119,6 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
                   onDragOver={handleDragOver}
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
-                  onClick={() => fileInputRef.current?.click()}
                 >
                   <motion.div 
                     animate={{ y: isDragging ? -10 : 0, scale: isDragging ? 1.1 : 1 }}
@@ -115,7 +134,7 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
                     ref={fileInputRef}
                     onChange={handleFileChange}
                     accept="application/pdf"
-                    className="hidden"
+                    className="absolute inset-0 opacity-0 cursor-pointer"
                   />
                 </motion.div>
               ) : (
@@ -152,6 +171,19 @@ export function UploadScreen({ onStart, apiKey, openSettings, isStarting, errorM
 
       <div className="mt-8 flex flex-col items-end space-y-4 relative z-10">
         <AnimatePresence>
+          {localError && (
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 25 }}
+              className="flex items-center text-sm text-amber-300 bg-amber-500/10 border border-amber-500/20 px-4 py-2 rounded-full shadow-[0_0_15px_rgba(245,158,11,0.1)]"
+            >
+              <AlertCircle className="w-4 h-4 mr-2" />
+              {localError}
+            </motion.div>
+          )}
+
           {errorMessage && (
             <motion.div
               initial={{ opacity: 0, y: 10, scale: 0.95 }}

@@ -7,8 +7,6 @@ services:
     dockerfilePath: ./Dockerfile
     healthCheckPath: /api/health
     envVars:
-      - key: GROQ_API_KEY
-        sync: false
       - key: API_HOST
         value: 0.0.0.0
       - key: API_PORT

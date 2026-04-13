@@ -15,7 +15,6 @@ import {
 } from './lib/api';
 
 type Step = 'welcome' | 'upload' | 'parsing' | 'results';
-const API_KEY_STORAGE_KEY = 'pdf_parser_api_key';
 
 export default function App() {
   const [step, setStep] = useState<Step>('welcome');
@@ -28,29 +27,6 @@ export default function App() {
   const [uploadError, setUploadError] = useState<string | null>(null);
   const isPollingRef = useRef(false);
   const resultLoadedForJobRef = useRef<string | null>(null);
-
-  useEffect(() => {
-    try {
-      const saved = window.localStorage.getItem(API_KEY_STORAGE_KEY);
-      if (saved) {
-        setApiKey(saved);
-      }
-    } catch {
-      // Ignore storage read errors.
-    }
-  }, []);
-
-  useEffect(() => {
-    try {
-      if (apiKey) {
-        window.localStorage.setItem(API_KEY_STORAGE_KEY, apiKey);
-      } else {
-        window.localStorage.removeItem(API_KEY_STORAGE_KEY);
-      }
-    } catch {
-      // Ignore storage write errors.
-    }
-  }, [apiKey]);
 
   const handleStartParsing = async (file: File) => {
     setIsStarting(true);

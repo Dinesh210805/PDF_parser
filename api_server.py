@@ -30,7 +30,6 @@ MAX_UPLOAD_BYTES = 50 * 1024 * 1024
 JOB_WORKERS = 1
 UI_DIST_DIR = Path(__file__).resolve().parent / "ui" / "dist"
 UI_INDEX_FILE = UI_DIST_DIR / "index.html"
-FRONTEND_DIST = Path(__file__).resolve().parent / "ui" / "dist"
 
 app = FastAPI(title="PDF Parser API", version="1.0.0")
 app.add_middleware(
@@ -214,9 +213,12 @@ def _run_parse_job(
         )
         _append_log(job_id, "Starting document analysis")
 
-        if api_key and api_key.strip():
-            set_api_key(api_key)
-            _append_log(job_id, "Using API key from UI settings")
+        provided_api_key = (api_key or "").strip()
+        if not provided_api_key:
+            raise RuntimeError("API key is required for each session. Set it in Settings before parsing.")
+
+        set_api_key(provided_api_key)
+        _append_log(job_id, "Using session API key from UI settings")
 
         if dpi is not None:
             config.RASTERIZE_DPI = dpi
@@ -225,9 +227,6 @@ def _run_parse_job(
         if model is not None and model.strip():
             config.VLM_MODEL = model.strip()
             _append_log(job_id, f"Vision model set to {config.VLM_MODEL}")
-
-        if not config.GROQ_API_KEY:
-            raise RuntimeError("GROQ API key not configured. Set it in .env or UI Settings.")
 
         analyzed_pages = analyze_pdf(pdf_path, verbose=False)
         selected_pages = analyzed_pages
@@ -315,7 +314,7 @@ def _run_parse_job(
 def health() -> dict[str, Any]:
     return {
         "status": "ok",
-        "hasApiKey": bool(config.GROQ_API_KEY),
+        "requiresSessionApiKey": True,
         "model": config.VLM_MODEL,
         "dpi": config.RASTERIZE_DPI,
     }
@@ -510,37 +509,6 @@ def serve_ui_spa(full_path: str) -> FileResponse:
         return FileResponse(path=str(UI_INDEX_FILE), media_type="text/html")
 
     raise HTTPException(status_code=404, detail="UI build not found")
-
-
-@app.get("/", include_in_schema=False)
-def serve_frontend_root() -> FileResponse:
-    index_path = FRONTEND_DIST / "index.html"
-    if not index_path.exists():
-        raise HTTPException(status_code=404, detail="Frontend build not found")
-    return FileResponse(path=str(index_path), media_type="text/html")
-
-
-@app.get("/{full_path:path}", include_in_schema=False)
-def serve_frontend_assets(full_path: str) -> FileResponse:
-    if full_path.startswith("api/"):
-        raise HTTPException(status_code=404, detail="Not found")
-
-    if not FRONTEND_DIST.exists():
-        raise HTTPException(status_code=404, detail="Frontend build not found")
-
-    safe_base = FRONTEND_DIST.resolve()
-    requested = (FRONTEND_DIST / full_path).resolve()
-    if not str(requested).startswith(str(safe_base)):
-        raise HTTPException(status_code=404, detail="Not found")
-
-    if requested.is_file():
-        return FileResponse(path=str(requested))
-
-    index_path = FRONTEND_DIST / "index.html"
-    if not index_path.exists():
-        raise HTTPException(status_code=404, detail="Frontend build not found")
-
-    return FileResponse(path=str(index_path), media_type="text/html")
 
 
 if __name__ == "__main__":

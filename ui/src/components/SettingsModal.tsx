@@ -76,7 +76,7 @@ export function SettingsModal({ isOpen, onClose, apiKey, setApiKey }: SettingsMo
                   <div className="flex items-center justify-between">
                     <div className="flex items-center text-xs text-zinc-500">
                       <ShieldCheck className="w-4 h-4 mr-1 text-zinc-400" />
-                      Stored locally in browser.
+                      Session only (cleared on refresh).
                     </div>
                     <Button 
                       variant="outline" 
