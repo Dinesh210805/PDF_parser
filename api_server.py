@@ -18,6 +18,7 @@ import fitz
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 import config
 from knowledge_builder import build_knowledge_base
@@ -27,6 +28,8 @@ from vlm_client import set_api_key
 
 MAX_UPLOAD_BYTES = 50 * 1024 * 1024
 JOB_WORKERS = 1
+UI_DIST_DIR = Path(__file__).resolve().parent / "ui" / "dist"
+UI_INDEX_FILE = UI_DIST_DIR / "index.html"
 FRONTEND_DIST = Path(__file__).resolve().parent / "ui" / "dist"
 
 app = FastAPI(title="PDF Parser API", version="1.0.0")
@@ -71,6 +74,9 @@ class JobState:
 _jobs: dict[str, JobState] = {}
 _jobs_lock = threading.Lock()
 _executor = ThreadPoolExecutor(max_workers=JOB_WORKERS)
+
+if (UI_DIST_DIR / "assets").exists():
+    app.mount("/assets", StaticFiles(directory=str(UI_DIST_DIR / "assets")), name="ui-assets")
 
 
 def _resolve_page_range(spec: str | None, total: int) -> list[int] | None:
@@ -482,6 +488,28 @@ def get_page_image(job_id: str, page_number: int) -> FileResponse:
         media_type="image/jpeg",
         filename=preview_path.name,
     )
+
+
+@app.get("/", include_in_schema=False)
+def serve_ui_root() -> FileResponse | dict[str, str]:
+    if UI_INDEX_FILE.exists():
+        return FileResponse(path=str(UI_INDEX_FILE), media_type="text/html")
+    return {"status": "ok", "message": "UI build not found. Build ui/ first."}
+
+
+@app.get("/{full_path:path}", include_in_schema=False)
+def serve_ui_spa(full_path: str) -> FileResponse:
+    if full_path.startswith("api/"):
+        raise HTTPException(status_code=404, detail="Not found")
+
+    candidate = UI_DIST_DIR / full_path
+    if candidate.exists() and candidate.is_file():
+        return FileResponse(path=str(candidate))
+
+    if UI_INDEX_FILE.exists():
+        return FileResponse(path=str(UI_INDEX_FILE), media_type="text/html")
+
+    raise HTTPException(status_code=404, detail="UI build not found")
 
 
 @app.get("/", include_in_schema=False)

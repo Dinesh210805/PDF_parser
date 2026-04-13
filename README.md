@@ -61,6 +61,33 @@ VITE_BACKEND_URL=http://your-host:8000
 
 when starting the UI.
 
+## Deploy (Recommended Free Option)
+
+Best free option for this repo: Render (Docker web service).
+
+Why Render for this project:
+- Runs a single Docker service, perfect for FastAPI + built React UI.
+- `render.yaml` is already included for one-click setup.
+- Free web plan is enough for demos and testing.
+
+### Render deploy steps
+
+1. Push your repository to GitHub.
+2. In Render, create a new Blueprint deploy from your repo.
+3. Render will detect `render.yaml` and configure the service.
+4. Set `GROQ_API_KEY` in Render environment variables.
+5. Deploy.
+
+After deploy, your site and API are served from one domain:
+- `/` -> React UI
+- `/api/health` -> health endpoint
+
+### Production environment variables
+
+- `GROQ_API_KEY` (required)
+- `API_HOST=0.0.0.0` (set by `render.yaml`)
+- `API_PORT=8000` (set by `render.yaml`)
+
 ## Production Deployment (Recommended Free Option)
 
 Best free website for this full-stack setup: **Render** (single Docker web service).
