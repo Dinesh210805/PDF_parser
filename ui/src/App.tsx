@@ -15,6 +15,7 @@ import {
 } from './lib/api';
 
 type Step = 'welcome' | 'upload' | 'parsing' | 'results';
+const LEGACY_API_KEY_STORAGE_KEY = 'pdf_parser_api_key';
 
 export default function App() {
   const [step, setStep] = useState<Step>('welcome');
@@ -27,6 +28,15 @@ export default function App() {
   const [uploadError, setUploadError] = useState<string | null>(null);
   const isPollingRef = useRef(false);
   const resultLoadedForJobRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    try {
+      // Clear any previously persisted key from older app versions.
+      window.localStorage.removeItem(LEGACY_API_KEY_STORAGE_KEY);
+    } catch {
+      // Ignore storage access errors.
+    }
+  }, []);
 
   const handleStartParsing = async (file: File) => {
     setIsStarting(true);
