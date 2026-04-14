@@ -230,6 +230,8 @@ def _is_multimodal_model(model_id: str, model_payload: dict[str, Any]) -> bool:
     return any(token in normalized_id for token in multimodal_tokens)
 
 
+_preview_lock = threading.Lock()
+
 def _preview_image_path(job_id: str, page_number: int) -> Path:
     preview_dir = Path(config.OUTPUT_DIR) / "jobs" / job_id / "preview"
     preview_dir.mkdir(parents=True, exist_ok=True)
@@ -237,15 +239,16 @@ def _preview_image_path(job_id: str, page_number: int) -> Path:
 
 
 def _render_preview_page(source_pdf_path: str, page_number: int, output_path: Path, dpi: int = 140) -> None:
-    doc = fitz.open(source_pdf_path)
-    try:
-        page = doc[page_number - 1]
-        scale = dpi / 72.0
-        mat = fitz.Matrix(scale, scale)
-        pix = page.get_pixmap(matrix=mat, alpha=False)
-        pix.save(str(output_path), jpg_quality=88)
-    finally:
-        doc.close()
+    with _preview_lock:
+        doc = fitz.open(source_pdf_path)
+        try:
+            page = doc[page_number - 1]
+            scale = dpi / 72.0
+            mat = fitz.Matrix(scale, scale)
+            pix = page.get_pixmap(matrix=mat, alpha=False)
+            pix.save(str(output_path), jpg_quality=88)
+        finally:
+            doc.close()
 
 
 def _run_parse_job(
