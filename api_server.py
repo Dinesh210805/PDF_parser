@@ -247,6 +247,10 @@ def _render_preview_page(source_pdf_path: str, page_number: int, output_path: Pa
             mat = fitz.Matrix(scale, scale)
             pix = page.get_pixmap(matrix=mat, alpha=False)
             pix.save(str(output_path), jpg_quality=88)
+            
+            # Explicit cleanup of PyMuPDF C objects which evade fast Python GC
+            pix = None
+            page = None
         finally:
             doc.close()
 
@@ -383,7 +387,7 @@ def _run_parse_job(
 
 
 @app.get("/api/health")
-def health() -> dict[str, Any]:
+async def health() -> dict[str, Any]:
     return {
         "status": "ok",
         "requiresSessionApiKey": True,
@@ -498,7 +502,7 @@ async def create_job(
 
 
 @app.get("/api/jobs/{job_id}")
-def get_job(job_id: str) -> dict[str, Any]:
+async def get_job(job_id: str) -> dict[str, Any]:
     with _jobs_lock:
         job = _jobs.get(job_id)
         if job is None:
@@ -507,7 +511,7 @@ def get_job(job_id: str) -> dict[str, Any]:
 
 
 @app.get("/api/jobs/{job_id}/result")
-def get_job_result(job_id: str) -> dict[str, Any]:
+async def get_job_result(job_id: str) -> dict[str, Any]:
     with _jobs_lock:
         job = _jobs.get(job_id)
         if job is None:
@@ -533,7 +537,7 @@ def get_job_result(job_id: str) -> dict[str, Any]:
 
 
 @app.get("/api/jobs/{job_id}/markdown")
-def download_markdown(job_id: str) -> FileResponse:
+async def download_markdown(job_id: str) -> FileResponse:
     with _jobs_lock:
         job = _jobs.get(job_id)
         if job is None:
@@ -554,7 +558,7 @@ def download_markdown(job_id: str) -> FileResponse:
 
 
 @app.get("/api/jobs/{job_id}/pdf")
-def download_source_pdf(job_id: str) -> FileResponse:
+async def download_source_pdf(job_id: str) -> FileResponse:
     with _jobs_lock:
         job = _jobs.get(job_id)
         if job is None:
@@ -573,7 +577,7 @@ def download_source_pdf(job_id: str) -> FileResponse:
 
 
 @app.get("/api/jobs/{job_id}/page-images")
-def list_page_images(job_id: str) -> dict[str, Any]:
+async def list_page_images(job_id: str) -> dict[str, Any]:
     with _jobs_lock:
         job = _jobs.get(job_id)
         if job is None:

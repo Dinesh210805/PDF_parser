@@ -38,6 +38,10 @@ def rasterize_page(pdf_path: str, page_number: int, tmp_dir: str) -> str | None:
 
         # Save as JPEG (smaller than PNG, good enough for VLM)
         pix.save(output_path, jpg_quality=90)
+        
+        # Explicit PyMuPDF memory cleanup
+        pix = None
+        page = None
         doc.close()
         return output_path
 
@@ -71,6 +75,11 @@ def rasterize_pages_batch(
                 pix = page.get_pixmap(matrix=mat, alpha=False)
                 pix.save(output_path, jpg_quality=90)
                 results[page_num] = output_path
+
+                # Explicitly free memory for PyMuPDF objects
+                # which allocates C/C++ memory outside Python's heap
+                pix = None
+                page = None
 
                 if verbose:
                     console.print(
