@@ -1,0 +1,24 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - button [ref=e5]:
+      - img [ref=e6]
+    - generic: Set API Key here
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e12]: Next-Gen VLM Extraction
+      - heading "Parse documents with precision." [level=1] [ref=e14]:
+        - text: Parse documents
+        - text: with precision.
+      - paragraph [ref=e15]: Transform static PDFs into structured, machine-readable Markdown using Vision-Language Models. No complex setup, just pure results.
+      - button "Start Parsing" [ref=e17]:
+        - generic [ref=e18]: Start Parsing
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - heading "VLM Extraction" [level=3] [ref=e21]
+          - paragraph [ref=e22]: Intelligently parses complex tables and multi-column layouts with near-perfect accuracy.
+        - generic [ref=e23]:
+          - heading "Visual Detection" [level=3] [ref=e24]
+          - paragraph [ref=e25]: Automatically identifies and describes diagrams, charts, and embedded images.
+        - generic [ref=e26]:
+          - heading "QA Comparison" [level=3] [ref=e27]
+          - paragraph [ref=e28]: Side-by-side verification with confidence scoring and missing content detection.

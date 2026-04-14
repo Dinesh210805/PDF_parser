@@ -1,0 +1,265 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Render" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Render" [ref=e8]
+          - button "M My Workspace" [ref=e12] [cursor=pointer]:
+            - generic [ref=e13]:
+              - generic [ref=e14]: M
+              - generic "My Workspace" [ref=e15]
+              - img [ref=e16]
+        - generic [ref=e20]:
+          - navigation [ref=e21]:
+            - list [ref=e22]:
+              - listitem [ref=e23]:
+                - button "pdf-parser" [ref=e1180] [cursor=pointer]:
+                  - generic [ref=e1181]:
+                    - img [ref=e1182]
+                    - generic [ref=e1184]:
+                      - generic [ref=e1185]: pdf-parser
+                      - img [ref=e1186]
+          - button "Search Ctrl + K" [ref=e32] [cursor=pointer]:
+            - img [ref=e34]
+            - text: Search
+            - generic [ref=e36]:
+              - img [ref=e37]
+              - generic [ref=e39]: Ctrl
+              - generic [ref=e40]: +
+              - generic [ref=e41]: K
+              - generic [ref=e42]: K
+        - generic [ref=e43]:
+          - button "New" [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]:
+              - img [ref=e47]
+              - generic [ref=e49]: New
+          - button "Upgrade" [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]:
+              - img [ref=e53]
+              - generic [ref=e55]: Upgrade
+          - button "Help" [ref=e57] [cursor=pointer]:
+            - img "Help" [ref=e58]
+          - button "d" [ref=e63] [cursor=pointer]:
+            - generic [ref=e65]: d
+      - generic [ref=e66]:
+        - navigation [ref=e1017]:
+          - separator [ref=e1018]
+          - generic [ref=e1019]:
+            - generic [ref=e1020]:
+              - link "Dashboard" [ref=e1188] [cursor=pointer]:
+                - /url: /
+                - img [ref=e1022]
+                - generic [ref=e1024]: Dashboard
+              - generic [ref=e1025]:
+                - img [ref=e1189]
+                - generic [ref=e1031]: pdf-parser
+            - generic [ref=e1032]:
+              - list [ref=e1191]:
+                - listitem [ref=e1192]:
+                  - link "Events" [ref=e1193] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/events
+                    - img [ref=e1194]
+                    - generic [ref=e1201]: Events
+                - listitem [ref=e1202]:
+                  - link "Settings" [ref=e1203] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/settings
+                    - img [ref=e1204]
+                    - generic [ref=e1207]: Settings
+              - generic [ref=e1208]:
+                - generic [ref=e1209]: Monitor
+                - list "Monitor" [ref=e1210]:
+                  - listitem [ref=e1211]:
+                    - link "Logs" [ref=e1212] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/logs
+                      - img [ref=e1213]
+                      - generic [ref=e1218]: Logs
+                  - listitem [ref=e1219]:
+                    - link "Metrics" [ref=e1220] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/metrics
+                      - img [ref=e1221]
+                      - generic [ref=e1223]: Metrics
+              - generic [ref=e1224]:
+                - generic [ref=e1225]: Manage
+                - list "Manage" [ref=e1226]:
+                  - listitem [ref=e1227]:
+                    - link "Environment" [ref=e1228] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/env
+                      - img [ref=e1229]
+                      - generic [ref=e1233]: Environment
+                  - listitem [ref=e1234]:
+                    - link "Shell" [ref=e1235] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/shell
+                      - img [ref=e1236]
+                      - generic [ref=e1240]:
+                        - generic [ref=e1241]: Shell
+                        - status [ref=e1244]:
+                          - img [ref=e1245]
+                  - listitem [ref=e1247]:
+                    - link "Scaling" [ref=e1248] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/scaling
+                      - img [ref=e1249]
+                      - generic [ref=e1254]:
+                        - generic [ref=e1255]: Scaling
+                        - status [ref=e1258]:
+                          - img [ref=e1259]
+                  - listitem [ref=e1261]:
+                    - link "Previews" [ref=e1262] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/previews
+                      - img [ref=e1263]
+                      - generic [ref=e1267]: Previews
+                  - listitem [ref=e1268]:
+                    - link "Disk" [ref=e1269] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/disks
+                      - img [ref=e1270]
+                      - generic [ref=e1275]:
+                        - generic [ref=e1276]: Disk
+                        - status [ref=e1279]:
+                          - img [ref=e1280]
+                  - listitem [ref=e1282]:
+                    - link "One-Off Jobs" [ref=e1283] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/jobs
+                      - img [ref=e1284]
+                      - generic [ref=e1290]:
+                        - generic [ref=e1291]: One-Off Jobs
+                        - status [ref=e1294]:
+                          - img [ref=e1295]
+          - generic [ref=e1051]:
+            - alert [ref=e1052]:
+              - img [ref=e1054]
+              - generic [ref=e1058]:
+                - generic [ref=e1059]:
+                  - generic [ref=e1060]: "Workflows: Now in beta"
+                  - generic [ref=e1061]:
+                    - text: Orchestrate your agents and background jobs with automatic retries and scale-to-zero.
+                    - link "Learn more" [ref=e1062] [cursor=pointer]:
+                      - /url: https://render.com/docs/workflows
+                - link "Create Workflow" [ref=e1064] [cursor=pointer]:
+                  - /url: /workflow/new
+              - button "Close notification" [ref=e1065] [cursor=pointer]:
+                - img [ref=e1066]
+            - generic [ref=e1068]:
+              - button "Collapse items" [expanded] [ref=e1069] [cursor=pointer]:
+                - img [ref=e1070]
+              - list "Footer navigation" [ref=e1072]:
+                - listitem [ref=e1073]:
+                  - link "Changelog" [ref=e1074] [cursor=pointer]:
+                    - /url: https://render.com/changelog
+                    - img [ref=e1075]
+                    - generic [ref=e1080]: Changelog
+                - listitem [ref=e1081]:
+                  - link "Invite a friend" [ref=e1082] [cursor=pointer]:
+                    - /url: /invites
+                    - img [ref=e1083]
+                    - generic [ref=e1085]: Invite a friend
+                - listitem [ref=e1086]:
+                  - button "Contact support" [ref=e1087] [cursor=pointer]:
+                    - img [ref=e1088]
+                    - generic [ref=e1092]: Contact support
+              - link "Render Status" [ref=e1094] [cursor=pointer]:
+                - /url: https://status.render.com
+                - img [ref=e1095]
+                - generic [ref=e1097]: Render Status
+        - generic [ref=e1297]:
+          - banner [ref=e1299]:
+            - generic [ref=e1300]:
+              - generic [ref=e1301]:
+                - img [ref=e1302]
+                - generic [ref=e1304]: Web Service
+              - generic [ref=e1305]:
+                - heading "pdf-parser Docker Free Upgrade your instance Blueprint managed" [level=1] [ref=e1307]:
+                  - generic [ref=e1308]: pdf-parser
+                  - generic [ref=e1309]:
+                    - generic [ref=e1310]: Docker
+                    - link "Free" [ref=e1311] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/plan
+                      - generic [ref=e1312]: Free
+                    - link "Upgrade your instance" [ref=e1313] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/plan
+                      - text: Upgrade your instance
+                      - img [ref=e1315]
+                    - link "Blueprint managed" [ref=e1319] [cursor=pointer]:
+                      - /url: /blueprint/exs-d7eh41dckfvc73c1gi00
+                      - img [ref=e1320]
+                      - generic [ref=e1325]: Blueprint managed
+                - generic [ref=e1327]:
+                  - button "Connect" [ref=e1328] [cursor=pointer]:
+                    - generic [ref=e1329]: Connect
+                    - img [ref=e1330]
+                  - button "Manual Deploy" [ref=e1332] [cursor=pointer]:
+                    - generic [ref=e1333]: Manual Deploy
+                    - img [ref=e1334]
+            - generic [ref=e1338]:
+              - generic [ref=e1340]:
+                - generic [ref=e1341]: "Service ID:"
+                - generic "Service ID:" [ref=e1342]:
+                  - generic [ref=e1343]: srv-d7eh7g77f7vs73akvcng
+                  - button "Copy" [ref=e1346] [cursor=pointer]:
+                    - img [ref=e1347]
+              - generic [ref=e1350]:
+                - img "GitHub" [ref=e1352]
+                - link "Dinesh210805 / PDF_parser main" [ref=e1354] [cursor=pointer]:
+                  - /url: https://github.com/Dinesh210805/PDF_parser/tree/main
+                  - generic [ref=e1355]:
+                    - generic [ref=e1356]: Dinesh210805 / PDF_parser
+                    - img [ref=e1357]
+                    - generic [ref=e1359]: main
+              - generic "Copy" [ref=e1361]:
+                - link "https://pdf-parser-7cg7.onrender.com" [ref=e1363] [cursor=pointer]:
+                  - /url: https://pdf-parser-7cg7.onrender.com
+                - button "Copy" [ref=e1366] [cursor=pointer]:
+                  - img [ref=e1367]
+          - main [ref=e1370]:
+            - generic [ref=e1371]:
+              - alert [ref=e1372]:
+                - generic [ref=e1374]:
+                  - img [ref=e1376]
+                  - generic [ref=e1380]:
+                    - generic [ref=e1382]: Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more.
+                    - link "Upgrade now" [ref=e1384] [cursor=pointer]:
+                      - /url: /web/srv-d7eh7g77f7vs73akvcng/plan
+              - button "Filter events 31" [ref=e1386] [cursor=pointer]:
+                - img [ref=e1388]
+                - generic [ref=e1390]:
+                  - text: Filter events
+                  - generic [ref=e1391]: "31"
+                - img [ref=e1392]
+              - list [ref=e1395]:
+                - listitem [ref=e1396]:
+                  - generic [ref=e1397]:
+                    - img [ref=e1400]
+                    - generic [ref=e1403]:
+                      - generic [ref=e1404]:
+                        - generic [ref=e1405]:
+                          - text: First
+                          - link "deploy" [ref=e1406] [cursor=pointer]:
+                            - /url: /web/srv-d7eh7g77f7vs73akvcng/deploys/dep-d7eh7gf7f7vs73akvcsg
+                        - text: started for
+                        - link "33be135" [ref=e1408] [cursor=pointer]:
+                          - /url: https://github.com/Dinesh210805/PDF_parser/commit/33be135a37a0da555bf78667297f7c96469ed3ee
+                        - text: ":"
+                        - generic [ref=e1409]: "feat: persist settings API key in browser storage"
+                      - generic [ref=e1410]: April 13, 2026 at 9:33 PM
+                  - generic [ref=e1413]:
+                    - img "Loading..." [ref=e1414]
+                    - button "Cancel deploy" [ref=e1417] [cursor=pointer]
+    - generic:
+      - generic:
+        - generic: "0 services selected:"
+        - generic:
+          - generic:
+            - generic:
+              - button:
+                - generic:
+                  - img
+                - generic: Move
+                - img
+      - generic:
+        - separator
+        - generic:
+          - generic:
+            - button:
+              - img
+  - iframe [ref=e121]:
+    

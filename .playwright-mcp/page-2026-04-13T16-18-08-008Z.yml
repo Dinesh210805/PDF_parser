@@ -1,0 +1,320 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Render" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Render" [ref=e8]
+        - button "M My Workspace" [ref=e12] [cursor=pointer]:
+          - generic [ref=e13]:
+            - generic [ref=e14]: M
+            - generic "My Workspace" [ref=e15]
+            - img [ref=e16]
+      - generic [ref=e20]:
+        - navigation [ref=e21]:
+          - list [ref=e22]:
+            - listitem [ref=e23]:
+              - link "pdf-parser" [ref=e24] [cursor=pointer]:
+                - /url: /web/srv-d7eh7g77f7vs73akvcng
+                - img [ref=e25]
+                - generic [ref=e27]: pdf-parser
+              - button [ref=e30] [cursor=pointer]:
+                - img [ref=e31]
+        - button "Search Ctrl + K" [ref=e34] [cursor=pointer]:
+          - img [ref=e36]
+          - text: Search
+          - generic [ref=e38]:
+            - img [ref=e39]
+            - generic [ref=e41]: Ctrl
+            - generic [ref=e42]: +
+            - generic [ref=e43]: K
+            - generic [ref=e44]: K
+      - generic [ref=e45]:
+        - button "New" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]:
+            - img [ref=e49]
+            - generic [ref=e51]: New
+        - button "Upgrade" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]:
+            - img [ref=e55]
+            - generic [ref=e57]: Upgrade
+        - button "Help" [ref=e59] [cursor=pointer]:
+          - img "Help" [ref=e60]
+        - button "d" [ref=e65] [cursor=pointer]:
+          - generic [ref=e67]: d
+    - generic [ref=e68]:
+      - navigation [ref=e69]:
+        - separator [ref=e70]
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - link "Dashboard" [ref=e73] [cursor=pointer]:
+              - /url: /
+              - img [ref=e74]
+              - generic [ref=e76]: Dashboard
+            - generic [ref=e77]:
+              - img [ref=e78]
+              - generic [ref=e80]: pdf-parser
+          - generic [ref=e81]:
+            - list [ref=e82]:
+              - listitem [ref=e83]:
+                - link "Events" [ref=e84] [cursor=pointer]:
+                  - /url: /web/srv-d7eh7g77f7vs73akvcng/events
+                  - img [ref=e85]
+                  - generic [ref=e92]: Events
+              - listitem [ref=e93]:
+                - link "Settings" [ref=e94] [cursor=pointer]:
+                  - /url: /web/srv-d7eh7g77f7vs73akvcng/settings
+                  - img [ref=e95]
+                  - generic [ref=e98]: Settings
+            - generic [ref=e99]:
+              - generic [ref=e100]: Monitor
+              - list "Monitor" [ref=e101]:
+                - listitem [ref=e102]:
+                  - link "Logs" [ref=e103] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/logs
+                    - img [ref=e104]
+                    - generic [ref=e109]: Logs
+                - listitem [ref=e110]:
+                  - link "Metrics" [ref=e111] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/metrics
+                    - img [ref=e112]
+                    - generic [ref=e114]: Metrics
+            - generic [ref=e115]:
+              - generic [ref=e116]: Manage
+              - list "Manage" [ref=e117]:
+                - listitem [ref=e118]:
+                  - link "Environment" [ref=e119] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/env
+                    - img [ref=e120]
+                    - generic [ref=e124]: Environment
+                - listitem [ref=e125]:
+                  - link "Shell" [ref=e126] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/shell
+                    - img [ref=e127]
+                    - generic [ref=e130]: Shell
+                - listitem [ref=e131]:
+                  - link "Scaling" [ref=e132] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/scaling
+                    - img [ref=e133]
+                    - generic [ref=e137]: Scaling
+                - listitem [ref=e138]:
+                  - link "Previews" [ref=e139] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/previews
+                    - img [ref=e140]
+                    - generic [ref=e144]: Previews
+                - listitem [ref=e145]:
+                  - link "Disk" [ref=e146] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/disks
+                    - img [ref=e147]
+                    - generic [ref=e151]: Disk
+                - listitem [ref=e152]:
+                  - link "One-Off Jobs" [ref=e153] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/jobs
+                    - img [ref=e154]
+                    - generic [ref=e159]: One-Off Jobs
+        - generic [ref=e160]:
+          - alert [ref=e161]:
+            - img [ref=e163]
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - generic [ref=e169]: "Workflows: Now in beta"
+                - generic [ref=e170]:
+                  - text: Orchestrate your agents and background jobs with automatic retries and scale-to-zero.
+                  - link "Learn more" [ref=e171] [cursor=pointer]:
+                    - /url: https://render.com/docs/workflows
+              - link "Create Workflow" [ref=e173] [cursor=pointer]:
+                - /url: /workflow/new
+            - button "Close notification" [ref=e174] [cursor=pointer]:
+              - img [ref=e175]
+          - generic [ref=e177]:
+            - button "Collapse items" [expanded] [ref=e178] [cursor=pointer]:
+              - img [ref=e179]
+            - list "Footer navigation" [ref=e181]:
+              - listitem [ref=e182]:
+                - link "Changelog" [ref=e183] [cursor=pointer]:
+                  - /url: https://render.com/changelog
+                  - img [ref=e184]
+                  - generic [ref=e189]: Changelog
+              - listitem [ref=e190]:
+                - link "Invite a friend" [ref=e191] [cursor=pointer]:
+                  - /url: /invites
+                  - img [ref=e192]
+                  - generic [ref=e194]: Invite a friend
+              - listitem [ref=e195]:
+                - button "Contact support" [ref=e196] [cursor=pointer]:
+                  - img [ref=e197]
+                  - generic [ref=e201]: Contact support
+            - link "Render Status" [ref=e203] [cursor=pointer]:
+              - /url: https://status.render.com
+              - img [ref=e204]
+              - generic [ref=e206]: Render Status
+      - generic [ref=e208]:
+        - banner [ref=e210]:
+          - generic [ref=e211]:
+            - generic [ref=e212]:
+              - img [ref=e213]
+              - generic [ref=e215]: Web Service
+            - generic [ref=e216]:
+              - heading "pdf-parser Docker Free Upgrade your instance Blueprint managed" [level=1] [ref=e218]:
+                - generic [ref=e219]: pdf-parser
+                - generic [ref=e220]:
+                  - generic [ref=e221]: Docker
+                  - link "Free" [ref=e222] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/plan
+                    - generic [ref=e223]: Free
+                  - link "Upgrade your instance" [ref=e224] [cursor=pointer]:
+                    - /url: /web/srv-d7eh7g77f7vs73akvcng/plan
+                    - text: Upgrade your instance
+                    - img [ref=e226]
+                  - link "Blueprint managed" [ref=e230] [cursor=pointer]:
+                    - /url: /blueprint/exs-d7eh41dckfvc73c1gi00
+                    - img [ref=e231]
+                    - generic [ref=e236]: Blueprint managed
+              - generic [ref=e238]:
+                - button "Connect" [ref=e239] [cursor=pointer]:
+                  - generic [ref=e240]: Connect
+                  - img [ref=e241]
+                - button "Manual Deploy" [ref=e243] [cursor=pointer]:
+                  - generic [ref=e244]: Manual Deploy
+                  - img [ref=e245]
+          - generic [ref=e249]:
+            - generic [ref=e251]:
+              - generic [ref=e252]: "Service ID:"
+              - generic "Service ID:" [ref=e253]:
+                - generic [ref=e254]: srv-d7eh7g77f7vs73akvcng
+                - button "Copy" [ref=e257] [cursor=pointer]:
+                  - img [ref=e258]
+            - generic [ref=e261]:
+              - img "GitHub" [ref=e263]
+              - link "Dinesh210805 / PDF_parser main" [ref=e265] [cursor=pointer]:
+                - /url: https://github.com/Dinesh210805/PDF_parser/tree/main
+                - generic [ref=e266]:
+                  - generic [ref=e267]: Dinesh210805 / PDF_parser
+                  - img [ref=e268]
+                  - generic [ref=e270]: main
+            - generic "Copy" [ref=e272]:
+              - link "https://pdf-parser-7cg7.onrender.com" [ref=e274] [cursor=pointer]:
+                - /url: https://pdf-parser-7cg7.onrender.com
+              - button "Copy" [ref=e277] [cursor=pointer]:
+                - img [ref=e278]
+        - main [ref=e281]:
+          - generic [ref=e282]:
+            - heading "Environment" [level=2] [ref=e283]
+            - button "Create environment group" [ref=e284] [cursor=pointer]:
+              - img [ref=e286]
+              - text: Create environment group
+          - generic [ref=e288]:
+            - generic [ref=e290]:
+              - generic [ref=e292]:
+                - generic [ref=e293]:
+                  - heading "Environment Variables" [level=4] [ref=e295]
+                  - generic [ref=e296]:
+                    - text: Set environment-specific config and secrets (such as API keys), then read those values from your code.
+                    - link "Learn more." [ref=e297] [cursor=pointer]:
+                      - /url: https://render.com/docs/configure-environment-variables
+                - generic [ref=e299]:
+                  - button "Export" [ref=e300] [cursor=pointer]:
+                    - generic [ref=e301]: Export
+                    - img [ref=e302]
+                  - button "Edit" [ref=e304] [cursor=pointer]:
+                    - img [ref=e306]
+                    - text: Edit
+              - table [ref=e311]:
+                - rowgroup [ref=e312]:
+                  - row "Key Value" [ref=e313]:
+                    - columnheader "Key" [ref=e314]
+                    - columnheader "Value" [ref=e315]
+                - rowgroup [ref=e316]:
+                  - row "Key API_HOST Value • • • • • • • • • • • • Show secret" [ref=e317]:
+                    - rowheader "Key API_HOST" [ref=e318]:
+                      - generic [ref=e320]:
+                        - generic [ref=e321]: Key
+                        - textbox "Key" [ref=e323]:
+                          - /placeholder: NAME_OF_VARIABLE
+                          - text: API_HOST
+                    - cell "Value • • • • • • • • • • • • Show secret" [ref=e324]:
+                      - generic [ref=e325]:
+                        - generic [ref=e326]:
+                          - generic [ref=e327]: Value
+                          - generic [ref=e328]:
+                            - textbox "Value" [ref=e329]:
+                              - /placeholder: ""
+                            - generic:
+                              - generic: • • • • • • • • • • • •
+                        - button "Show secret" [ref=e330] [cursor=pointer]:
+                          - img "Show secret" [ref=e331]
+                  - row "Key API_PORT Value • • • • • • • • • • • • Show secret" [ref=e334]:
+                    - rowheader "Key API_PORT" [ref=e335]:
+                      - generic [ref=e337]:
+                        - generic [ref=e338]: Key
+                        - textbox "Key" [ref=e340]:
+                          - /placeholder: NAME_OF_VARIABLE
+                          - text: API_PORT
+                    - cell "Value • • • • • • • • • • • • Show secret" [ref=e341]:
+                      - generic [ref=e342]:
+                        - generic [ref=e343]:
+                          - generic [ref=e344]: Value
+                          - generic [ref=e345]:
+                            - textbox "Value" [ref=e346]:
+                              - /placeholder: ""
+                            - generic:
+                              - generic: • • • • • • • • • • • •
+                        - button "Show secret" [ref=e347] [cursor=pointer]:
+                          - img "Show secret" [ref=e348]
+                  - row "Key GROQ_API_KEY Value • • • • • • • • • • • • Show secret" [ref=e351]:
+                    - rowheader "Key GROQ_API_KEY" [ref=e352]:
+                      - generic [ref=e354]:
+                        - generic [ref=e355]: Key
+                        - textbox "Key" [ref=e357]:
+                          - /placeholder: NAME_OF_VARIABLE
+                          - text: GROQ_API_KEY
+                    - cell "Value • • • • • • • • • • • • Show secret" [ref=e358]:
+                      - generic [ref=e359]:
+                        - generic [ref=e360]:
+                          - generic [ref=e361]: Value
+                          - generic [ref=e362]:
+                            - textbox "Value" [ref=e363]:
+                              - /placeholder: ""
+                            - generic:
+                              - generic: • • • • • • • • • • • •
+                        - button "Show secret" [ref=e364] [cursor=pointer]:
+                          - img "Show secret" [ref=e365]
+            - generic [ref=e369]:
+              - generic [ref=e372]:
+                - heading "Secret Files" [level=4] [ref=e374]
+                - generic [ref=e376]:
+                  - generic [ref=e377]:
+                    - text: Store plaintext files containing secret data (such as a
+                    - code [ref=e378]: .env
+                    - text: file or a private key).
+                  - generic [ref=e379]:
+                    - text: Access during builds and at runtime from your app's root, or from
+                    - code [ref=e380]: /etc/secrets/<filename>
+                    - text: .
+              - generic [ref=e385]:
+                - button "Add file" [ref=e386] [cursor=pointer]:
+                  - img [ref=e388]
+                  - text: Add file
+                - button "More options" [ref=e391] [cursor=pointer]:
+                  - generic [ref=e392]: More options
+                  - img [ref=e393]
+            - generic [ref=e396]:
+              - img "Loading..." [ref=e397]
+              - generic [ref=e400]: Loading...
+  - generic:
+    - generic:
+      - generic: "0 services selected:"
+      - generic:
+        - generic:
+          - generic:
+            - button:
+              - generic:
+                - img
+              - generic: Move
+              - img
+    - generic:
+      - separator
+      - generic:
+        - generic:
+          - button:
+            - img

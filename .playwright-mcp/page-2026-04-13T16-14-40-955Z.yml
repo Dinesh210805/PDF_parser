@@ -1,0 +1,25 @@
+- generic [ref=e3]:
+  - banner [ref=e29]:
+    - generic [ref=e33] [cursor=pointer]: Knowledge Parser
+    - generic [ref=e34]:
+      - generic [ref=e35]: Upload
+      - generic [ref=e37]: Parse
+    - generic [ref=e38]:
+      - button [ref=e39]:
+        - img [ref=e40]
+      - generic: Set API Key here
+  - main [ref=e9]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - heading "Upload Document" [level=2] [ref=e45]
+        - paragraph [ref=e46]: Select a PDF file to begin the extraction process.
+      - generic [ref=e78] [cursor=pointer]:
+        - img [ref=e80]
+        - paragraph [ref=e83]: Click to upload or drag and drop
+        - paragraph [ref=e84]: PDF files only (max 50MB)
+        - button "Choose File" [ref=e85]
+      - generic [ref=e59]:
+        - button "Parse Document" [disabled]:
+          - generic:
+            - text: Parse Document
+            - img

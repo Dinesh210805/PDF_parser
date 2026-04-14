@@ -87,6 +87,16 @@ export function WelcomeScreen({ onNext }: WelcomeScreenProps) {
           <p className="text-sm text-zinc-500">Side-by-side verification with confidence scoring and missing content detection.</p>
         </motion.div>
       </motion.div>
+
+      <motion.div variants={itemVariants} className="mt-12 text-sm text-zinc-500 relative z-10 flex flex-wrap justify-center items-center gap-4 pb-8">
+        <span>Developed by <strong className="text-zinc-300 font-medium">Dinesh Kumar C</strong></span>
+        <span className="text-zinc-700 hidden sm:inline">•</span>
+        <a href="https://github.com/Dinesh210805" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
+        <span className="text-zinc-700 hidden sm:inline">•</span>
+        <a href="https://www.linkedin.com/in/dinesh-kumar-c-93a38129b" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+        <span className="text-zinc-700 hidden sm:inline">•</span>
+        <a href="mailto:dinesh210805@gmail.com" className="hover:text-white transition-colors">Email</a>
+      </motion.div>
     </motion.div>
   );
 }

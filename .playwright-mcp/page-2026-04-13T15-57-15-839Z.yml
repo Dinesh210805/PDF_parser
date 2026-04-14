@@ -1,0 +1,133 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Render" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Render" [ref=e8]
+          - button "M My Workspace" [ref=e12] [cursor=pointer]:
+            - generic [ref=e13]:
+              - generic [ref=e14]: M
+              - generic "My Workspace" [ref=e15]
+              - img [ref=e16]
+        - generic [ref=e20]:
+          - navigation [ref=e21]:
+            - list [ref=e22]:
+              - listitem [ref=e23]:
+                - generic [ref=e24]:
+                  - img [ref=e900]
+                  - generic [ref=e30]: New Blueprint
+          - button "Search Ctrl + K" [ref=e32] [cursor=pointer]:
+            - img [ref=e34]
+            - text: Search
+            - generic [ref=e36]:
+              - img [ref=e37]
+              - generic [ref=e39]: Ctrl
+              - generic [ref=e40]: +
+              - generic [ref=e41]: K
+              - generic [ref=e42]: K
+        - generic [ref=e43]:
+          - button "New" [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]:
+              - img [ref=e47]
+              - generic [ref=e49]: New
+          - button "Upgrade" [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]:
+              - img [ref=e53]
+              - generic [ref=e55]: Upgrade
+          - button "Help" [ref=e57] [cursor=pointer]:
+            - img "Help" [ref=e58]
+          - button "d" [ref=e63] [cursor=pointer]:
+            - generic [ref=e65]: d
+      - main [ref=e905]:
+        - heading "You are deploying from a Blueprint for Dinesh210805/PDF_parser" [level=1] [ref=e908]:
+          - text: You are deploying from a Blueprint for
+          - link "Dinesh210805/PDF_parser" [ref=e909] [cursor=pointer]:
+            - /url: https://github.com/Dinesh210805/PDF_parser
+        - generic [ref=e910]:
+          - generic [ref=e911]:
+            - generic [ref=e912]:
+              - generic [ref=e913]:
+                - generic [ref=e915]: Blueprint Name
+                - generic [ref=e916]: A unique name for your Blueprint.
+              - textbox "Blueprint Name" [ref=e921]: pdf-parser-prod
+            - generic [ref=e922]:
+              - generic [ref=e923]:
+                - generic [ref=e925]: Branch
+                - generic [ref=e926]:
+                  - text: The repository branch with the
+                  - code [ref=e927]: render.yaml
+                  - text: file.
+              - combobox [ref=e929]:
+                - generic [ref=e931]:
+                  - generic [ref=e932]: Branch
+                  - generic [ref=e933]:
+                    - img
+                    - textbox "Branch" [ref=e934]:
+                      - /placeholder: Search
+                      - text: main
+                    - button "Clear search input" [ref=e935] [cursor=pointer]:
+                      - img [ref=e936]
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - generic [ref=e941]: Blueprint Path
+                - generic [ref=e942]:
+                  - text: The path to the Blueprint file in your repo (e.g.,
+                  - code [ref=e943]: infra/render.yaml
+                  - text: ). Defaults to
+                  - code [ref=e944]: render.yaml
+                  - text: at the root of your repository.
+              - textbox "Blueprint Path" [ref=e948]:
+                - /placeholder: render.yaml
+            - generic [ref=e949]:
+              - heading "Review Blueprint configurations from Dinesh210805/PDF_parser." [level=2] [ref=e950]:
+                - text: Review Blueprint configurations from
+                - strong [ref=e951]: Dinesh210805/PDF_parser
+                - text: .
+              - alert [ref=e952]:
+                - generic [ref=e954]:
+                  - img [ref=e956]
+                  - generic [ref=e962]:
+                    - text: All future updates to your
+                    - link "Blueprint file" [ref=e963] [cursor=pointer]:
+                      - /url: https://render.com/docs/blueprint-spec
+                    - text: will be synced automatically, which may change your costs.
+            - generic [ref=e964]:
+              - heading "Specified configurations" [level=3] [ref=e966]
+              - generic [ref=e968]:
+                - generic [ref=e970]:
+                  - img [ref=e971]
+                  - generic [ref=e974]:
+                    - text: Create web service
+                    - strong [ref=e975]: pdf-parser
+                - generic [ref=e977]:
+                  - generic [ref=e978]:
+                    - generic [ref=e979]: Key
+                    - textbox "Key" [ref=e981]: GROQ_API_KEY
+                  - generic [ref=e982]:
+                    - generic [ref=e983]: Value
+                    - textbox "Value" [active] [ref=e988]:
+                      - /placeholder: Enter value
+          - generic [ref=e993]:
+            - button "Deploy Blueprint" [ref=e994] [cursor=pointer]
+            - button "Cancel" [ref=e995] [cursor=pointer]
+    - generic:
+      - generic:
+        - generic: "0 services selected:"
+        - generic:
+          - generic:
+            - generic:
+              - button:
+                - generic:
+                  - img
+                - generic: Move
+                - img
+      - generic:
+        - separator
+        - generic:
+          - generic:
+            - button:
+              - img
+  - iframe [ref=e121]:
+    

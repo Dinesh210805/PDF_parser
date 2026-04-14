@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - link "Render" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Render" [ref=e8]
+          - button "M My Workspace" [ref=e12] [cursor=pointer]:
+            - generic [ref=e13]:
+              - generic [ref=e14]: M
+              - generic "My Workspace" [ref=e15]
+              - img [ref=e16]
+        - generic [ref=e20]:
+          - navigation [ref=e21]:
+            - list [ref=e22]:
+              - listitem [ref=e23]:
+                - link "Blueprints" [ref=e24] [cursor=pointer]:
+                  - /url: /blueprints
+                  - img [ref=e25]
+                  - generic [ref=e30]: Blueprints
+                - text: /
+              - listitem [ref=e31]:
+                - link "pdf-parser-prod" [ref=e32] [cursor=pointer]:
+                  - /url: /blueprint/exs-d7eh41dckfvc73c1gi00
+                  - generic [ref=e33]: pdf-parser-prod
+                - button [ref=e36] [cursor=pointer]:
+                  - img [ref=e37]
+          - button "Search Ctrl + K" [ref=e40] [cursor=pointer]:
+            - img [ref=e42]
+            - text: Search
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - generic [ref=e47]: Ctrl
+              - generic [ref=e48]: +
+              - generic [ref=e49]: K
+              - generic [ref=e50]: K
+        - generic [ref=e51]:
+          - button "New" [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]:
+              - img [ref=e55]
+              - generic [ref=e57]: New
+          - button "Upgrade" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]:
+              - img [ref=e61]
+              - generic [ref=e63]: Upgrade
+          - button "Help" [ref=e65] [cursor=pointer]:
+            - img "Help" [ref=e66]
+          - button "d" [ref=e71] [cursor=pointer]:
+            - generic [ref=e73]: d
+      - generic [ref=e74]:
+        - navigation [ref=e75]:
+          - separator [ref=e76]
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - link "Blueprints" [ref=e79] [cursor=pointer]:
+                - /url: /blueprints
+                - img [ref=e80]
+                - generic [ref=e82]: Blueprints
+              - generic [ref=e83]:
+                - img [ref=e84]
+                - generic [ref=e89]: pdf-parser-prod
+            - list [ref=e91]:
+              - listitem [ref=e92]:
+                - link "Resources" [ref=e93] [cursor=pointer]:
+                  - /url: /blueprint/exs-d7eh41dckfvc73c1gi00/resources
+                  - img [ref=e94]
+                  - generic [ref=e96]: Resources
+              - listitem [ref=e97]:
+                - link "Syncs" [ref=e98] [cursor=pointer]:
+                  - /url: /blueprint/exs-d7eh41dckfvc73c1gi00/syncs
+                  - img [ref=e99]
+                  - generic [ref=e102]: Syncs
+              - listitem [ref=e103]:
+                - link "Settings" [ref=e104] [cursor=pointer]:
+                  - /url: /blueprint/exs-d7eh41dckfvc73c1gi00/settings
+                  - img [ref=e105]
+                  - generic [ref=e108]: Settings
+          - generic [ref=e109]:
+            - alert [ref=e110]:
+              - img [ref=e112]
+              - generic [ref=e116]:
+                - generic [ref=e117]:
+                  - generic [ref=e118]: "Workflows: Now in beta"
+                  - generic [ref=e119]:
+                    - text: Orchestrate your agents and background jobs with automatic retries and scale-to-zero.
+                    - link "Learn more" [ref=e120] [cursor=pointer]:
+                      - /url: https://render.com/docs/workflows
+                - link "Create Workflow" [ref=e122] [cursor=pointer]:
+                  - /url: /workflow/new
+              - button "Close notification" [ref=e123] [cursor=pointer]:
+                - img [ref=e124]
+            - generic [ref=e126]:
+              - button "Collapse items" [expanded] [ref=e127] [cursor=pointer]:
+                - img [ref=e128]
+              - list "Footer navigation" [ref=e130]:
+                - listitem [ref=e131]:
+                  - link "Changelog" [ref=e132] [cursor=pointer]:
+                    - /url: https://render.com/changelog
+                    - img [ref=e133]
+                    - generic [ref=e138]: Changelog
+                - listitem [ref=e139]:
+                  - link "Invite a friend" [ref=e140] [cursor=pointer]:
+                    - /url: /invites
+                    - img [ref=e141]
+                    - generic [ref=e143]: Invite a friend
+                - listitem [ref=e144]:
+                  - button "Contact support" [ref=e145] [cursor=pointer]:
+                    - img [ref=e146]
+                    - generic [ref=e150]: Contact support
+              - link "Render Status" [ref=e152] [cursor=pointer]:
+                - /url: https://status.render.com
+                - img [ref=e153]
+                - generic [ref=e155]: Render Status
+        - generic [ref=e157]:
+          - banner [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - img [ref=e162]
+                - generic [ref=e167]: Blueprint
+              - generic [ref=e168]:
+                - heading "pdf-parser-prod" [level=1] [ref=e170]:
+                  - generic [ref=e171]: pdf-parser-prod
+                - button "Manual sync" [ref=e173] [cursor=pointer]:
+                  - text: Manual sync
+                  - img [ref=e175]
+            - generic [ref=e180]:
+              - generic [ref=e182]:
+                - generic [ref=e183]: "Blueprint ID:"
+                - generic "Blueprint ID:" [ref=e184]:
+                  - generic [ref=e185]: exs-d7eh41dckfvc73c1gi00
+                  - button "Copy" [ref=e188] [cursor=pointer]:
+                    - img [ref=e189]
+              - generic [ref=e192]:
+                - img "GitHub" [ref=e194]
+                - link "Dinesh210805 / PDF_parser main" [ref=e196] [cursor=pointer]:
+                  - /url: https://github.com/Dinesh210805/PDF_parser/tree/main
+                  - generic [ref=e197]:
+                    - generic [ref=e198]: Dinesh210805 / PDF_parser
+                    - img [ref=e199]
+                    - generic [ref=e201]: main
+          - main [ref=e202]:
+            - generic [ref=e203]:
+              - heading "Syncs" [level=2] [ref=e204]
+              - list [ref=e206]:
+                - listitem [ref=e207]:
+                  - generic [ref=e209]:
+                    - img [ref=e211]
+                    - generic [ref=e214]:
+                      - generic [ref=e215]:
+                        - generic [ref=e217]:
+                          - link "acf7d7f" [ref=e218] [cursor=pointer]:
+                            - /url: https://github.com/Dinesh210805/PDF_parser/tree/acf7d7f35d91b45f3fba7b3330fa1b0080acf627
+                          - text: ":fix: serve built UI in production API"
+                        - link "View details" [ref=e220] [cursor=pointer]:
+                          - /url: /blueprint/exs-d7eh41dckfvc73c1gi00/sync/exe-d7eh41dckfvc73c1gi6g
+                      - time [ref=e223]: 17 minutes ago
+    - generic:
+      - generic:
+        - generic: "0 services selected:"
+        - generic:
+          - generic:
+            - generic:
+              - button:
+                - generic:
+                  - img
+                - generic: Move
+                - img
+      - generic:
+        - separator
+        - generic:
+          - generic:
+            - button:
+              - img
+  - iframe [ref=e224]:
+    

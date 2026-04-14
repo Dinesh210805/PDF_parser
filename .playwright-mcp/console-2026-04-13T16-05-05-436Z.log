@@ -1,0 +1,2 @@
+[    8563ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://pdf-parser-7cg7.onrender.com/:0
+[   17155ms] [ERROR] Refused to apply style from 'https://pdf-parser-7cg7.onrender.com/assets/index-1gJ_HqHu.css' because its MIME type ('text/plain') is not a supported stylesheet MIME type, and strict MIME checking is enabled. @ https://pdf-parser-7cg7.onrender.com/:0

@@ -1,0 +1,68 @@
+- generic [ref=e3]:
+  - banner [ref=e29]:
+    - generic [ref=e33] [cursor=pointer]: Knowledge Parser
+    - generic [ref=e34]:
+      - generic [ref=e35]: Upload
+      - generic [ref=e37]: Parse
+    - generic [ref=e38]:
+      - button [active] [ref=e39]:
+        - img [ref=e40]
+      - generic: Set API Key here
+  - main [ref=e9]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - heading "Upload Document" [level=2] [ref=e45]
+        - paragraph [ref=e46]: Select a PDF file to begin the extraction process.
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - img [ref=e64]
+          - generic [ref=e67]:
+            - paragraph [ref=e68]: UNIT 3 DL.pdf
+            - paragraph [ref=e69]: 1.04 MB • Est. 12 pages
+        - button [ref=e70]:
+          - img [ref=e71]
+      - button "Parse Document" [ref=e74]:
+        - generic [ref=e75]:
+          - text: Parse Document
+          - img [ref=e76]
+  - generic [ref=e80]:
+    - generic [ref=e81]:
+      - heading "Settings" [level=2] [ref=e82]
+      - button [ref=e83]:
+        - img [ref=e84]
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - img [ref=e90]
+          - text: Groq API Key
+        - generic [ref=e94]:
+          - textbox "gsk_..." [ref=e95]
+          - button "SHOW" [ref=e96]
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - img [ref=e99]
+            - text: Session only (cleared on refresh).
+          - button "Test Connection" [disabled]:
+            - generic: Test Connection
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - img [ref=e104]
+          - text: Model Preferences
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - text: Vision Model
+            - combobox [ref=e109]:
+              - option "llama-3.2-90b-vision-preview" [selected]
+              - option "llama-3.2-11b-vision-preview"
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - text: DPI (Rasterization)
+              - combobox [ref=e112]:
+                - option "150 (Fast)"
+                - option "300 (Balanced)" [selected]
+                - option "600 (High Quality)"
+            - generic [ref=e113]:
+              - text: Page Range
+              - textbox "e.g. 1-5, 8" [ref=e114]: All
+    - button "Done" [ref=e116]:
+      - generic [ref=e117]: Done

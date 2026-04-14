@@ -1,0 +1,58 @@
+- generic [ref=e3]:
+  - banner [ref=e29]:
+    - generic [ref=e33] [cursor=pointer]: Knowledge Parser
+    - generic [ref=e34]:
+      - generic [ref=e35]: Upload
+      - generic [ref=e37]: Parse
+    - generic [ref=e38]:
+      - button [ref=e39]:
+        - img [ref=e40]
+      - generic: Set API Key here
+  - main [ref=e9]:
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - heading "Processing Document" [level=2] [ref=e148]:
+            - img [ref=e149]
+            - text: Processing Document
+          - paragraph [ref=e151]: Analyzing PDF structure
+        - generic [ref=e152]:
+          - button [ref=e153]:
+            - img [ref=e155]
+          - button [disabled]:
+            - generic:
+              - img
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - img [ref=e161]
+          - generic [ref=e164]:
+            - paragraph [ref=e165]: Text Pages
+            - paragraph [ref=e166]: "0"
+        - generic [ref=e167]:
+          - img [ref=e169]
+          - generic [ref=e173]:
+            - paragraph [ref=e174]: Image/Scanned
+            - paragraph [ref=e175]: "0"
+        - generic [ref=e176]:
+          - img [ref=e178]
+          - generic [ref=e182]:
+            - paragraph [ref=e183]: Mixed/Diagrams
+            - paragraph [ref=e184]: "0"
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - generic [ref=e189]: Overall Progress
+          - generic [ref=e190]: 5%
+        - generic [ref=e193]:
+          - generic [ref=e194]: Analyzing PDF
+          - generic [ref=e195]: Rasterizing
+          - generic [ref=e196]: VLM Extraction
+          - generic [ref=e197]: Building Markdown
+      - generic [ref=e199]:
+        - generic [ref=e205]: parser.log
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - generic [ref=e208]: "[16:15:55]"
+            - generic [ref=e209]: Starting document analysis
+          - generic [ref=e210]:
+            - generic [ref=e211]: "[16:15:55]"
+            - generic [ref=e212]: Using session API key from UI settings

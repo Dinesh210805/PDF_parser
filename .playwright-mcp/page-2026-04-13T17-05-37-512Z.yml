@@ -1,0 +1,1190 @@
+- main [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - heading "UNIT 3 DL.pdf" [level=1] [ref=e8]
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - img [ref=e12]
+            - text: Completed
+          - button "0 Missing Items" [ref=e15]:
+            - img [ref=e16]
+            - text: 0 Missing Items
+      - generic [ref=e18]:
+        - button "QA Report" [ref=e19]:
+          - generic [ref=e20]:
+            - img [ref=e21]
+            - text: QA Report
+        - button "PDF" [ref=e24]:
+          - generic [ref=e25]:
+            - img [ref=e26]
+            - text: PDF
+        - button "Markdown" [active] [ref=e29]:
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - text: Markdown
+        - button "Parse Another" [ref=e35]:
+          - generic [ref=e36]:
+            - img [ref=e37]
+            - text: Parse Another
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - button [ref=e43]:
+            - img [ref=e44]
+          - generic [ref=e46]: Page 16 (16/20)
+          - button [ref=e47]:
+            - img [ref=e48]
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e52]: Original PDF • Page 1
+            - img "PDF page 1" [ref=e53]
+          - generic [ref=e54]:
+            - generic [ref=e55]: Original PDF • Page 2
+            - img "PDF page 2" [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]: Original PDF • Page 3
+            - img "PDF page 3" [ref=e59]
+          - generic [ref=e60]:
+            - generic [ref=e61]: Original PDF • Page 4
+            - img "PDF page 4" [ref=e62]
+          - generic [ref=e63]:
+            - generic [ref=e64]: Original PDF • Page 5
+            - img "PDF page 5" [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e67]: Original PDF • Page 6
+            - img "PDF page 6" [ref=e68]
+          - generic [ref=e69]:
+            - generic [ref=e70]: Original PDF • Page 7
+            - img "PDF page 7" [ref=e71]
+          - generic [ref=e72]:
+            - generic [ref=e73]: Original PDF • Page 8
+            - img "PDF page 8" [ref=e74]
+          - generic [ref=e75]:
+            - generic [ref=e76]: Original PDF • Page 9
+            - img "PDF page 9" [ref=e77]
+          - generic [ref=e78]:
+            - generic [ref=e79]: Original PDF • Page 10
+            - img "PDF page 10" [ref=e80]
+          - generic [ref=e81]:
+            - generic [ref=e82]: Original PDF • Page 11
+            - img "PDF page 11" [ref=e83]
+          - generic [ref=e84]:
+            - generic [ref=e85]: Original PDF • Page 12
+            - img "PDF page 12" [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]: Original PDF • Page 13
+            - img "PDF page 13" [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]: Original PDF • Page 14
+            - img "PDF page 14" [ref=e92]
+          - generic [ref=e93]:
+            - generic [ref=e94]: Original PDF • Page 15
+            - img "PDF page 15" [ref=e95]
+          - generic [ref=e96]:
+            - generic [ref=e97]: Original PDF • Page 16
+            - img "PDF page 16" [ref=e98]
+          - generic [ref=e99]:
+            - generic [ref=e100]: Original PDF • Page 17
+            - img "PDF page 17" [ref=e101]
+          - generic [ref=e102]:
+            - generic [ref=e103]: Original PDF • Page 18
+            - img "PDF page 18" [ref=e104]
+          - generic [ref=e105]:
+            - generic [ref=e106]: Original PDF • Page 19
+            - img "PDF page 19" [ref=e107]
+          - generic [ref=e108]:
+            - generic [ref=e109]: Original PDF • Page 20
+            - img "PDF page 20" [ref=e110]
+      - generic [ref=e111]:
+        - generic [ref=e112]: Markdown Preview (synced with PDF pages)
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - heading "Markdown • Page 1" [level=3] [ref=e115]
+            - generic [ref=e116]:
+              - paragraph [ref=e117]:
+                - emphasis [ref=e118]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e119]
+              - paragraph [ref=e120]: U20ITCM09 DEEP LEARNING UNIT III UNIT III RECURRENT NEURAL NETWORK (RNN) (9 Hrs) Recurrent Neural Network – Long Short-Term Memory Network – Implementation of RNN & LSTM – Hyperparameters – Embeddings & Word2vec – Sentiment Prediction RNN RECURRENT NEURAL NETWORK Recurrent Neural Network(RNN) is a type of Neural Network where the output from the previous step is fed as input to the current step. In traditional neural networks, all the inputs and outputs are independent of each other. Still, in cases when it is required to predict the next word of a sentence, the previous words are required and hence there is a need to remember the previous words. Thus RNN came into existence, which solved this issue with the help of a Hidden Layer. The main and most important feature of RNN is its Hidden state, which remembers some information about a sequence. The state is also referred to as Memory State since it remembers the previous input to the network. It uses the same parameters for each input as it performs the same task on all the inputs or hidden layers to produce the output. This reduces the complexity of parameters, unlike other neural networks. How RNN differs from Feedforward Neural Network? Artificial neural networks that do not have looping nodes are called feed forward neural networks. Because all information is only passed forward, this kind of neural network is also referred to as a multi-layer neural network. Information moves from the input layer to the output layer – if any hidden layers are present – unidirectionally in a feedforward neural network. These networks are appropriate for image classification tasks, for example, where input and output are independent. Nevertheless, their inability to retain previous inputs automatically renders them less useful for sequential data analysis. IV YR / VIII SEM Page 1
+              - heading "🖼 Visual Elements (Page 1)" [level=4] [ref=e121]
+              - blockquote [ref=e122]:
+                - paragraph [ref=e123]:
+                  - text: 📌
+                  - strong [ref=e124]: This page contains diagrams/figures on page 1.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=3] [ref=e125]
+              - 'heading "Diagram: Recurrent Neural Network (RNN) Architecture" [level=4] [ref=e126]'
+              - list [ref=e127]:
+                - listitem [ref=e128]:
+                  - strong [ref=e129]: "Type of Visual:"
+                  - text: Diagram/Flowchart
+                - listitem [ref=e130]:
+                  - strong [ref=e131]: "Components, Labels, and Relationships:"
+                  - list [ref=e132]:
+                    - listitem [ref=e133]: The diagram illustrates the architecture of a Recurrent Neural Network (RNN).
+                    - listitem [ref=e134]:
+                      - text: "It consists of:"
+                      - list [ref=e135]:
+                        - listitem [ref=e136]:
+                          - text: A green rectangle labeled
+                          - strong [ref=e137]: "\"h\""
+                          - text: representing the hidden state.
+                        - listitem [ref=e138]:
+                          - text: A dark green circle labeled
+                          - strong [ref=e139]: "\"X\""
+                          - text: representing the input.
+                        - listitem [ref=e140]:
+                          - text: A green circle labeled
+                          - strong [ref=e141]: "\"L\""
+                          - text: representing the output or loss.
+                        - listitem [ref=e142]:
+                          - text: "Arrows indicating the flow of information:"
+                          - list [ref=e143]:
+                            - listitem [ref=e144]:
+                              - text: An arrow from
+                              - strong [ref=e145]: "\"X\""
+                              - text: to
+                              - strong [ref=e146]: "\"h\""
+                              - text: labeled
+                              - strong [ref=e147]: "\"u\""
+                              - text: .
+                            - listitem [ref=e148]:
+                              - text: An arrow from
+                              - strong [ref=e149]: "\"h\""
+                              - text: to
+                              - strong [ref=e150]: "\"L\""
+                              - text: labeled
+                              - strong [ref=e151]: "\"v\""
+                              - text: .
+                            - listitem [ref=e152]:
+                              - text: An arrow from
+                              - strong [ref=e153]: "\"h\""
+                              - text: back to itself, labeled
+                              - strong [ref=e154]: "\"w\""
+                              - text: ", indicating the recurrent connection."
+                    - listitem [ref=e155]:
+                      - text: "The diagram also shows the unfolded version of the RNN over time steps:"
+                      - list [ref=e156]:
+                        - listitem [ref=e157]:
+                          - text: At time step
+                          - strong [ref=e158]: t-1
+                          - text: ":"
+                          - list [ref=e159]:
+                            - listitem [ref=e160]:
+                              - text: Input
+                              - strong [ref=e161]: "X_{t-1}"
+                            - listitem [ref=e162]:
+                              - text: Hidden state
+                              - strong [ref=e163]: "h_{t-1}"
+                            - listitem [ref=e164]:
+                              - text: Output/Loss
+                              - strong [ref=e165]: "L_{t-0}"
+                        - listitem [ref=e166]:
+                          - text: At time step
+                          - strong [ref=e167]: t
+                          - text: ":"
+                          - list [ref=e168]:
+                            - listitem [ref=e169]:
+                              - text: Input
+                              - strong [ref=e170]: "X_{t}"
+                            - listitem [ref=e171]:
+                              - text: Hidden state
+                              - strong [ref=e172]: "h_{t}"
+                            - listitem [ref=e173]:
+                              - text: Output/Loss
+                              - strong [ref=e174]: "L_{t}"
+                        - listitem [ref=e175]:
+                          - text: At time step
+                          - strong [ref=e176]: t+1
+                          - text: ":"
+                          - list [ref=e177]:
+                            - listitem [ref=e178]:
+                              - text: Input
+                              - strong [ref=e179]: "X_{t+1}"
+                            - listitem [ref=e180]:
+                              - text: Hidden state
+                              - strong [ref=e181]: "h_{t+1}"
+                            - listitem [ref=e182]:
+                              - text: Output/Loss
+                              - strong [ref=e183]: "L_{t+1}"
+                - listitem [ref=e184]:
+                  - strong [ref=e185]: "Concept Illustrated:"
+                  - list [ref=e186]:
+                    - listitem [ref=e187]: This diagram illustrates how an RNN processes sequential data by maintaining a hidden state that captures information from previous time steps. The recurrent connection allows the network to keep track of long-term dependencies in the data.
+                - listitem [ref=e188]:
+                  - strong [ref=e189]: "Data/Trends:"
+                  - list [ref=e190]:
+                    - listitem [ref=e191]: This diagram does not contain any data or trends but is a structural representation of an RNN.
+              - blockquote [ref=e192]:
+                - paragraph [ref=e193]:
+                  - text: 📌
+                  - strong [ref=e194]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e195]
+          - generic [ref=e196]:
+            - heading "Markdown • Page 2" [level=3] [ref=e197]
+            - generic [ref=e198]:
+              - paragraph [ref=e199]:
+                - emphasis [ref=e200]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e201]
+              - paragraph [ref=e202]: U20ITCM09 DEEP LEARNING UNIT III Recurrent Neuron and RNN Unfolding The fundamental processing unit in a Recurrent Neural Network (RNN) is a Recurrent Unit, which is not explicitly called a “Recurrent Neuron.” This unit has the unique ability to maintain a hidden state, allowing the network to capture sequential dependencies by remembering previous inputs while processing. Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) versions improve the RNN’s ability to handle long-term dependencies. L – long short term W – weight h – current state U – hidden state V – output state X – input state Page 2 IV YR / VIII SEM
+              - heading "🖼 Visual Elements (Page 2)" [level=4] [ref=e203]
+              - blockquote [ref=e204]:
+                - paragraph [ref=e205]:
+                  - text: 📌
+                  - strong [ref=e206]: This page contains diagrams/figures on page 2.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e207]
+              - 'heading "Diagram 1: Recurrent Neural Network" [level=3] [ref=e208]'
+              - list [ref=e209]:
+                - listitem [ref=e210]:
+                  - strong [ref=e211]: "Type of Visual:"
+                  - text: Network Diagram
+                - listitem [ref=e212]:
+                  - strong [ref=e213]: "Components and Labels:"
+                  - list [ref=e214]:
+                    - listitem [ref=e215]: Multiple dark blue nodes (input or neurons) at the left side
+                    - listitem [ref=e216]: Multiple green nodes (output or processed neurons) at the right side
+                    - listitem [ref=e217]: Arrows connecting the nodes in a complex web pattern
+                    - listitem [ref=e218]: Arrows looping back from the green nodes to themselves
+                    - listitem [ref=e219]: "Label: (a) Recurrent Neural Network"
+                - listitem [ref=e220]:
+                  - strong [ref=e221]: "Relationships:"
+                  - text: The diagram shows a network where data flows not only from left to right but also allows feedback loops from the output back into the system.
+                - listitem [ref=e222]:
+                  - strong [ref=e223]: "Concept:"
+                  - text: This diagram illustrates a Recurrent Neural Network (RNN), which is a type of neural network that has feedback connections, allowing it to keep track of sequential information.
+              - paragraph [ref=e224]:
+                - text: 📌
+                - strong [ref=e225]: "Study tip:"
+                - text: This diagram is worth drawing by hand for better retention.
+              - 'heading "Diagram 2: Feed-Forward Neural Network" [level=3] [ref=e226]'
+              - list [ref=e227]:
+                - listitem [ref=e228]:
+                  - strong [ref=e229]: "Type of Visual:"
+                  - text: Network Diagram
+                - listitem [ref=e230]:
+                  - strong [ref=e231]: "Components and Labels:"
+                  - list [ref=e232]:
+                    - listitem [ref=e233]: Multiple dark blue nodes at the left side
+                    - listitem [ref=e234]: Multiple green nodes at the right side
+                    - listitem [ref=e235]: Arrows connecting the nodes in a feed-forward pattern
+                    - listitem [ref=e236]: "Label: (b) Feed-Forward Neural Network"
+                - listitem [ref=e237]:
+                  - strong [ref=e238]: "Relationships:"
+                  - text: The diagram shows a straightforward network where data flows only from left to right without any feedback loops.
+                - listitem [ref=e239]:
+                  - strong [ref=e240]: "Concept:"
+                  - text: This diagram illustrates a Feed-Forward Neural Network, which is a type of neural network where information flows only in one direction, from input to output, without any cycles.
+              - paragraph [ref=e241]:
+                - text: 📌
+                - strong [ref=e242]: "Study tip:"
+                - text: This diagram is worth drawing by hand for better retention.
+              - 'heading "Diagram 3: Recurrent Neuron and RNN Unfolding" [level=3] [ref=e243]'
+              - list [ref=e244]:
+                - listitem [ref=e245]:
+                  - strong [ref=e246]: "Type of Visual:"
+                  - text: Detailed Network Component Diagram
+                - listitem [ref=e247]:
+                  - strong [ref=e248]: "Components and Labels:"
+                  - list [ref=e249]:
+                    - listitem [ref=e250]: A light green rectangle labeled "h"
+                    - listitem [ref=e251]: A dark green circle labeled "L"
+                    - listitem [ref=e252]: A dark green circle labeled "X"
+                    - listitem [ref=e253]:
+                      - text: "Arrows and labels:"
+                      - list [ref=e254]:
+                        - listitem [ref=e255]: "\"v\" (output state)"
+                        - listitem [ref=e256]: "\"w\" (weight)"
+                        - listitem [ref=e257]: "\"u\" (hidden state)"
+                    - listitem [ref=e258]: A loop from "h" back to itself
+                - listitem [ref=e259]:
+                  - strong [ref=e260]: "Relationships:"
+                  - text: The diagram details the internal structure of a recurrent unit, showing how input, hidden state, and output are related over time.
+                - listitem [ref=e261]:
+                  - strong [ref=e262]: "Concept:"
+                  - text: This diagram illustrates the fundamental processing unit in a Recurrent Neural Network (RNN), highlighting its ability to maintain a hidden state over time.
+              - paragraph [ref=e263]:
+                - text: 📌
+                - strong [ref=e264]: "Study tip:"
+                - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e265]
+          - generic [ref=e266]:
+            - heading "Markdown • Page 3" [level=3] [ref=e267]
+            - generic [ref=e268]:
+              - paragraph [ref=e269]:
+                - emphasis [ref=e270]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e271]
+              - paragraph [ref=e272]: U20ITCM09 DEEP LEARNING UNIT III Types Of RNN There are four types of RNNs based on the number of inputs and outputs in the network.
+              - list [ref=e273]:
+                - listitem [ref=e274]: One to One
+                - listitem [ref=e275]: One to Many
+                - listitem [ref=e276]: Many to One
+                - listitem [ref=e277]: Many to Many One to One This type of RNN behaves the same as any simple Neural network it is also known as Vanilla Neural Network. In this Neural network, there is only one input and one output. One To Many In this type of RNN, there is one input and many outputs associated with it. One of the most used examples of this network is Image captioning where given an image we predict a sentence having Multiple words. IV YR / VIII SEM Page 3
+              - heading "🖼 Visual Elements (Page 3)" [level=4] [ref=e278]
+              - blockquote [ref=e279]:
+                - paragraph [ref=e280]:
+                  - text: 📌
+                  - strong [ref=e281]: This page contains diagrams/figures on page 3.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e282]
+              - heading "1. Unfolded RNN Diagram" [level=3] [ref=e283]
+              - list [ref=e284]:
+                - listitem [ref=e285]:
+                  - strong [ref=e286]: "Type of Visual:"
+                  - text: Diagram/Flowchart
+                - listitem [ref=e287]:
+                  - strong [ref=e288]: "Components and Labels:"
+                  - list [ref=e289]:
+                    - listitem [ref=e290]: A large black arrow pointing to the right labeled "Unfold".
+                    - listitem [ref=e291]: "Four green circles representing inputs: $X_{t-1}$, $X_t$, $X_{t+1}$, and two more implied in the sequence."
+                    - listitem [ref=e292]: "Four light green boxes representing hidden states: $h_{t-1}$, $h_t$, $h_{t+1}$, and one more implied in the sequence."
+                    - listitem [ref=e293]: "Four green circles on top representing outputs or losses: $L_{t-0}$, $L_t$, $L_{t+1}$, and one more implied."
+                    - listitem [ref=e294]:
+                      - text: "Arrows:"
+                      - list [ref=e295]:
+                        - listitem [ref=e296]: Horizontal arrows with a "v" label indicating vertical connections between hidden states.
+                        - listitem [ref=e297]: Vertical arrows labeled "w" from hidden states to outputs or losses.
+                        - listitem [ref=e298]: Arrows labeled "u" from inputs to hidden states.
+                - listitem [ref=e299]:
+                  - strong [ref=e300]: "Relationships:"
+                  - text: "The diagram shows how Recurrent Neural Networks (RNNs) unfold over time. Each input $X_t$ at time step $t$ is fed into the network along with the previous hidden state $h_{t-1}$ to produce a new hidden state $h_t$ and an output or loss $L_t$."
+                - listitem [ref=e301]:
+                  - strong [ref=e302]: "Concept:"
+                  - text: This diagram illustrates the basic structure and temporal unfolding of a Recurrent Neural Network (RNN).
+              - paragraph [ref=e303]:
+                - text: 📌
+                - strong [ref=e304]: "Study tip:"
+                - text: This diagram is worth drawing by hand for better retention.
+              - heading "2. One to One RNN Type Diagram" [level=3] [ref=e305]
+              - list [ref=e306]:
+                - listitem [ref=e307]:
+                  - strong [ref=e308]: "Type of Visual:"
+                  - text: Simple Vertical Flowchart
+                - listitem [ref=e309]:
+                  - strong [ref=e310]: "Components and Labels:"
+                  - list [ref=e311]:
+                    - listitem [ref=e312]: A light green rectangle with "One to One" at the top.
+                    - listitem [ref=e313]:
+                      - text: "Inside the rectangle:"
+                      - list [ref=e314]:
+                        - listitem [ref=e315]: A single dark green rectangle at the bottom labeled "Single Input".
+                        - listitem [ref=e316]: A single light green rectangle at the top labeled "Single Output".
+                        - listitem [ref=e317]: A vertical arrow pointing upwards connecting the input to the output.
+                - listitem [ref=e318]:
+                  - strong [ref=e319]: "Relationships:"
+                  - text: The diagram shows a straightforward input-output relationship without any recurrent connections.
+                - listitem [ref=e320]:
+                  - strong [ref=e321]: "Concept:"
+                  - text: This illustrates the "One to One" type of RNN, also known as a Vanilla Neural Network.
+              - heading "3. One To Many RNN Type Diagram" [level=3] [ref=e322]
+              - list [ref=e323]:
+                - listitem [ref=e324]:
+                  - strong [ref=e325]: "Type of Visual:"
+                  - text: Simple Vertical Flowchart
+                - listitem [ref=e326]:
+                  - strong [ref=e327]: "Components and Labels:"
+                  - list [ref=e328]:
+                    - listitem [ref=e329]: A light green rectangle with "One To Many" implied (though not explicitly labeled, inferred from context).
+                    - listitem [ref=e330]:
+                      - text: "Inside the rectangle:"
+                      - list [ref=e331]:
+                        - listitem [ref=e332]: A single dark green rectangle at the bottom labeled "Single Input".
+                        - listitem [ref=e333]: Multiple light green rectangles stacked vertically at the top, implying multiple outputs.
+                        - listitem [ref=e334]: A vertical arrow pointing upwards from the input to each of the outputs.
+                - listitem [ref=e335]:
+                  - strong [ref=e336]: "Relationships:"
+                  - text: The diagram shows one input leading to multiple outputs.
+                - listitem [ref=e337]:
+                  - strong [ref=e338]: "Concept:"
+                  - text: This illustrates the "One To Many" type of RNN, where a single input generates multiple outputs, such as in image captioning.
+              - separator [ref=e339]
+          - generic [ref=e340]:
+            - heading "Markdown • Page 4" [level=3] [ref=e341]
+            - generic [ref=e342]:
+              - paragraph [ref=e343]:
+                - emphasis [ref=e344]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e345]
+              - paragraph [ref=e346]: U20ITCM09 DEEP LEARNING UNIT III Many to One In this type of network, Many inputs are fed to the network at several states of the network generating only one output. This type of network is used in the problems like sentimental analysis. Where we give multiple words as input and predict only the sentiment of the sentence as output. Many to Many In this type of neural network, there are multiple inputs and multiple outputs corresponding to a problem. One Example of this Problem will be language translation. In language translation, we provide multiple words from one language as input and predict multiple words from the second language as output. Recurrent Neural Network Architecture RNNs have the same input and output architecture as any other deep neural architecture. However, differences arise in the way information flows from input to output. Unlike Deep neural networks where we have different weight matrices for each Dense network in RNN, the Page 4 IV YR / VIII SEM
+              - heading "🖼 Visual Elements (Page 4)" [level=4] [ref=e347]
+              - blockquote [ref=e348]:
+                - paragraph [ref=e349]:
+                  - text: 📌
+                  - strong [ref=e350]: This page contains diagrams/figures on page 4.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e351]
+              - 'heading "Diagram 1: One to Many" [level=3] [ref=e352]'
+              - list [ref=e353]:
+                - listitem [ref=e354]:
+                  - strong [ref=e355]: "Type:"
+                  - text: Flowchart/Block Diagram
+                - listitem [ref=e356]:
+                  - strong [ref=e357]: "Components and Labels:"
+                  - list [ref=e358]:
+                    - listitem [ref=e359]:
+                      - text: A single green block on the left labeled
+                      - strong [ref=e360]: Single Input
+                    - listitem [ref=e361]:
+                      - text: Three green blocks on the right labeled
+                      - strong [ref=e362]: Multiple Outputs
+                    - listitem [ref=e363]:
+                      - text: Arrows connecting the
+                      - strong [ref=e364]: Single Input
+                      - text: to each of the
+                      - strong [ref=e365]: Multiple Outputs
+                      - text: ", with intermediate blocks in various shades of green"
+                - listitem [ref=e366]:
+                  - strong [ref=e367]: "Relationships:"
+                  - text: The diagram shows a single input leading to multiple outputs with a series of connected blocks
+                - listitem [ref=e368]:
+                  - strong [ref=e369]: "Concept:"
+                  - text: This diagram illustrates a one-to-many network architecture
+                - listitem [ref=e370]:
+                  - strong [ref=e371]: "📌 Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - 'heading "Diagram 2: Many to One" [level=3] [ref=e372]'
+              - list [ref=e373]:
+                - listitem [ref=e374]:
+                  - strong [ref=e375]: "Type:"
+                  - text: Flowchart/Block Diagram
+                - listitem [ref=e376]:
+                  - strong [ref=e377]: "Components and Labels:"
+                  - list [ref=e378]:
+                    - listitem [ref=e379]:
+                      - text: Three green blocks on the left labeled
+                      - strong [ref=e380]: Multiple Inputs
+                    - listitem [ref=e381]:
+                      - text: A single green block on the right labeled
+                      - strong [ref=e382]: Single Output
+                    - listitem [ref=e383]:
+                      - text: Arrows connecting each of the
+                      - strong [ref=e384]: Multiple Inputs
+                      - text: to the
+                      - strong [ref=e385]: Single Output
+                      - text: ", with intermediate blocks in various shades of green"
+                - listitem [ref=e386]:
+                  - strong [ref=e387]: "Relationships:"
+                  - text: The diagram shows multiple inputs leading to a single output with a series of connected blocks
+                - listitem [ref=e388]:
+                  - strong [ref=e389]: "Concept:"
+                  - text: This diagram illustrates a many-to-one network architecture
+                - listitem [ref=e390]:
+                  - strong [ref=e391]: "📌 Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - 'heading "Diagram 3: Many to Many" [level=3] [ref=e392]'
+              - list [ref=e393]:
+                - listitem [ref=e394]:
+                  - strong [ref=e395]: "Type:"
+                  - text: Flowchart/Block Diagram
+                - listitem [ref=e396]:
+                  - strong [ref=e397]: "Components and Labels:"
+                  - list [ref=e398]:
+                    - listitem [ref=e399]:
+                      - text: Three green blocks on the left labeled
+                      - strong [ref=e400]: Multiple Inputs
+                    - listitem [ref=e401]:
+                      - text: Three green blocks on the right labeled
+                      - strong [ref=e402]: Multiple Outputs
+                    - listitem [ref=e403]:
+                      - text: Arrows connecting each of the
+                      - strong [ref=e404]: Multiple Inputs
+                      - text: to each of the
+                      - strong [ref=e405]: Multiple Outputs
+                      - text: ", with intermediate blocks in various shades of green"
+                - listitem [ref=e406]:
+                  - strong [ref=e407]: "Relationships:"
+                  - text: The diagram shows multiple inputs leading to multiple outputs with a series of connected blocks
+                - listitem [ref=e408]:
+                  - strong [ref=e409]: "Concept:"
+                  - text: This diagram illustrates a many-to-many network architecture
+                - listitem [ref=e410]:
+                  - strong [ref=e411]: "📌 Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e412]
+          - generic [ref=e413]:
+            - heading "Markdown • Page 5" [level=3] [ref=e414]
+            - generic [ref=e415]:
+              - paragraph [ref=e416]:
+                - emphasis [ref=e417]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e418]
+              - paragraph [ref=e419]: "U20ITCM09 DEEP LEARNING UNIT III weight across the network remains the same. It calculates state hidden state Hi for every input Xi . By using the following formulas: h= σ(UX + Wh-1 + B) Y = O(Vh + C) Hence Y = f (X, h , W, U, V, B, C) Here S is the State matrix which has element si as the state of the network at timestep i The parameters in the network are W, U, V, c, b which are shared across timestep How does RNN work? The Recurrent Neural Network consists of multiple fixed activation function units, one for each time step. Each unit has an internal state which is called the hidden state of the unit. This hidden state signifies the past knowledge that the network currently holds at a given time step. This hidden state is updated at every time step to signify the change in the knowledge of the network about the past. The hidden state is updated using the following recurrence relation:- The formula for calculating the current state: where, ● ht -> current state ● ht-1 -> previous state ● xt -> input state Formula for applying Activation function(tanh) where, ● whh -> weight at recurrent neuron ● wxh -> weight at input neuron The formula for calculating output: ● Yt -> output ● Why -> weight at output layer IV YR / VIII SEM Page 5"
+              - heading "🖼 Visual Elements (Page 5)" [level=4] [ref=e420]
+              - blockquote [ref=e421]:
+                - paragraph [ref=e422]:
+                  - text: 📌
+                  - strong [ref=e423]: This page contains diagrams/figures on page 5.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e424]
+              - 'heading "Diagram: Recurrent Neural Networks (RNN)" [level=3] [ref=e425]'
+              - list [ref=e426]:
+                - listitem [ref=e427]:
+                  - strong [ref=e428]: "Type of Visual:"
+                  - text: Flowchart/Diagram
+                - listitem [ref=e429]:
+                  - strong [ref=e430]: "Components and Labels:"
+                  - list [ref=e431]:
+                    - listitem [ref=e432]:
+                      - strong [ref=e433]: "Starting Point:"
+                      - text: $S_0$
+                    - listitem [ref=e434]:
+                      - strong [ref=e435]: "RNN Cells:"
+                      - text: Multiple light green boxes labeled "RNN Cell" connected sequentially. Each cell has an input arrow labeled $X_i$ and an output arrow leading to the next cell or a dense layer.
+                    - listitem [ref=e436]:
+                      - strong [ref=e437]: "Inputs:"
+                      - text: $X_0, X_1, X_n$ (input to each RNN cell)
+                    - listitem [ref=e438]:
+                      - strong [ref=e439]: "States:"
+                      - text: $S_0, S_1, S_n$ (state transitions between RNN cells)
+                    - listitem [ref=e440]:
+                      - strong [ref=e441]: "Dense Layers:"
+                      - text: Two black boxes labeled "Dense" at the end of the sequence and a side connection.
+                    - listitem [ref=e442]:
+                      - strong [ref=e443]: "Feedback Loop:"
+                      - text: A loop from the output of an RNN cell back to itself (for the second RNN cell shown).
+                - listitem [ref=e444]:
+                  - strong [ref=e445]: "Relationships:"
+                  - list [ref=e446]:
+                    - listitem [ref=e447]: "Each RNN cell takes an input $X_i$ and the previous state $S_{i-1}$ to produce a new state $S_i$."
+                    - listitem [ref=e448]: The final state $S_n$ (or $S_i$ in the loop) is fed into a dense layer to produce an output.
+                - listitem [ref=e449]:
+                  - strong [ref=e450]: "Concept Illustrated:"
+                  - text: This diagram illustrates the basic architecture and data flow in a Recurrent Neural Network (RNN), showing how RNN cells process sequential data by maintaining a hidden state across time steps.
+                - listitem [ref=e451]:
+                  - strong [ref=e452]: "Study Tip:"
+              - blockquote [ref=e453]:
+                - paragraph [ref=e454]:
+                  - text: 📌
+                  - strong [ref=e455]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e456]
+          - generic [ref=e457]:
+            - heading "Markdown • Page 6" [level=3] [ref=e458]
+            - generic [ref=e459]:
+              - paragraph [ref=e460]:
+                - emphasis [ref=e461]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e462]
+              - paragraph [ref=e463]: U20ITCM09 DEEP LEARNING UNIT III These parameters are updated using Backpropagation. However, since RNN works on sequential data here we use an updated backpropagation which is known as Backpropagation through time. Backpropagation Through Time (BPTT) In RNN the neural network is in an ordered fashion and since in the ordered network each variable is computed one at a time in a specified order like first h1 then h2 then h3 so on. Hence we will apply backpropagation throughout all these hidden time states sequentially. ● L(θ)(loss function) depends on h3 ● h3 in turn depends on h2 and W ● h2 in turn depends on h1 and W ● h1 in turn depends on h0 and W ● where h0 is a constant starting state. For simplicity of this equation, we will apply backpropagation on only one row We already know how to compute this one as it is the same as any simple deep neural network backpropagation. IV YR / VIII SEM Page 6
+              - heading "🖼 Visual Elements (Page 6)" [level=4] [ref=e464]
+              - blockquote [ref=e465]:
+                - paragraph [ref=e466]:
+                  - text: 📌
+                  - strong [ref=e467]: This page contains diagrams/figures on page 6.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e468]
+              - 'heading "Diagram: Backpropagation Through Time (BPTT) Network" [level=3] [ref=e469]'
+              - list [ref=e470]:
+                - listitem [ref=e471]:
+                  - paragraph [ref=e472]:
+                    - strong [ref=e473]: Type
+                    - text: ": This visual is a"
+                    - strong [ref=e474]: flowchart/network diagram
+                    - text: illustrating the Backpropagation Through Time (BPTT) process in a Recurrent Neural Network (RNN).
+                - listitem [ref=e475]:
+                  - paragraph [ref=e476]:
+                    - strong [ref=e477]: Components and Labels
+                    - text: ":"
+                  - list [ref=e478]:
+                    - listitem [ref=e479]:
+                      - strong [ref=e480]: Nodes/Circles
+                      - text: ": Representing hidden states at different time steps: (h_0), (h_1), (h_2), and (h_3)."
+                    - listitem [ref=e481]:
+                      - strong [ref=e482]: Squares
+                      - text: ": Representing inputs at different time steps: (X_1), (X_2), and (X_3)."
+                    - listitem [ref=e483]:
+                      - strong [ref=e484]: Dark Green Square
+                      - text: ": Representing the loss function (L(\\theta))."
+                    - listitem [ref=e485]:
+                      - strong [ref=e486]: Black Circle
+                      - text: ": Representing the weight matrix (W)."
+                    - listitem [ref=e487]:
+                      - strong [ref=e488]: Arrows
+                      - text: ": Indicate the flow of information. Solid arrows show the forward pass, and the dashed arrow represents the backward pass (backpropagation)."
+                    - listitem [ref=e489]:
+                      - strong [ref=e490]: Labels
+                      - text: ":"
+                      - list [ref=e491]:
+                        - listitem [ref=e492]: "(U): Control or input vectors influencing the hidden states."
+                        - listitem [ref=e493]: "(W): Shared weight matrix."
+                - listitem [ref=e494]:
+                  - paragraph [ref=e495]:
+                    - strong [ref=e496]: Relationships
+                    - text: ":"
+                  - list [ref=e497]:
+                    - listitem [ref=e498]: Each hidden state (h_i) is connected to the next hidden state and to the input (X_i).
+                    - listitem [ref=e499]: The loss function (L(\theta)) depends on (h_3).
+                    - listitem [ref=e500]: The backward pass adjusts (W) based on the loss.
+                - listitem [ref=e501]:
+                  - paragraph [ref=e502]:
+                    - strong [ref=e503]: Concept
+                    - text: ": This diagram illustrates how BPTT applies backpropagation to RNNs by unrolling the network through time. It shows the forward pass through the network and the backward pass for updating weights."
+              - blockquote [ref=e504]:
+                - paragraph [ref=e505]:
+                  - text: 📌
+                  - strong [ref=e506]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - heading "No Other Visuals" [level=3] [ref=e507]
+              - paragraph [ref=e508]: The page does not contain any other diagrams, charts, or figures beyond the described BPTT network diagram.
+              - separator [ref=e509]
+          - generic [ref=e510]:
+            - heading "Markdown • Page 7" [level=3] [ref=e511]
+            - generic [ref=e512]:
+              - paragraph [ref=e513]:
+                - emphasis [ref=e514]: "[Direct text extraction]"
+              - paragraph [ref=e515]: "U20ITCM09 DEEP LEARNING UNIT III .However, we will see how to apply backpropagation to this term As we know h3 = σ(Wh2 + b) And In such an ordered network, we can’t compute by simply treating h3 as a constant because as it also depends on W. the total derivative has two parts:"
+              - list [ref=e516]:
+                - listitem [ref=e517]: "Explicit: treating all other inputs as constant"
+                - listitem [ref=e518]: "Implicit: Summing over all indirect paths from h3 to W This algorithm is called backpropagation through time (BPTT) as we backpropagate over all previous time steps Issues of Standard RNNs"
+                - listitem [ref=e519]: "Vanishing Gradient: Text generation, machine translation, and stock market prediction are just a few examples of the time-dependent and sequential data problems that can be modelled with recurrent neural networks. You will discover, though, that the gradient problem makes training RNN difficult."
+                - listitem [ref=e520]: "Exploding Gradient: An Exploding Gradient occurs when a neural network is being trained and the slope tends to grow exponentially rather than decay. Large error gradients that build up during training lead to very large updates to the neural network model weights, which is the source of this issue. Training through RNN"
+                - listitem [ref=e521]: A single-time step of the input is provided to the network.
+                - listitem [ref=e522]: Then calculate its current state using a set of current input and the previous state.
+                - listitem [ref=e523]: The current ht becomes ht-1 for the next time step.
+                - listitem [ref=e524]: One can go as many time steps according to the problem and join the information from all the previous states.
+                - listitem [ref=e525]: Once all the time steps are completed the final current state is used to calculate the output.
+                - listitem [ref=e526]: The output is then compared to the actual output i.e the target output and the error is generated.
+                - listitem [ref=e527]: The error is then back-propagated to the network to update the weights and hence the network (RNN) is trained using Backpropagation through time. Advantages and Disadvantages of Recurrent Neural Network Advantages
+                - listitem [ref=e528]: An RNN remembers each and every piece of information through time. It is useful in time series prediction only because of the feature to remember previous inputs as well. This is called Long Short Term Memory.
+                - listitem [ref=e529]: Recurrent neural networks are even used with convolutional layers to extend the effective pixel neighborhood. Disadvantages
+                - listitem [ref=e530]: Gradient vanishing and exploding problems.
+                - listitem [ref=e531]: Training an RNN is a very difficult task.
+                - listitem [ref=e532]: It cannot process very long sequences if using tanh or relu as an activation function. Applications of Recurrent Neural Network
+                - listitem [ref=e533]: Language Modelling and Generating Text
+                - listitem [ref=e534]: Speech Recognition
+                - listitem [ref=e535]: Machine Translation
+                - listitem [ref=e536]: Image Recognition, Face detection
+                - listitem [ref=e537]: Time series Forecasting IV YR / VIII SEM Page 7
+              - separator [ref=e538]
+          - generic [ref=e539]:
+            - heading "Markdown • Page 8" [level=3] [ref=e540]
+            - generic [ref=e541]:
+              - paragraph [ref=e542]:
+                - emphasis [ref=e543]: "[Direct text extraction]"
+              - paragraph [ref=e544]: U20ITCM09 DEEP LEARNING UNIT III Variation Of Recurrent Neural Network (RNN) To overcome the problems like vanishing gradient and exploding gradient descent several new advanced versions of RNNs are formed some of these are as;
+              - list [ref=e545]:
+                - listitem [ref=e546]: Bidirectional Neural Network (BiNN)
+                - listitem [ref=e547]: "Long Short-Term Memory (LSTM) Bidirectional Neural Network (BiNN) A BiNN is a variation of a Recurrent Neural Network in which the input information flows in both direction and then the output of both direction are combined to produce the input. BiNN is useful in situations when the context of the input is more important such as Nlp tasks and Time-series analysis problems. Long Short-Term Memory (LSTM) Long Short-Term Memory works on the read-write-and-forget principle where given the input information network reads and writes the most useful information from the data and it forgets about the information which is not important in predicting the output. For doing this three new gates are introduced in the RNN. In this way, only the selected information is passed through the network. Long Short Term Memory Long Short-Term Memory is an improved version of recurrent neural network designed by Hochreiter & Schmidhuber. LSTM is well-suited for sequence prediction tasks and excels in capturing long-term dependencies. Its applications extend to tasks involving time series and sequences. LSTM’s strength lies in its ability to grasp the order dependence crucial for solving intricate problems, such as machine translation and speech recognition. The article provides an in-depth introduction to LSTM, covering the LSTM model, architecture, working principles, and the critical role they play in various applications. What is LSTM? A traditional RNN has a single hidden state that is passed through time, which can make it difficult for the network to learn long-term dependencies. LSTMs address this problem by introducing a memory cell, which is a container that can hold information for an extended period. LSTM networks are capable of learning long-term dependencies in sequential data, which makes them well-suited for tasks such as language translation, speech recognition, and time series forecasting. LSTMs can also be used in combination with other neural network architectures, such as Convolutional Neural Networks (CNNs) for image and video analysis. The memory cell is controlled by three gates: the input gate, the forget gate, and the output gate. These gates decide what information to add to, remove from, and output from the memory cell. The input gate controls what information is added to the memory cell. The forget gate controls what information is removed from the memory cell. And the output gate controls what information is output from the memory cell. This allows LSTM networks to selectively retain or discard information as it flows through the network, which allows them to learn long-term dependencies. Bidirectional LSTM Bidirectional LSTM (Bi LSTM/ BLSTM) is recurrent neural network (RNN) that is able to process sequential data in both forward and backward directions. This allows Bi LSTM to learn longer-range dependencies in sequential data than traditional LSTMs, which can only process sequential data in one direction. ● Bi LSTMs are made up of two LSTM networks, one that processes the input sequence in the forward direction and one that processes the input sequence in the backward direction. The outputs of the two LSTM networks are then combined to produce the final output. IV YR / VIII SEM Page 8"
+              - separator [ref=e548]
+          - generic [ref=e549]:
+            - heading "Markdown • Page 9" [level=3] [ref=e550]
+            - generic [ref=e551]:
+              - paragraph [ref=e552]:
+                - emphasis [ref=e553]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e554]
+              - paragraph [ref=e555]: "U20ITCM09 DEEP LEARNING UNIT III ● Bi LSTM have been shown to achieve state-of-the-art results on a wide variety of tasks, including machine translation, speech recognition, and text summarization. LSTMs can be stacked to create deep LSTM networks, which can learn even more complex patterns in sequential data. Each LSTM layer captures different levels of abstraction and temporal dependencies in the input data. Architecture and Working of LSTM LSTM architecture has a chain structure that contains four neural networks and different memory blocks called cells. nformation is retained by the cells and the memory manipulations are done by the gates. There are three gates – Forget Gate The information that is no longer useful in the cell state is removed with the forget gate. Two inputs xt (input at the particular time) and ht-1 (previous cell output) are fed to the gate and multiplied with weight matrices followed by the addition of bias. The resultant is passed through an activation function which gives a binary output. If for a particular cell state the output is 0, the piece of information is forgotten and for output 1, the information is retained for future use. The equation for the forget gate is: f_t = σ(W_f · [h_{t-1}, x_t] + b_f) where: ● W_f represents the weight matrix associated with the forget gate. ● [h_t-1, x_t] denotes the concatenation of the current input and the previous hidden state. ● b_f is the bias with the forget gate. ● σ is the sigmoid activation function. IV YR / VIII SEM Page 9"
+              - heading "🖼 Visual Elements (Page 9)" [level=4] [ref=e556]
+              - blockquote [ref=e557]:
+                - paragraph [ref=e558]:
+                  - text: 📌
+                  - strong [ref=e559]: This page contains diagrams/figures on page 9.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=3] [ref=e560]
+              - 'heading "Diagram: LSTM Architecture" [level=4] [ref=e561]'
+              - list [ref=e562]:
+                - listitem [ref=e563]:
+                  - strong [ref=e564]: "Type of Visual:"
+                  - text: Flowchart/Block Diagram
+                - listitem [ref=e565]:
+                  - strong [ref=e566]: "Components and Labels:"
+                  - list [ref=e567]:
+                    - listitem [ref=e568]: A green-outlined rectangle encompassing the entire structure
+                    - listitem [ref=e569]:
+                      - text: "Four neural network blocks labeled with activation functions:"
+                      - list [ref=e570]:
+                        - listitem [ref=e571]: $\sigma$ (sigma) for three blocks
+                        - listitem [ref=e572]: $tanh$ (hyperbolic tangent) for two blocks
+                    - listitem [ref=e573]:
+                      - text: "Circles with:"
+                      - list [ref=e574]:
+                        - listitem [ref=e575]: $X$ (input or previous hidden state)
+                        - listitem [ref=e576]: $+$ (addition)
+                    - listitem [ref=e577]: Arrows indicating flow and operations between blocks
+                    - listitem [ref=e578]: A feedback loop from the output back to the input within the green rectangle
+                - listitem [ref=e579]:
+                  - strong [ref=e580]: "Relationships:"
+                  - list [ref=e581]:
+                    - listitem [ref=e582]: Inputs and previous hidden states flow into the blocks
+                    - listitem [ref=e583]: Outputs from blocks are combined through addition
+                    - listitem [ref=e584]: Feedback loop allows for recurrent processing
+                - listitem [ref=e585]:
+                  - strong [ref=e586]: "Concept:"
+                  - text: This diagram illustrates the architecture of a Long Short-Term Memory (LSTM) cell, specifically showing how information is processed and retained through gates and activation functions.
+              - blockquote [ref=e587]:
+                - paragraph [ref=e588]:
+                  - text: 📌
+                  - strong [ref=e589]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e590]
+          - generic [ref=e591]:
+            - heading "Markdown • Page 10" [level=3] [ref=e592]
+            - generic [ref=e593]:
+              - paragraph [ref=e594]:
+                - emphasis [ref=e595]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e596]
+              - paragraph [ref=e597]: "U20ITCM09 DEEP LEARNING UNIT III Input gate The addition of useful information to the cell state is done by the input gate. First, the information is regulated using the sigmoid function and filter the values to be remembered similar to the forget gate using inputs ht-1 and xt. . Then, a vector is created using tanh function that gives an output from -1 to +1, which contains all the possible values from ht-1 and xt. At last, the values of the vector and the regulated values are multiplied to obtain the useful information. The equation for the input gate is: i_t = σ(W_i · [h_{t-1}, x_t] + b_i) Ĉ_t = tanh(W_c · [h_{t-1}, x_t] + b_c) C_t = f_t ⊙ C_{t-1} + i_t ⊙ Ĉ_t where ● ⊙ denotes element-wise multiplication ● tanh is tanh activation function Page 10 IV YR / VIII SEM"
+              - heading "🖼 Visual Elements (Page 10)" [level=4] [ref=e598]
+              - blockquote [ref=e599]:
+                - paragraph [ref=e600]:
+                  - text: 📌
+                  - strong [ref=e601]: This page contains diagrams/figures on page 10.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=3] [ref=e602]
+              - heading "Diagram" [level=4] [ref=e603]
+              - paragraph [ref=e604]: The page contains a single diagram.
+              - list [ref=e605]:
+                - listitem [ref=e606]:
+                  - strong [ref=e607]: "Type of Visual:"
+                  - text: The visual is a
+                  - strong [ref=e608]: flowchart
+                  - text: or a
+                  - strong [ref=e609]: network diagram
+                  - text: ", specifically illustrating the architecture of a component in a Recurrent Neural Network (RNN), likely an LSTM (Long Short-Term Memory) network."
+                - listitem [ref=e610]:
+                  - strong [ref=e611]: "Components, Labels, and Relationships:"
+                  - list [ref=e612]:
+                    - listitem [ref=e613]:
+                      - text: "The diagram shows a simple neural network architecture with the following components:"
+                      - list [ref=e614]:
+                        - listitem [ref=e615]: A green vertical line on the left side, possibly representing a boundary or a reference point.
+                        - listitem [ref=e616]: A circle labeled "X" at the top, representing the input or a specific node.
+                        - listitem [ref=e617]: A rectangle labeled with "σ" (sigma), which is a common symbol for a sigmoid activation function.
+                        - listitem [ref=e618]: "Two arrows pointing to the sigma block: one from the left labeled \"h<sub>t-1</sub>\" and one from the bottom labeled \"X<sub>t</sub>\"."
+                        - listitem [ref=e619]: An arrow pointing upwards from the sigma block to the "X" circle labeled "f<sub>t</sub>".
+                - listitem [ref=e620]:
+                  - strong [ref=e621]: "Concept Illustrated:"
+                  - text: This diagram illustrates how the forget gate in an LSTM network processes inputs to determine which information to discard from the cell state.
+                - listitem [ref=e622]:
+                  - strong [ref=e623]: "Data/Trends:"
+                  - text: This diagram does not contain any data or trends. It is a structural representation rather than a data-driven visualization.
+              - blockquote [ref=e624]:
+                - paragraph [ref=e625]:
+                  - text: 📌
+                  - strong [ref=e626]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention. Try to recreate it and understand the flow of information through the gates in an LSTM network.
+              - separator [ref=e627]
+          - generic [ref=e628]:
+            - heading "Markdown • Page 11" [level=3] [ref=e629]
+            - generic [ref=e630]:
+              - paragraph [ref=e631]:
+                - emphasis [ref=e632]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e633]
+              - paragraph [ref=e634]: "U20ITCM09 DEEP LEARNING UNIT III Output gate The task of extracting useful information from the current cell state to be presented as output is done by the output gate. First, a vector is generated by applying tanh function on the cell. Then, the information is regulated using the sigmoid function and filter by the values to be remembered using inputs ht-1 and xt. At last, the values of the vector and the regulated values are multiplied to be sent as an output and input to the next cell. The equation for the output gate is: o_t = σ(W_o · [h_{t-1}, x_t] + b_o) The advantages of LSTM (Long-Short Term Memory) are as follows: ● Long-term dependencies can be captured by LSTM networks. They have a memory cell that is capable of long-term information storage. ● In traditional RNNs, there is a problem of vanishing and exploding gradients when models are trained over long sequences. By using a gating mechanism that selectively recalls or forgets information, LSTM networks deal with this problem. The disadvantages of LSTM (Long-Short Term Memory) are as follows: IV YR / VIII SEM Page 11"
+              - heading "🖼 Visual Elements (Page 11)" [level=4] [ref=e635]
+              - blockquote [ref=e636]:
+                - paragraph [ref=e637]:
+                  - text: 📌
+                  - strong [ref=e638]: This page contains diagrams/figures on page 11.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e639]
+              - 'heading "Diagram 1: LSTM (Long-Short Term Memory) Network Architecture" [level=3] [ref=e640]'
+              - list [ref=e641]:
+                - listitem [ref=e642]:
+                  - strong [ref=e643]: "Type:"
+                  - text: Flowchart/Block Diagram
+                - listitem [ref=e644]:
+                  - strong [ref=e645]: "Components and Labels:"
+                  - list [ref=e646]:
+                    - listitem [ref=e647]: A green-outlined rectangle representing the LSTM cell
+                    - listitem [ref=e648]: A red-outlined rectangle within the green rectangle, labeled as "Input gate"
+                    - listitem [ref=e649]:
+                      - text: "Various nodes and gates:"
+                      - list [ref=e650]:
+                        - listitem [ref=e651]: Input gate
+                        - listitem [ref=e652]: Output gate
+                        - listitem [ref=e653]: tanh and sigmoid (σ) functions
+                    - listitem [ref=e654]: Arrows indicating the flow of information between components
+                    - listitem [ref=e655]: Mathematical symbols (e.g., X, +, tanh, σ)
+                - listitem [ref=e656]:
+                  - strong [ref=e657]: "Relationships:"
+                  - list [ref=e658]:
+                    - listitem [ref=e659]: The input gate is connected to the LSTM cell and receives input from the current time step (Xt) and previous hidden state (ht-1)
+                    - listitem [ref=e660]: The output gate is connected to the LSTM cell and generates output based on the current cell state and hidden state
+                - listitem [ref=e661]:
+                  - strong [ref=e662]: "Concept:"
+                  - text: This diagram illustrates the architecture of an LSTM network, specifically the components and flow of information within an LSTM cell.
+              - blockquote [ref=e663]:
+                - paragraph [ref=e664]:
+                  - text: 📌
+                  - strong [ref=e665]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - 'heading "Diagram 2: Output Gate Mechanism" [level=3] [ref=e666]'
+              - list [ref=e667]:
+                - listitem [ref=e668]:
+                  - strong [ref=e669]: "Type:"
+                  - text: Flowchart/Block Diagram
+                - listitem [ref=e670]:
+                  - strong [ref=e671]: "Components and Labels:"
+                  - list [ref=e672]:
+                    - listitem [ref=e673]: A green-outlined rectangle representing the output gate
+                    - listitem [ref=e674]:
+                      - text: "Nodes and functions:"
+                      - list [ref=e675]:
+                        - listitem [ref=e676]: tanh function
+                        - listitem [ref=e677]: Multiplication (X) symbol
+                    - listitem [ref=e678]: Arrows indicating the flow of information
+                - listitem [ref=e679]:
+                  - strong [ref=e680]: "Relationships:"
+                  - list [ref=e681]:
+                    - listitem [ref=e682]: The output gate receives input from the current cell state and hidden state
+                    - listitem [ref=e683]: The output gate generates output based on the current cell state and hidden state
+                - listitem [ref=e684]:
+                  - strong [ref=e685]: "Concept:"
+                  - text: This diagram illustrates the mechanism of the output gate in an LSTM network.
+              - blockquote [ref=e686]:
+                - paragraph [ref=e687]:
+                  - text: 📌
+                  - strong [ref=e688]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e689]
+          - generic [ref=e690]:
+            - heading "Markdown • Page 12" [level=3] [ref=e691]
+            - generic [ref=e692]:
+              - paragraph [ref=e693]:
+                - emphasis [ref=e694]: "[Direct text extraction]"
+              - paragraph [ref=e695]: "U20ITCM09 DEEP LEARNING UNIT III ● Compared to simpler architectures like feed-forward neural networks LSTM networks are computationally more expensive. This can limit their scalability for large-scale datasets or constrained environments. ● Training LSTM networks can be more time-consuming compared to simpler models due to their computational complexity. So training LSTMs often requires more data and longer training times to achieve high performance. Applications of LSTM Some of the famous applications of LSTM includes: ● Language Modeling: LSTMs have been used for natural language processing tasks such as language modeling, machine translation, and text summarization. They can be trained to generate coherent and grammatically correct sentences by learning the dependencies between words in a sentence. ● Speech Recognition: LSTMs have been used for speech recognition tasks such as transcribing speech to text and recognizing spoken commands. They can be trained to recognize patterns in speech and match them to the corresponding text. ● Time Series Forecasting: LSTMs have been used for time series forecasting tasks such as predicting stock prices, weather, and energy consumption. They can learn patterns in time series data and use them to make predictions about future events. Hyperparameters in Deep Learning Introduction Deep learning, a subset of machine learning, has revolutionized various fields, from natural language processing to image recognition. At the heart of deep learning’s success is the nuanced and often complex process of training deep neural networks. This training is heavily influenced by hyperparameters, adjustable settings that dictate the model’s learning process. Unlike parameters, which the model learns through training, hyperparameters are preset by the practitioner and remain constant during the training phase. Understanding and optimizing these hyperparameters is crucial for building effective deep learning models. IV YR / VIII SEM Page 12"
+              - separator [ref=e696]
+          - generic [ref=e697]:
+            - heading "Markdown • Page 13" [level=3] [ref=e698]
+            - generic [ref=e699]:
+              - paragraph [ref=e700]:
+                - emphasis [ref=e701]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e702]
+              - paragraph [ref=e703]: "U20ITCM09 DEEP LEARNING UNIT III The Importance of Hyperparameters Hyperparameters play a pivotal role in the performance of deep learning models. They impact how quickly a model learns, its ability to generalize from training data to unseen data, and its overall performance. The right set of hyperparameters can mean the difference between a mediocre model and a highly accurate one. However, determining the optimal hyperparameters is not straightforward. It requires a deep understanding of both the theoretical aspects of deep learning and practical experience. Key Hyperparameters in Deep Learning Hyperparameters in deep learning are adjustable parameters that you choose to train a model that govern the training process itself. Unlike model parameters, which are learned during training, hyperparameters are set prior to the training process and remain constant during training. They can significantly influence the performance of your trained models. Here are some of the most common hyperparameters in deep learning:"
+              - list [ref=e704]:
+                - listitem [ref=e705]: "Learning Rate: Perhaps the most critical hyperparameter, the learning rate determines the step size at each iteration while moving toward a minimum of the loss function."
+                - listitem [ref=e706]: "Number of Epochs: This is the number of times the learning algorithm will work through the entire training dataset."
+                - listitem [ref=e707]: "Batch Size: It refers to the number of training samples used in one iteration. IV YR / VIII SEM Page 13"
+              - heading "🖼 Visual Elements (Page 13)" [level=4] [ref=e708]
+              - blockquote [ref=e709]:
+                - paragraph [ref=e710]:
+                  - text: 📌
+                  - strong [ref=e711]: This page contains diagrams/figures on page 13.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=3] [ref=e712]
+              - 'heading "1. Diagram: Labeled Photos and Neural Network Layers" [level=4] [ref=e713]'
+              - list [ref=e714]:
+                - listitem [ref=e715]:
+                  - paragraph [ref=e716]:
+                    - strong [ref=e717]: "Type of Visual:"
+                    - text: Diagram/Illustration
+                - listitem [ref=e718]:
+                  - paragraph [ref=e719]:
+                    - strong [ref=e720]: "Components and Labels:"
+                  - list [ref=e721]:
+                    - listitem [ref=e722]:
+                      - text: "Two labeled photos:"
+                      - list [ref=e723]:
+                        - listitem [ref=e724]:
+                          - strong [ref=e725]: CAT
+                          - text: ": A picture of a cat."
+                        - listitem [ref=e726]:
+                          - strong [ref=e727]: DOG
+                          - text: ": A picture of a dog."
+                    - listitem [ref=e728]: Four sets of blue-outlined layers with black dots (representing neural network layers or feature extractors).
+                    - listitem [ref=e729]:
+                      - strong [ref=e730]: OUTPUT
+                      - text: ": A layer on the far right with black dots, representing the output of the model."
+                - listitem [ref=e731]:
+                  - paragraph [ref=e732]:
+                    - strong [ref=e733]: "Relationships:"
+                  - list [ref=e734]:
+                    - listitem [ref=e735]: The labeled photos (CAT and DOG) are shown feeding into the first set of neural network layers.
+                    - listitem [ref=e736]: Each layer has multiple representations (stacked on top of each other), suggesting multiple images or examples being processed simultaneously.
+                    - listitem [ref=e737]: The layers progressively transform the input images into a final output.
+                - listitem [ref=e738]:
+                  - paragraph [ref=e739]:
+                    - strong [ref=e740]: "Concept Illustrated:"
+                  - list [ref=e741]:
+                    - listitem [ref=e742]: This diagram illustrates how a deep learning model processes labeled input data (images of a cat and dog) through multiple layers to produce an output. It highlights the concept of feature extraction and transformation in deep learning.
+              - blockquote [ref=e743]:
+                - paragraph [ref=e744]:
+                  - text: 📌
+                  - strong [ref=e745]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - 'heading "2. Logo: Scaler Topics" [level=4] [ref=e746]'
+              - list [ref=e747]:
+                - listitem [ref=e748]:
+                  - paragraph [ref=e749]:
+                    - strong [ref=e750]: "Type of Visual:"
+                    - text: Logo
+                - listitem [ref=e751]:
+                  - paragraph [ref=e752]:
+                    - strong [ref=e753]: "Components and Labels:"
+                  - list [ref=e754]:
+                    - listitem [ref=e755]:
+                      - strong [ref=e756]: Scaler Topics
+                      - text: ": The logo includes text with \"SCALER\" in black and \"Topics\" in pink."
+                - listitem [ref=e757]:
+                  - paragraph [ref=e758]:
+                    - strong [ref=e759]: "Relationships:"
+                  - list [ref=e760]:
+                    - listitem [ref=e761]: The logo is placed centrally at the bottom of the page.
+                - listitem [ref=e762]:
+                  - paragraph [ref=e763]:
+                    - strong [ref=e764]: "Concept Illustrated:"
+                  - list [ref=e765]:
+                    - listitem [ref=e766]: This logo likely represents the branding of the study material or educational resource.
+              - paragraph [ref=e767]: No other visual elements (diagrams, charts, figures) are present on the page.
+              - separator [ref=e768]
+          - generic [ref=e769]:
+            - heading "Markdown • Page 14" [level=3] [ref=e770]
+            - generic [ref=e771]:
+              - paragraph [ref=e772]:
+                - emphasis [ref=e773]: "[Direct text extraction]"
+              - paragraph [ref=e774]: "U20ITCM09 DEEP LEARNING UNIT III 4. Number of Layers and Neurons in Each Layer: In neural networks, deciding on the number of layers and the number of neurons in each layer can significantly impact the model’s performance. 5. Activation Function: Functions like ReLU, Sigmoid, and Tanh, determine the output of a neural network node given an input or set of inputs. 6. Optimizer: Algorithms like SGD, Adam, and RMSprop are used to change the attributes of the neural network such as weights and learning rate to reduce the losses. 7. Dropout Rate: Used in dropout layers to prevent overfitting, it determines the fraction of the output units to drop at each training stage. 8. Weight Initialization: This defines the method to set the initial random weights of Keras layers. 9. Momentum: Often used in optimization algorithms, it helps to accelerate gradient vectors in the right directions, thus leading to faster converging. 10. Regularization Techniques: Techniques like L1 and L2 regularization to prevent overfitting by penalizing complex models. The choice of hyperparameters can vary widely depending on the specific problem and data set. Selecting the right set of hyperparameters is more of an art than a science, often involving a fair bit of trial and error or more systematic approaches like grid search or random search. Challenges in Hyperparameter Tuning Choosing the right hyperparameters is often challenging. It’s a multidimensional problem where each hyperparameter can interact with others in unpredictable ways. Manual tuning is time-consuming and requires extensive experience. Therefore, automated methods like grid search, random search, and Bayesian optimization are increasingly popular. These methods systematically explore the hyperparameter space to find the most effective combination. Implementation of RNN and LSTM: Introduction In NLP we have seen some NLP tasks using traditional neural networks, like text classification, sentiment analysis, and we did it with satisfactory results. but this wasn’t enough, we faced certain problems with traditional neural networks as given below. ● The prediction was highly dependent on the specific words. ● If you change any word with it synonyms result gets deviated.3. If you write like, affection instead of love, the result gets deviated.4. The prediction was not dependent on the sequence of words. IV YR / VIII SEM Page 14"
+              - separator [ref=e775]
+          - generic [ref=e776]:
+            - heading "Markdown • Page 15" [level=3] [ref=e777]
+            - generic [ref=e778]:
+              - paragraph [ref=e779]:
+                - emphasis [ref=e780]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e781]
+              - paragraph [ref=e782]: "U20ITCM09 DEEP LEARNING UNIT III To fix this problem we came up with the idea of Word Embedding and a model which can store the sequence of the words and depending on the sequence it can generate results. ie “I love playing Ball” and “I do not love playing Ball” In both the sentence we see “love” hence our vanilla model can classify it as a positive sentiment but as you see its negative sentiment, here sequence of words matters a lot. So far we had no model which can consider the sequence of words in a sentence for the prediction. RNN Model ( Recurrent Neural Networks) To solve this problem Recurrent neural network came into the picture. which solves this problem by using hidden layers. and hidden layers are the main features of a recurrent neural network. hidden layers help RNN to remember the sequence of words (data) and use the sequence pattern for the prediction. The idea of RNN has developed a lot. it has been used for speech recognition and various NLP tasks where the sequence of words matters. RNN takes input as time series (sequence of words ), we can say RNN acts like a memory that remembers the sequence. Use cases of RNN Speech, text recognition & sentiment classificationMusic synthesisImage captioningChatbots & NLP(natural language processing)Machine Translation — Language translationStock predictionsFinding and blocking abusive words in a speech or text Does RNN sound so powerful? No ! there is a big problem. Problems with RNN : Exploding and vanishing gradient problems during backpropagation. Gradients are those values which to update neural networks weights. In other words, we can say that Gradient carries information. Vanishing gradient is a big problem in deep neural networks. it vanishes or explodes quickly in earlier layers and this makes RNN unable to hold information of longer sequence. and thus RNN becomes short-term memory. Page 15 IV YR / VIII SEM"
+              - heading "🖼 Visual Elements (Page 15)" [level=4] [ref=e783]
+              - blockquote [ref=e784]:
+                - paragraph [ref=e785]:
+                  - text: 📌
+                  - strong [ref=e786]: This page contains diagrams/figures on page 15.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=3] [ref=e787]
+              - heading "1. RNN Model (Recurrent Neural Networks) Diagram" [level=4] [ref=e788]
+              - list [ref=e789]:
+                - listitem [ref=e790]:
+                  - strong [ref=e791]: "Type of Visual:"
+                  - text: Diagram/Flowchart
+                - listitem [ref=e792]:
+                  - strong [ref=e793]: "Components, Labels, and Relationships:"
+                  - list [ref=e794]:
+                    - listitem [ref=e795]: The diagram consists of several identical blocks connected sequentially.
+                    - listitem [ref=e796]:
+                      - text: "Each block contains:"
+                      - list [ref=e797]:
+                        - listitem [ref=e798]:
+                          - text: A small orange rectangle labeled
+                          - code [ref=e799]: "`σ`"
+                          - text: (sigma) inside a blue square.
+                        - listitem [ref=e800]: Inputs and outputs are labeled and connected with arrows.
+                        - listitem [ref=e801]:
+                          - text: "Specific labels:"
+                          - list [ref=e802]:
+                            - listitem [ref=e803]:
+                              - strong [ref=e804]: "Inputs/Outputs:"
+                              - list [ref=e805]:
+                                - listitem [ref=e806]: $x_1$, $x_2$, $x_3$, ..., $x_k$
+                                - listitem [ref=e807]: $h_1$, $h_2$, $h_3$, ..., $h_T$
+                                - listitem [ref=e808]: "$c_0$, $c_1$, $c_2$, $c_3$, ..., $c_{k-1}$"
+                            - listitem [ref=e809]:
+                              - strong [ref=e810]: "Weights:"
+                              - list [ref=e811]:
+                                - listitem [ref=e812]: "$W_{in}$ and $W_{rec}$ (recurrent weight)"
+                            - listitem [ref=e813]:
+                              - strong [ref=e814]: "Internal:"
+                              - list [ref=e815]:
+                                - listitem [ref=e816]: $\sigma$ (activation function)
+                - listitem [ref=e817]:
+                  - strong [ref=e818]: "Concept Illustrated:"
+                  - text: This diagram illustrates a Recurrent Neural Network (RNN) model, which is designed to handle sequential data by maintaining a 'memory' of previous inputs through the use of hidden states ($h$).
+                - listitem [ref=e819]:
+                  - strong [ref=e820]: "Study Tip:"
+                  - blockquote [ref=e821]:
+                    - paragraph [ref=e822]:
+                      - text: 📌
+                      - strong [ref=e823]: "Study tip:"
+                      - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e824]
+          - generic [ref=e825]:
+            - heading "Markdown • Page 16" [level=3] [ref=e826]
+            - generic [ref=e827]:
+              - paragraph [ref=e828]:
+                - emphasis [ref=e829]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e830]
+              - paragraph [ref=e831]: U20ITCM09 DEEP LEARNING UNIT III If we apply RNN for a paragraph RNN may leave out necessary information due to gradient problems and not be able to carry information from the initial time step to later time steps. To solve this problem LSTM, GRU came into the picture. How do LSTM, GRU solve this problem? I highly encourage you to read Colah’s blog for in-depth knowledge of LSTM. The reason for exploding gradient was the capturing of relevant and irrelevant information. a model which can decide what information from a paragraph and relevant and remember only relevant information and throw all the irrelevant information This is achieved by using gates. the LSTM ( Long -short-term memory ) and GRU ( Gated Recurrent Unit ) have gates as an internal mechanism, which control what information to keep and what information to throw out. By doing this LSTM, GRU networks solve the exploding and vanishing gradient problem. Almost each and every SOTA ( state of the art) model based on RNN follows LSTM or GRU networks for prediction. LSTMs /GRUs are implemented in speech recognition, text generation, caption generation, etc. LSTM networks Step by Step Every LSTM network basically contains three gates to control the flow of information and cells to hold information. The Cell States carries the information from initial to later time steps without getting vanished. IV YR / VIII SEM Page 16
+              - heading "🖼 Visual Elements (Page 16)" [level=4] [ref=e832]
+              - blockquote [ref=e833]:
+                - paragraph [ref=e834]:
+                  - text: 📌
+                  - strong [ref=e835]: This page contains diagrams/figures on page 16.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e836]
+              - 'heading "Diagram: LSTM CELL" [level=3] [ref=e837]'
+              - list [ref=e838]:
+                - listitem [ref=e839]:
+                  - strong [ref=e840]: "Type:"
+                  - text: The visual is a flowchart diagram illustrating the internal structure of an LSTM (Long Short-Term Memory) cell.
+                - listitem [ref=e841]:
+                  - strong [ref=e842]: "Components, Labels, and Relationships:"
+                  - list [ref=e843]:
+                    - listitem [ref=e844]: The diagram is a green rectangle labeled "LSTM CELL" at the bottom.
+                    - listitem [ref=e845]:
+                      - text: "It contains several components:"
+                      - list [ref=e846]:
+                        - listitem [ref=e847]:
+                          - strong [ref=e848]: "Cell State:"
+                          - text: "Represented by a vertical green circle with $C_{t-1}$ at the top and $C_t$ at the bottom."
+                        - listitem [ref=e849]:
+                          - strong [ref=e850]: "Gates:"
+                          - text: "Three gates are shown, each represented by a pink rectangle with a label:"
+                          - list [ref=e851]:
+                            - listitem [ref=e852]:
+                              - strong [ref=e853]: "Forget Gate:"
+                              - text: $f_t$ with $sig$ (sigmoid function) and an arrow pointing to the Cell State.
+                            - listitem [ref=e854]:
+                              - strong [ref=e855]: "Input Gate:"
+                              - text: $i_t$ with $sig$ and an arrow pointing to the Cell State.
+                            - listitem [ref=e856]:
+                              - strong [ref=e857]: "Output Gate:"
+                              - text: $o_t$ with $sig$ and an arrow pointing to the output $h_t$.
+                        - listitem [ref=e858]:
+                          - text: "** tanh functions:** Two $tanh$ functions are present:"
+                          - list [ref=e859]:
+                            - listitem [ref=e860]: One is connected to the Input Gate and has an arrow pointing to the Cell State.
+                            - listitem [ref=e861]: Another $tanh$ function is connected to the output of the Cell State and the Output Gate.
+                        - listitem [ref=e862]:
+                          - strong [ref=e863]: "Arrows and Connections:"
+                          - list [ref=e864]:
+                            - listitem [ref=e865]: The diagram shows various arrows representing the flow of information between gates, the Cell State, and the output.
+                            - listitem [ref=e866]: "The inputs $h_{t-1}$ and $x_t$ are shown at the bottom left, and the output $h_t$ is shown at the bottom right."
+                - listitem [ref=e867]:
+                  - strong [ref=e868]: "Concept:"
+                  - text: This diagram illustrates the internal workings of an LSTM cell, which is a type of Recurrent Neural Network (RNN) component used to handle the vanishing gradient problem in traditional RNNs. It shows how the cell state and gates interact to control the flow of information.
+                - listitem [ref=e869]:
+                  - strong [ref=e870]: "Data:"
+                  - text: There is no data presented in this diagram.
+              - blockquote [ref=e871]:
+                - paragraph [ref=e872]:
+                  - text: 📌
+                  - strong [ref=e873]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e874]
+          - generic [ref=e875]:
+            - heading "Markdown • Page 17" [level=3] [ref=e876]
+            - generic [ref=e877]:
+              - paragraph [ref=e878]:
+                - emphasis [ref=e879]: "[Direct text extraction]"
+              - paragraph [ref=e880]: U20ITCM09 DEEP LEARNING UNIT III Gates Gates make use of sigmoid activation or you can say tanh activation. values ranges in tanh activation are 0 -1.
+              - list [ref=e881]:
+                - listitem [ref=e882]: Forget Gate
+                - listitem [ref=e883]: Input Gate
+                - listitem [ref=e884]: "Output Gate Let’s see these gates in detail: Forget Gate This gate decides what information should be carried out forward or what information should be ignored. Information from previous hidden states and the current state information passes through the sigmoid function. Values that come out from sigmoid are always between 0 and 1. if the value is closer to 1 means information should proceed forward and if value closer to 0 means information should be ignored. Input Gate After deciding the relevant information, the information goes to the input gate, Input gate passes the relevant information, and this leads to updating the cell states. simply saving updating the weight. Input gate adds the new relevant information to the existing information by updating cell states. Output Gate After the information is passed through the input gate, now the output gate comes into play. Output gate generates the next hidden states. and cell states are carried over the next time step. EMBEDDINGS AND WORD2VEC: What is Word Embedding? Word Embedding is a language modeling technique for mapping words to vectors of real numbers. It represents words or phrases in vector space with several dimensions. Word embeddings can be generated using various methods like neural networks, co-occurrence matrices, probabilistic models, etc. Word2Vec consists of models for generating word embedding. These models are shallow two-layer neural networks having one input layer, one hidden layer, and one output layer. What is Word2Vec? Word2Vec is a widely used method in natural language processing (NLP) that allows words to be represented as vectors in a continuous vector space. Word2Vec is an effort to map words to high-dimensional vectors to capture the semantic relationships between words, developed by Page 17 IV YR / VIII SEM"
+              - separator [ref=e885]
+          - generic [ref=e886]:
+            - heading "Markdown • Page 18" [level=3] [ref=e887]
+            - generic [ref=e888]:
+              - paragraph [ref=e889]:
+                - emphasis [ref=e890]: "[Text + VLM for visuals]"
+              - heading "📝 Extracted Text" [level=4] [ref=e891]
+              - paragraph [ref=e892]: "U20ITCM09 DEEP LEARNING UNIT III researchers at Google. Words with similar meanings should have similar vector representations, according to the main principle of Word2Vec. Word2Vec utilizes two architectures: ● CBOW (Continuous Bag of Words): The CBOW model predicts the current word given context words within a specific window. The input layer contains the context words and the output layer contains the current word. The hidden layer contains the dimensions we want to represent the current word present at the output layer. ● Skip Gram : Skip gram predicts the surrounding context words within specific window given current word. The input layer contains the current word and the output layer contains the context words. The hidden layer contains the number of dimensions in which we want to represent current word present at the input layer. The basic idea of word embedding is words that occur in similar context tend to be closer to each other in vector space. For generating word vectors in Python, modules needed are nltk and gensim. Run these commands in terminal to install nltk and gensim: pip install nltk pip install gensim Page 18 IV YR / VIII SEM"
+              - heading "🖼 Visual Elements (Page 18)" [level=4] [ref=e893]
+              - blockquote [ref=e894]:
+                - paragraph [ref=e895]:
+                  - text: 📌
+                  - strong [ref=e896]: This page contains diagrams/figures on page 18.
+                  - text: "VLM description:"
+              - heading "Visual Elements Description" [level=2] [ref=e897]
+              - 'heading "Diagram 1: CBOW (Continuous Bag of Words) Model" [level=3] [ref=e898]'
+              - list [ref=e899]:
+                - listitem [ref=e900]:
+                  - strong [ref=e901]: "Type:"
+                  - text: Neural network diagram
+                - listitem [ref=e902]:
+                  - strong [ref=e903]: "Components and Labels:"
+                  - list [ref=e904]:
+                    - listitem [ref=e905]:
+                      - text: Input layer with four green boxes labeled
+                      - code [ref=e906]: "`w(t-2)`"
+                      - text: ","
+                      - code [ref=e907]: "`w(t-1)`"
+                      - text: ","
+                      - code [ref=e908]: "`w(t+1)`"
+                      - text: ", and"
+                      - code [ref=e909]: "`w(t+2)`"
+                      - text: .
+                    - listitem [ref=e910]:
+                      - text: A
+                      - code [ref=e911]: "`SUM`"
+                      - text: green box.
+                    - listitem [ref=e912]: A green box in the projection layer (no label).
+                    - listitem [ref=e913]:
+                      - text: An output layer with a single green box labeled
+                      - code [ref=e914]: "`w(t)`"
+                      - text: .
+                - listitem [ref=e915]:
+                  - strong [ref=e916]: "Relationships:"
+                  - list [ref=e917]:
+                    - listitem [ref=e918]:
+                      - text: Lines connect each input layer box to the
+                      - code [ref=e919]: "`SUM`"
+                      - text: box.
+                    - listitem [ref=e920]:
+                      - text: A line connects the
+                      - code [ref=e921]: "`SUM`"
+                      - text: box to the projection layer box.
+                    - listitem [ref=e922]: A line connects the projection layer box to the output layer box.
+                - listitem [ref=e923]:
+                  - strong [ref=e924]: "Concept:"
+                  - text: This diagram illustrates the CBOW model, which predicts the current word given the context words within a specific window.
+                - listitem [ref=e925]:
+                  - strong [ref=e926]: "Study Tip:"
+              - blockquote [ref=e927]:
+                - paragraph [ref=e928]:
+                  - text: 📌
+                  - strong [ref=e929]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - 'heading "Diagram 2: Skip Gram Model" [level=3] [ref=e930]'
+              - list [ref=e931]:
+                - listitem [ref=e932]:
+                  - strong [ref=e933]: "Type:"
+                  - text: Neural network diagram
+                - listitem [ref=e934]:
+                  - strong [ref=e935]: "Components and Labels:"
+                  - list [ref=e936]:
+                    - listitem [ref=e937]:
+                      - text: Input layer with a single green box labeled
+                      - code [ref=e938]: "`w(t)`"
+                      - text: .
+                    - listitem [ref=e939]: A green box in the projection layer (no label).
+                    - listitem [ref=e940]:
+                      - text: Output layer with four green boxes labeled
+                      - code [ref=e941]: "`w(t-2)`"
+                      - text: ","
+                      - code [ref=e942]: "`w(t-1)`"
+                      - text: ","
+                      - code [ref=e943]: "`w(t+1)`"
+                      - text: ", and"
+                      - code [ref=e944]: "`w(t+2)`"
+                      - text: .
+                - listitem [ref=e945]:
+                  - strong [ref=e946]: "Relationships:"
+                  - list [ref=e947]:
+                    - listitem [ref=e948]: Lines connect the input layer box to the projection layer box.
+                    - listitem [ref=e949]: Lines connect the projection layer box to each of the output layer boxes.
+                - listitem [ref=e950]:
+                  - strong [ref=e951]: "Concept:"
+                  - text: This diagram illustrates the Skip Gram model, which predicts the surrounding context words within a specific window given the current word.
+                - listitem [ref=e952]:
+                  - strong [ref=e953]: "Study Tip:"
+              - blockquote [ref=e954]:
+                - paragraph [ref=e955]:
+                  - text: 📌
+                  - strong [ref=e956]: "Study tip:"
+                  - text: This diagram is worth drawing by hand for better retention.
+              - separator [ref=e957]
+          - generic [ref=e958]:
+            - heading "Markdown • Page 19" [level=3] [ref=e959]
+            - generic [ref=e960]:
+              - paragraph [ref=e961]:
+                - emphasis [ref=e962]: "[Direct text extraction]"
+              - paragraph [ref=e963]: "U20ITCM09 DEEP LEARNING UNIT III ● NLTK: For handling human language data, NLTK, or Natural Language Toolkit, is a potent Python library. It offers user-friendly interfaces to more than 50 lexical resources and corpora, including WordNet. A collection of text processing libraries for tasks like categorization, tokenization, stemming, tagging, parsing, and semantic reasoning are also included with NLTK. ● GENSIM: Gensim is an open-source Python library that uses topic modelling and document similarity modelling to manage and analyse massive amounts of unstructured text data. It is especially well-known for applying topic and vector space modelling algorithms, such as Word2Vec and Latent Dirichlet Allocation (LDA), which are widely used. Why we need Word2Vec? In natural language processing (NLP), Word2Vec is a popular and significant method for representing words as vectors in a continuous vector space. Word2Vec has become popular and is utilized in many different NLP applications for several reasons: ● Semantic Representations: Word2Vec records the connections between words semantically. Words are represented in the vector space so that similar words are near to one another. This enables the model to interpret words according to their context within a particular corpus. ● Distributional Semantics: The foundation of Word2Vec is the distributional hypothesis, which holds that words with similar meanings are more likely to occur in similar contexts. Word2Vec generates vector representations that reflect semantic similarities by learning from the distributional patterns of words in a large corpus. ● Vector Arithmetic: Word2Vec generates vector representations that have intriguing algebraic characteristics. Vector arithmetic, for instance, can be used to record word relationships. One well-known example is that the vector representation of “queen” could resemble the vector representation of “king” less “man” plus “woman.” ● Efficiency: Word2Vec’s high computational efficiency makes training on big datasets possible. Learning high-dimensional vector representations for a large vocabulary requires this efficiency. ● Transfer Learning: A variety of natural language processing tasks can be initiated with pre-trained Word2Vec models. Time and resources can be saved by fine- tuning the embeddings discovered on a sizable dataset for particular uses. ● Applications: Word2Vec embeddings have shown promise in a number of natural language processing (NLP) applications, such as machine translation, text classification, sentiment analysis, and information retrieval. These applications are successful in part because of their capacity to capture semantic relationships. ● Scalability: Word2Vec can handle big corpora with ease and is scalable. Scalability like this is essential for training on large text datasets. ● Open Source Implementations: Word2Vec has open-source versions, including one that is included in the Gensim library. Its widespread adoption and use in both research and industry can be attributed in part to its accessibility. SENTIMENT PREDICTION RNN: Building a sentiment prediction Recurrent Neural Network (RNN) involves using a type of neural network architecture that can handle sequential data, such as text. RNNs, with their ability to retain information from previous steps, are particularly well-suited for tasks like IV YR / VIII SEM Page 19"
+              - separator [ref=e964]
+          - generic [ref=e965]:
+            - heading "Markdown • Page 20" [level=3] [ref=e966]
+            - generic [ref=e967]:
+              - paragraph [ref=e968]:
+                - emphasis [ref=e969]: "[Direct text extraction]"
+              - paragraph [ref=e970]: "U20ITCM09 DEEP LEARNING UNIT III sentiment analysis. Here's a basic outline of how you can approach building a sentiment prediction RNN:"
+              - list [ref=e971]:
+                - listitem [ref=e972]: "Data Preparation: ● Obtain a dataset labeled with sentiment (positive, negative, neutral). ● Preprocess the text data: tokenization, removing stop words, punctuation, lowercasing, etc. ● Convert words into numerical representations (word embeddings)."
+                - listitem [ref=e973]: "Model Architecture: ● Define the architecture of your RNN model. You can use different types of RNN cells like vanilla RNN, LSTM, or GRU. LSTM and GRU are preferred choices due to their ability to handle long-range dependencies. ● Decide whether to use pre-trained word embeddings (like Word2Vec, GloVe) or train embeddings from scratch. ● Include an output layer with appropriate activation function (sigmoid for binary classification, softmax for multi-class classification). ● Consider adding layers for regularization (dropout) to prevent overfitting."
+                - listitem [ref=e974]: "Model Training: ● Split your dataset into training, validation, and testing sets. ● Train your RNN model using the training data. Monitor performance on the validation set to avoid overfitting. ● Experiment with different hyperparameters such as learning rate, batch size, number of epochs, etc."
+                - listitem [ref=e975]: "Model Evaluation: ● Evaluate the trained model on the test set using appropriate metrics (accuracy, precision, recall, F1-score). ● Analyze the model's performance and fine-tune hyperparameters if necessary."
+                - listitem [ref=e976]: "Deployment: ● Once satisfied with the model's performance, deploy it for inference on new data. ● Monitor the model's performance in the production environment and update as needed. Page 20 IV YR / VIII SEM"
+              - separator [ref=e977]
